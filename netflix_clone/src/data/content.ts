@@ -21,7 +21,35 @@ export interface Content {
   episodeCount?: number;
 }
 
-function normalizeContent(item: any): Content {
+type RawContent = {
+  id: number;
+  title: string;
+  type: ContentType;
+  creator: string[];
+  cast: string[];
+  genre: string[];
+  features: string[];
+  backdropUrl: string;
+  description: string;
+  previewLink: string;
+  releaseYear: number;
+  runningTime?: number;
+  isLimited?: boolean;
+  partCount?: number;
+  seasonCount?: number;
+  episodeCount?: number;
+};
+
+type RawContentsFile = {
+  movies?: RawContent[];
+  dramas?: RawContent[];
+  animations?: RawContent[];
+  series?: RawContent[];
+};
+
+const raw = rawContents as unknown as RawContentsFile;
+
+function normalizeContent(item: RawContent): Content {
   const base = {
     id: item.id,
     title: item.title,
