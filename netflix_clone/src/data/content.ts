@@ -21,6 +21,7 @@ export interface Content {
   episodeCount?: number;
 }
 
+/* JSON을 임시로 표현하는 내부 타입 */
 type RawContent = {
   id: number;
   title: string;
@@ -49,6 +50,7 @@ type RawContentsFile = {
 
 const raw = rawContents as unknown as RawContentsFile;
 
+/* 정규화 함수 */
 function normalizeContent(item: RawContent): Content {
   const base = {
     id: item.id,
@@ -96,11 +98,12 @@ function normalizeContent(item: RawContent): Content {
   }
 }
 
-const allRawContents: any[] = [
-  ...(rawContents.movies ?? []),
-  ...(rawContents.dramas ?? []),
-  ...(rawContents.animations ?? []),
-  ...(rawContents.series ?? []),
+const allRawContents: RawContent[] = [
+  ...(raw.movies ?? []),
+  ...(raw.dramas ?? []),
+  ...(raw.animations ?? []),
+  ...(raw.series ?? []),
 ];
 
+/* contens 내보내기 */
 export const contents: Content[] = allRawContents.map(normalizeContent);
