@@ -1,6 +1,6 @@
 // 호버 프리뷰 컴포넌트
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import type { HoverPreviewProps } from "./types";
 import type { Content } from "../../data/content";
@@ -77,13 +77,27 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
         finalTop = window.innerHeight - previewHeight - 110;
     }
 
+    // 프리뷰가 열린 시점에서의 화면 위치 저장
+    const fixedPositionRef = useRef({
+        left: finalLeft,
+        top: finalTop,
+        width: previewWidth,
+        height: previewHeight,
+    });
+
+    // 프리뷰가 열린 시점에서의 스크롤 위치 저장
+    const fixedScrollRef = useRef({
+        x: window.scrollX,
+        y: window.scrollY,
+      });
+
     const handleClose = () => {
         setIsClosing(true);
         setTimeout(() => {
             setIsClosing(false);
             onMouseLeave();
         }, 200);
-    }
+    };
 
     // 애니메이션 시작
     useEffect(() => {
@@ -94,18 +108,18 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     }, []);
 
     // 초기 상태 (카드 크기/위치) vs 최종 상태 (확대된 크기/위치)
-    const currentWidth = isAnimating ? position.width : (isClosing ? position.width : previewWidth);
-    const currentHeight = isAnimating ? position.height : (isClosing ? position.height : previewHeight);
-    const currentLeft = isAnimating ? position.left : (isClosing ? position.left : finalLeft);
-    const currentTop = isAnimating ? position.top : (isClosing ? position.top : finalTop);
+    const currentWidth = isAnimating ? position.width : (isClosing ? position.width : fixedPositionRef.current.width);
+    const currentHeight = isAnimating ? position.height : (isClosing ? position.height : fixedPositionRef.current.height);
+    const currentLeft = isAnimating ? position.left : (isClosing ? position.left : fixedPositionRef.current.left);
+    const currentTop = isAnimating ? position.top : (isClosing ? position.top : fixedPositionRef.current.top);
 
     // HoverPreview를 body 바로 아래에 렌더링하여 부모 영향을 받지 않게 수정
     return createPortal(
         <div
-            className="absolute z-50 bg-[#181818] rounded-md shadow-2xl overflow-visible"
+            className="absolute z-50 bg-[#181818] rounded-[.2vw] shadow-2xl overflow-visible"
             style={{
-                left: `${currentLeft + scrollX}px`,
-                top: `${currentTop + scrollY}px`,
+                left: `${currentLeft + fixedScrollRef.current.x}px`,
+                top: `${currentTop + fixedScrollRef.current.y}px`,
                 width: `${currentWidth}px`,
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
@@ -123,7 +137,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 <img
                     src={movie.backdropUrl}
                     alt={movie.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-t-[.2vw]"
                 />
             </div>
 
@@ -133,6 +147,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                     opacity: isAnimating ? 0 : 1,
                     transform: isAnimating ? 'translateY(-10px)' : 'translateY(0)',
                     transition: 'opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s',
+                    cursor: 'pointer',
                 }}
             >
                 <div className="flex gap-2 mb-5">
