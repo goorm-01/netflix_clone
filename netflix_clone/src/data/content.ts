@@ -21,7 +21,37 @@ export interface Content {
   episodeCount?: number;
 }
 
-function normalizeContent(item: any): Content {
+/* JSON을 임시로 표현하는 내부 타입 */
+type RawContent = {
+  id: number;
+  title: string;
+  type: ContentType;
+  creator: string[];
+  cast: string[];
+  genre: string[];
+  features: string[];
+  backdropUrl: string;
+  description: string;
+  previewLink: string;
+  releaseYear: number;
+  runningTime?: number;
+  isLimited?: boolean;
+  partCount?: number;
+  seasonCount?: number;
+  episodeCount?: number;
+};
+
+type RawContentsFile = {
+  movies?: RawContent[];
+  dramas?: RawContent[];
+  animations?: RawContent[];
+  series?: RawContent[];
+};
+
+const raw = rawContents as unknown as RawContentsFile;
+
+/* 정규화 함수 */
+function normalizeContent(item: RawContent): Content {
   const base = {
     id: item.id,
     title: item.title,
@@ -68,11 +98,12 @@ function normalizeContent(item: any): Content {
   }
 }
 
-const allRawContents: any[] = [
-  ...(rawContents.movies ?? []),
-  ...(rawContents.dramas ?? []),
-  ...(rawContents.animations ?? []),
-  ...(rawContents.series ?? []),
+const allRawContents: RawContent[] = [
+  ...(raw.movies ?? []),
+  ...(raw.dramas ?? []),
+  ...(raw.animations ?? []),
+  ...(raw.series ?? []),
 ];
 
+/* contens 내보내기 */
 export const contents: Content[] = allRawContents.map(normalizeContent);
