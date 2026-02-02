@@ -1,6 +1,9 @@
 import React from 'react'
 
+<<<<<<< HEAD
 import Header from '../components/Header/Header'
+=======
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
 import { CardSlider } from '../components/MovieList';
 import { useState, useEffect } from 'react';
 import { getContentsByType } from '../api/contentsApi';
@@ -23,13 +26,21 @@ export default function MainPage() {
   
   return (
     <div className="bg-[#141414] min-h-screen py-10">
+<<<<<<< HEAD
       <Header />
+=======
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
       <CardSlider title="영화" movies={movies} />
       <CardSlider
         title="오늘 대한민국의 TOP 10 시리즈"
         movies={series.slice(0, 10)}
         variant="ranking"
       />
+<<<<<<< HEAD
+=======
+      <CardSlider title="드라마" movies={dramas} />
+      <CardSlider title="애니메이션" movies={animations} />
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
     </div>
   )
 }

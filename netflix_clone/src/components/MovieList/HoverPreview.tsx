@@ -1,6 +1,10 @@
 // 호버 프리뷰 컴포넌트
 
+<<<<<<< HEAD
 import { useState, useEffect, useRef } from "react";
+=======
+import { useState, useEffect } from "react";
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
 import { createPortal } from "react-dom";
 import type { HoverPreviewProps } from "./types";
 import type { Content } from "../../data/content";
@@ -62,6 +66,12 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const expandX = (previewWidth - position.width) / 2;
     const expandY = (previewHeight - position.height);
 
+<<<<<<< HEAD
+=======
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
     // 화면 가장자리 판단 (좌/우 끝 카드의 확장은 다르게 처리)
     const edgeThreshold = 60;
     const isLeftEdge = position.left < edgeThreshold;
@@ -87,6 +97,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     // 화면 가장자리 보정
     if (finalLeft < 10) finalLeft = 10;
     if (finalLeft + previewWidth > window.innerWidth - 10) {
+<<<<<<< HEAD
         finalLeft = window.innerWidth - previewWidth - 60;
     }
     if (position.top < 10) return null;
@@ -104,6 +115,14 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
         x: window.scrollX,
         y: window.scrollY,
     });
+=======
+        finalLeft = window.innerWidth - previewWidth - 10;
+    }
+    if (finalTop < 10) finalTop = 10;
+    if (finalTop + previewHeight + 100 > window.innerHeight) {
+        finalTop = window.innerHeight - previewHeight - 110;
+    }
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
 
     const handleClose = () => {
         setIsClosing(true);
@@ -111,7 +130,11 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
             setIsClosing(false);
             onMouseLeave();
         }, 200);
+<<<<<<< HEAD
     };
+=======
+    }
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
 
     // 애니메이션 시작
     useEffect(() => {
@@ -122,14 +145,22 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     }, []);
 
     // 초기 상태 (카드 크기/위치) vs 최종 상태 (확대된 크기/위치)
+<<<<<<< HEAD
     const currentWidth = isAnimating ? position.width : (isClosing ? position.width : fixedPositionRef.current.width);
     const currentHeight = isAnimating ? position.height : (isClosing ? position.height : fixedPositionRef.current.height);
     const currentLeft = isAnimating ? position.left : (isClosing ? position.left : fixedPositionRef.current.left);
     const currentTop = isAnimating ? position.top : (isClosing ? position.top : fixedPositionRef.current.top);
+=======
+    const currentWidth = isAnimating ? position.width : (isClosing ? position.width : previewWidth);
+    const currentHeight = isAnimating ? position.height : (isClosing ? position.height : previewHeight);
+    const currentLeft = isAnimating ? position.left : (isClosing ? position.left : finalLeft);
+    const currentTop = isAnimating ? position.top : (isClosing ? position.top : finalTop);
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
 
     // HoverPreview를 body 바로 아래에 렌더링하여 부모 영향을 받지 않게 수정
     return createPortal(
         <div
+<<<<<<< HEAD
             className="absolute z-50 bg-[#181818] rounded-[.2vw] shadow-2xl overflow-visible"
             style={{
                 left: `${currentLeft + fixedScrollRef.current.x}px`,
@@ -138,6 +169,15 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
                 boxShadow: 'rgba(0,0,0,0.75) 0px 3px 10px 0px'
+=======
+            className="absolute z-50 bg-[#181818] rounded-md shadow-2xl overflow-visible"
+            style={{
+                left: `${currentLeft + scrollX}px`,
+                top: `${currentTop + scrollY}px`,
+                width: `${currentWidth}px`,
+                opacity: isClosing ? 0 : 1,
+                transition: isAnimating ? 'none' : 'all 0.2s ease-out',
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
             }}
             onMouseEnter={onMouseEnter}
             onMouseLeave={handleClose}
@@ -149,22 +189,15 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                     transition: isAnimating ? 'none' : 'height 0.2s ease-out',
                 }}
             >
-                {getPreviewUrl(movie.previewLink) ? (
-                    <iframe
-                        src={getPreviewUrl(movie.previewLink)!}
-                        title="movie.title"
-                        className="w-full h-full rounded-t-[.2vw]"
-                        allow="autoplay; encrypted-media"
-                        style={{ border: 'none' }}
-                    />
-                ) : (
-                    <img
-                        src={movie.backdropUrl}
-                        alt={movie.title}
-                        className="w-full h-full object-cover rounded-t-[.2vw]"
-                    />
-                )}
-
+                <img
+                    src={movie.backdropUrl}
+                    alt={movie.title}
+<<<<<<< HEAD
+                    className="w-full h-full object-cover rounded-t-[.2vw]"
+=======
+                    className="w-full h-full object-cover"
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
+                />
             </div>
 
             <div
@@ -173,7 +206,10 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                     opacity: isAnimating ? 0 : 1,
                     transform: isAnimating ? 'translateY(-10px)' : 'translateY(0)',
                     transition: 'opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s',
+<<<<<<< HEAD
                     cursor: 'pointer',
+=======
+>>>>>>> a2aeb71 (리스트 컴포넌트 작성)
                 }}
             >
                 <div className="flex gap-2 mb-5">
