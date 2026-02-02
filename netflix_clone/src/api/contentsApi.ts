@@ -1,4 +1,4 @@
-import type { Content } from '../data/content';
+import type { Content, ContentType } from '../data/content';
 import { contents } from '../data/content';
 
 /* 검색 결과 인터페이스 */
@@ -19,7 +19,7 @@ export const getContents = async (): Promise<Content[]> => {
   });
 };
 
-/* id로 컨텐츠 찾기 API */
+/* id로 컨텐츠 불러오기 API */
 export const getContentById = async (id: number): Promise<Content> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -41,9 +41,11 @@ export const searchContents = async (
     setTimeout(() => {
       /* 키워드를 기반으로 제목, 출연, 제작에서 탐색 */
       const exactMatches = contents.filter((c) => {
-        c.title.includes(keyword) ||
+        return (
+          c.title.includes(keyword) ||
           c.cast.includes(keyword) ||
-          c.creator.includes(keyword);
+          c.creator.includes(keyword)
+        );
       });
 
       /* 유사 콘텐츠 추가(중복은 제거) */
@@ -60,5 +62,14 @@ export const searchContents = async (
 
       resolve({ exactMatches, relatedMatches });
     }, 300);
+  });
+};
+
+/* 타입(영화, 드라마 등)으로 컨텐츠 불러오기 API */
+export const getContentsByType = async (
+  type: ContentType,
+): Promise<Content[]> => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(contents.filter((c) => c.type === type)), 300);
   });
 };
