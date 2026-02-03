@@ -71,11 +71,14 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const expandY = (previewHeight - position.height);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     const scrollX = window.scrollX;
     const scrollY = window.scrollY;
 
 >>>>>>> a2aeb71 (리스트 컴포넌트 작성)
+=======
+>>>>>>> bd40830 (임시 커밋)
     // 화면 가장자리 판단 (좌/우 끝 카드의 확장은 다르게 처리)
     const edgeThreshold = 60;
     const isLeftEdge = position.left < edgeThreshold;
@@ -102,6 +105,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     if (finalLeft < 10) finalLeft = 10;
     if (finalLeft + previewWidth > window.innerWidth - 10) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         finalLeft = window.innerWidth - previewWidth - 60;
     }
     if (position.top < 10) return null;
@@ -127,6 +131,11 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
         finalTop = window.innerHeight - previewHeight - 110;
     }
 >>>>>>> a2aeb71 (리스트 컴포넌트 작성)
+=======
+        finalLeft = window.innerWidth - previewWidth - 60;
+    }
+    if (position.top < 10) return null;
+>>>>>>> bd40830 (임시 커밋)
 
     // 프리뷰가 열린 시점에서의 화면 위치 저장
     const fixedPositionRef = useRef({
@@ -140,7 +149,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const fixedScrollRef = useRef({
         x: window.scrollX,
         y: window.scrollY,
-      });
+    });
 
     const handleClose = () => {
         setIsClosing(true);
@@ -198,6 +207,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
                 boxShadow: 'rgba(0,0,0,0.75) 0px 3px 10px 0px'
+<<<<<<< HEAD
 =======
             className="absolute z-50 bg-[#181818] rounded-md shadow-2xl overflow-visible"
 =======
@@ -210,6 +220,8 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
 >>>>>>> a2aeb71 (리스트 컴포넌트 작성)
+=======
+>>>>>>> bd40830 (임시 커밋)
             }}
             onMouseEnter={onMouseEnter}
             onMouseLeave={handleClose}

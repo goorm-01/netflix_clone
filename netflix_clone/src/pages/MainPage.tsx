@@ -37,10 +37,13 @@ export default function MainPage() {
         variant="ranking"
       />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <CardSlider title="드라마" movies={dramas} />
       <CardSlider title="애니메이션" movies={animations} />
 >>>>>>> a2aeb71 (리스트 컴포넌트 작성)
+=======
+>>>>>>> bd40830 (임시 커밋)
     </div>
   )
 }
