@@ -28,8 +28,6 @@ export default function MainPage() {
         movies={series.slice(0, 10)}
         variant="ranking"
       />
-      <CardSlider title="드라마" movies={dramas} />
-      <CardSlider title="애니메이션" movies={animations} />
     </div>
   )
 }

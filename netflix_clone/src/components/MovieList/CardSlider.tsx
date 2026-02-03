@@ -20,7 +20,7 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
     const [cardPosition, setCardPosition] = useState<DOMRect | null>(null);
     const [showPreview, setShowPreview] = useState(false);
 
-    
+
     // 슬라이더 타이틀 호버 샅애
     const [isTitleHovered, setIsTitleHovered] = useState(false);
 
@@ -75,6 +75,15 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
         updateWidth();
         window.addEventListener('resize', updateWidth);
         return () => window.removeEventListener('resize', updateWidth);
+    }, []);
+
+    // 컴포넌트 언마운트 시 타이머 정리
+    useEffect(() => {
+        return () => {
+            if (hoverTimeoutRef.current) {
+                clearTimeout(hoverTimeoutRef.current);
+            }
+        };
     }, []);
 
     // 화면 크기 변경 시 currentIndex 보정
@@ -158,6 +167,8 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         hoverTimeoutRef.current = setTimeout(() => {
             setShowPreview(false);
+            setHoveredMovie(null);
+            setCardPosition(null);
         }, 100);
     };
 

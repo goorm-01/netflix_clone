@@ -42,9 +42,6 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const expandX = (previewWidth - position.width) / 2;
     const expandY = (previewHeight - position.height);
 
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-
     // 화면 가장자리 판단 (좌/우 끝 카드의 확장은 다르게 처리)
     const edgeThreshold = 60;
     const isLeftEdge = position.left < edgeThreshold;
@@ -70,12 +67,9 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     // 화면 가장자리 보정
     if (finalLeft < 10) finalLeft = 10;
     if (finalLeft + previewWidth > window.innerWidth - 10) {
-        finalLeft = window.innerWidth - previewWidth - 10;
+        finalLeft = window.innerWidth - previewWidth - 60;
     }
-    if (finalTop < 10) finalTop = 10;
-    if (finalTop + previewHeight + 100 > window.innerHeight) {
-        finalTop = window.innerHeight - previewHeight - 110;
-    }
+    if (position.top < 10) return null;
 
     // 프리뷰가 열린 시점에서의 화면 위치 저장
     const fixedPositionRef = useRef({
@@ -89,7 +83,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const fixedScrollRef = useRef({
         x: window.scrollX,
         y: window.scrollY,
-      });
+    });
 
     const handleClose = () => {
         setIsClosing(true);
@@ -123,6 +117,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 width: `${currentWidth}px`,
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
+                boxShadow: 'rgba(0,0,0,0.75) 0px 3px 10px 0px'
             }}
             onMouseEnter={onMouseEnter}
             onMouseLeave={handleClose}
