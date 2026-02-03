@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Header from '../components/Header/Header'
 import { CardSlider } from '../components/MovieList';
 import { useState, useEffect } from 'react';
 import { getContentsByType } from '../api/contentsApi';
@@ -22,6 +23,7 @@ export default function MainPage() {
   
   return (
     <div className="bg-[#141414] min-h-screen py-10">
+      <Header />
       <CardSlider title="영화" movies={movies} />
       <CardSlider
         title="오늘 대한민국의 TOP 10 시리즈"
