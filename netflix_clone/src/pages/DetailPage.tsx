@@ -267,7 +267,7 @@ export default function DetailPage() {
                         <div className="grid gap-4 text-[14px]">
                             <div className='flex gap-1'>
                                 <p className="text-gray-400">감독:</p>
-                                <p>{movie.director}</p>
+                                <p>{movie.creator}</p>
                             </div>
                             <div className='flex gap-1'>
                                 <p className="text-gray-400">출연: </p>
