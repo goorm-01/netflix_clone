@@ -1,13 +1,15 @@
 import { useState } from 'react';
+import React from 'react';
 import * as Icons from '../../assets/icons';
 import moviesData from '../../data/dummy-data.json';
 
 interface RecommendedMoviesProps {
     addedItems: Set<number>;
     onToggleAddItem: (id: number) => void;
+    getAgeRatingIcon: (ageRating?: number) => any;
 }
 
-export default function RecommendedMovies({ addedItems, onToggleAddItem }: RecommendedMoviesProps) {
+export default function RecommendedMovies({ addedItems, onToggleAddItem, getAgeRatingIcon }: RecommendedMoviesProps) {
     const [showAll, setShowAll] = useState(false);
 
     return (
@@ -22,7 +24,10 @@ export default function RecommendedMovies({ addedItems, onToggleAddItem }: Recom
                             <span className='absolute top-2 right-2 text-white px-2 py-1 text-[16px]'>{Math.floor(item.runningTime / 60)}시간 {item.runningTime % 60}분</span>
                         </div>
                         <div className='p-[16px] text-[16px] font-light flex justify-between'>
-                            <span>{item.releaseYear}</span>
+                            <div className='flex items-center gap-2'>
+                                <p>{getAgeRatingIcon(item.ageRating) && React.createElement(getAgeRatingIcon(item.ageRating), { className: 'w-[30px] h-[30px]' })}</p>
+                                <span>{item.releaseYear}</span>
+                            </div>
                             <button className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15" aria-label="찜하기" onClick={() => onToggleAddItem(item.id)}>
                                 {addedItems.has(item.id) ?
                                     <Icons.CheckmarkMedium className="w-[17px] h-[17px]" /> :

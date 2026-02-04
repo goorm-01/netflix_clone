@@ -51,6 +51,7 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
                     <RecommendedMovies 
                         addedItems={addedItems}
                         onToggleAddItem={toggleAddItem}
+                        getAgeRatingIcon={getAgeRatingIcon}
                     />
                     
                     <div className='mt-8 pb-8 text-white'>
