@@ -1,6 +1,7 @@
 // 카드 슬라이더 컴포넌트
 
 import { useState, useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import type { CardSliderProps } from "./types";
 import type { Content } from "../../data/content";
 import MovieCard from "./MovieCard";
@@ -9,6 +10,8 @@ import HoverPreview from "./HoverPreview";
 import { useVisibleCount } from "../../hooks/useVisibleCount";
 
 export default function CardSlider({ title, movies, variant = 'default' }: CardSliderProps) {
+    const navigate = useNavigate();
+    const location = useLocation();
     // 슬라이더 상태
     const [currentIndex, setCurrentIndex] = useState(0);
     const [hasInteracted, setHasInteracted] = useState(false);
@@ -153,6 +156,10 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
         }
     };
 
+    const handleCardClick = (movie: Content) => {
+        navigate(`/detail/${movie.id}`, { state: { background: location } });
+    };
+
     // 호버 핸들러들
     const handleCardHover = (movie: Content, rect: DOMRect) => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
@@ -234,6 +241,7 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
                                 rank={(index - startOffset + movies.length) % movies.length + 1}
                                 onHover={handleCardHover}
                                 onLeave={handleCardLeave}
+                                onClick={handleCardClick}
                                 cardWidth={cardWidth}
                             />
                         ) : (
