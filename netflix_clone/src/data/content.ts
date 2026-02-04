@@ -14,6 +14,7 @@ export interface Content {
   description: string;
   previewLink: string;
   releaseYear: number;
+  ageRating: number;
   runningTime?: number;
   isLimited?: boolean;
   partCount?: number;
@@ -34,6 +35,7 @@ type RawContent = {
   description: string;
   previewLink: string;
   releaseYear: number;
+  ageRating: number;
   runningTime?: number;
   isLimited?: boolean;
   partCount?: number;
@@ -64,6 +66,7 @@ function normalizeContent(item: RawContent): Content {
     description: item.description ?? '',
     previewLink: item.previewLink ?? '',
     releaseYear: item.releaseYear,
+    ageRating: item.ageRating,
   };
 
   switch (item.type) {
