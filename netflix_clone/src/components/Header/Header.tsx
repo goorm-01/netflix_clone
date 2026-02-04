@@ -77,8 +77,31 @@ export default function Header() {
             </svg>
           </button>
           <button className='flex columns-1 items-center'>
-            <div className='bg-white w-[32px] h-[32px]'></div>
-            <div className='bg-white w-[10px] h-[5px] ml-[10px]'></div>
+            <img
+              src='./src/assets/Header/profile.png'
+              className='w-[32px] h-[32px] rounded-[4px]'
+            ></img>
+            <div className='ml-[10px]'>
+              <svg
+                viewBox='0 0 16 16'
+                width='16'
+                height='16'
+                data-icon='CaretDownSmall'
+                data-icon-id=':rn:'
+                data-uia='account+header+menu+Icon'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                role='img'
+              >
+                <path
+                  fill='currentColor'
+                  fillRule='evenodd'
+                  d='M11.6 6.5c.15 0 .22.18.12.28l-3.48 3.48a.33.33 0 0 1-.48 0L4.28 6.78a.17.17 0 0 1 .12-.28z'
+                  clipRule='evenodd'
+                ></path>
+              </svg>
+            </div>
           </button>
         </div>
       </div>
