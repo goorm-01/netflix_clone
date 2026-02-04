@@ -4,9 +4,10 @@ import VideoPreview from './VideoPreview';
 import MovieInfo from './MovieInfo';
 import RecommendedMovies from './RecommendedMovies';
 import * as Icons from '../../assets/icons';
+import type { Content } from '../../data/content';
 
 interface ContentsDetailModalProps {
-    movie: any;
+    movie: Content;
     onClose: () => void;
 }
 
@@ -36,8 +37,14 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-            <div className="relative w-full max-w-[920px] mx-4 bg-[#181818] rounded-lg overflow-y-auto max-h-[90vh]">
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+            onClick={onClose}
+        >
+            <div
+                className="relative w-full max-w-[920px] mx-4 bg-[#181818] rounded-lg overflow-y-auto max-h-[90vh]"
+                onClick={(e) => e.stopPropagation()}
+            >
                 <VideoPreview 
                     movie={movie} 
                     onClose={onClose}
@@ -49,6 +56,7 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
                 
                 <div className='px-[48px] pb-12'>
                     <RecommendedMovies 
+                        movie={movie}
                         addedItems={addedItems}
                         onToggleAddItem={toggleAddItem}
                         getAgeRatingIcon={getAgeRatingIcon}
@@ -57,7 +65,7 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
                     <div className='mt-8 text-white'>
                         <h3 className='mb-5 text-[24px]'>{movie.title} 상세 정보</h3>
                         <div className="grid gap-2 text-[14px]">
-                                <p className="text-gray-400 font-light">감독: <span className='text-white'>{movie.creator}</span></p>
+                                <p className="text-gray-400 font-light">감독: <span className='text-white'>{movie.creator.join(', ')}</span></p>
                                 <p className="text-gray-400 font-light">출연: <span className='text-white'>{movie.cast.join(', ')}</span></p>
                                 <p className="text-gray-400 font-light">장르: <span className='text-white'>{movie.genre.join(', ')}</span></p>
                                 <p className="text-gray-400 font-light">영화 특징: <span className='text-white'>{movie.features.join(', ')}</span></p>
