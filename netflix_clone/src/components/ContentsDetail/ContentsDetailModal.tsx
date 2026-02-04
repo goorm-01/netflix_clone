@@ -47,35 +47,20 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
                 
                 <MovieInfo movie={movie} />
                 
-                <div className='px-[48px]'>
+                <div className='px-[48px] pb-12'>
                     <RecommendedMovies 
                         addedItems={addedItems}
                         onToggleAddItem={toggleAddItem}
                         getAgeRatingIcon={getAgeRatingIcon}
                     />
                     
-                    <div className='mt-8 pb-8 text-white'>
+                    <div className='mt-8 text-white'>
                         <h3 className='mb-5 text-[24px]'>{movie.title} 상세 정보</h3>
-                        <div className="grid gap-4 text-[14px]">
-                            <div className='flex gap-1'>
-                                <p className="text-gray-400">감독:</p>
-                                <p>{movie.creator}</p>
-                            </div>
-                            <div className='flex gap-1'>
-                                <p className="text-gray-400">출연: </p>
-                                <p>{movie.cast.join(', ')}</p>
-                            </div>
-                            <div className='flex gap-1'>
-                                <p className="text-gray-400">각본: </p>
-                            </div>
-                            <div className='flex gap-1'>
-                                <p className="text-gray-400">장르: </p>
-                                <p>{movie.genre.join(', ')}</p>
-                            </div>
-                            <div className='flex gap-1'>
-                                <p className="text-gray-400">영화 특징: </p>
-                                <p>{movie.features.join(', ')}</p>
-                            </div>
+                        <div className="grid gap-2 text-[14px]">
+                                <p className="text-gray-400 font-light">감독: <span className='text-white'>{movie.creator}</span></p>
+                                <p className="text-gray-400 font-light">출연: <span className='text-white'>{movie.cast.join(', ')}</span></p>
+                                <p className="text-gray-400 font-light">장르: <span className='text-white'>{movie.genre.join(', ')}</span></p>
+                                <p className="text-gray-400 font-light">영화 특징: <span className='text-white'>{movie.features.join(', ')}</span></p>
                             <div className='flex gap-2 items-center '>
                                 <p className="text-gray-400">관람등급: </p>
                                 <p>{getAgeRatingIcon(movie.ageRating) && React.createElement(getAgeRatingIcon(movie.ageRating), { className: 'w-[30px] h-[30px]' })}</p>
