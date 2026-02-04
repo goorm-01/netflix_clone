@@ -19,7 +19,7 @@ export default function RecommendedMovies({ addedItems, onToggleAddItem, getAgeR
                 {moviesData.movies.slice(0, showAll ? moviesData.movies.length : 9).map((item) => (
                     <div key={item.id} className="cursor-pointer rounded bg-[rgb(47,47,47)] text-[rgb(210,210,210)] overflow-hidden">
                         <div className="relative">
-                            <img src={item.backdropUrl} alt={item.title} className="w-full " />
+                            <img src={item.thumbnail} alt={item.title} className="w-full " />
                             <div className='absolute inset-0' style={{ background: 'radial-gradient(circle, transparent 0%, rgba(0,0,0,0.6) 100%)' }} />
                             <span className='absolute top-2 right-2 text-white px-2 py-1 text-[16px]'>{Math.floor(item.runningTime / 60)}시간 {item.runningTime % 60}분</span>
                         </div>
