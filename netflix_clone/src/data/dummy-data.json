@@ -20,7 +20,8 @@
       "description": "한국 전쟁이 한창이던 시절, 피난길에 아버지와 헤어져 부산에 자리 잡은 덕수. 평생 동안 아버지와의 약속을 한시도 잊지 않는다. 아버지 대신 가족을 지키겠다는 그 약속을.",
       "previewLink": "https://youtu.be/4TwmvNNlWqI",
       "releaseYear": 2014,
-      "runningTime": 126
+      "runningTime": 126,
+      "ageRating": 12
     },
     {
       "id": 2,
@@ -48,7 +49,8 @@
       "description": "교양 있고 우아한 피아니스트와 산전수전 다 겪은 운전기사. 인종 차별이 만연한 남부 지역으로 콘서트 투어를 떠난 두 사람 사이에 어느새 인종을 뛰어넘는 우정이 싹튼다.",
       "previewLink": "https://youtu.be/qtGBWKR9QhY",
       "releaseYear": 2018,
-      "runningTime": 130
+      "runningTime": 130,
+      "ageRating": 12
     },
     {
       "id": 3,
@@ -73,7 +75,8 @@
       "description": "반지하에서 근근이 먹고 살던 가족. 우연히 생긴 알바로 부잣집에 발을 들이더니, 어느덧 온 식구가 저택 곳곳의 밥줄을 꿰찬다. 공간도 계단도 남아돌잖아요. 그러니 우리 같이 나눠 씁시다.",
       "previewLink": "https://youtu.be/jBdRhhSt3Bc",
       "releaseYear": 2019,
-      "runningTime": 132
+      "runningTime": 132,
+      "ageRating": 15
     },
     {
       "id": 4,
@@ -87,7 +90,8 @@
       "description": "첫눈에 반하면 뭐 해, 엇갈리고 또 엇갈리는데. 고등학교 시절 첫사랑 승희와 원치 않는 이별을 한 우연. 그런 그에게 승희를 다시 만날 수 있는 기회가 찾아온다. 우연은 그녀와의 완벽한 재회를 꿈꾸는데, 과연 그의 바람은 이루어질까?",
       "previewLink": "https://youtu.be/ATrvjG5-qGk",
       "releaseYear": 2018,
-      "runningTime": 110
+      "runningTime": 110,
+      "ageRating": 12
     },
     {
       "id": 5,
@@ -106,7 +110,8 @@
       "description": "자유로운 영혼을 가진 여성이 친구가 게이라는 비밀을 알아 버린다. 그리고 그때부터 의기투합한 두 사람은 서로의 곁에서 위안을 얻는다.",
       "previewLink": "https://youtu.be/5VPwCGe9S5c",
       "releaseYear": 2024,
-      "runningTime": 118
+      "runningTime": 118,
+      "ageRating": 15
     },
     {
       "id": 6,
@@ -143,7 +148,8 @@
       "description": "법보다 돈이 더 강한 세상. 정의감으로 똘똘 뭉친 베테랑 형사와 돈으로 죄를 덮으려는 안하무인 재벌 3세. 한 치의 양보도 없는 두 사람의 불꽃 튀는 대결이 지금 시작된다!",
       "previewLink": "https://youtu.be/24PZYgDMCh4",
       "releaseYear": 2015,
-      "runningTime": 123
+      "runningTime": 123,
+      "ageRating": 15
     },
     {
       "id": 7,
@@ -166,7 +172,8 @@
       "description": "불운한 음악 프로듀서가 바에서 실력 있는 싱어송라이터를 발견하자 가수로 데뷔시키고 자신의 삶도 구하기로 한다.",
       "previewLink": "https://youtu.be/98wK1kFDEAo",
       "releaseYear": 2013,
-      "runningTime": 103
+      "runningTime": 103,
+      "ageRating": 12
     },
     {
       "id": 8,
@@ -196,7 +203,8 @@
       "description": "마녀가 지배하는 기묘한 세계. 마녀에게 거역하면 동물로 변하게 되는 이곳에 열 살 소녀 치히로가 발을 들여놓는다.",
       "previewLink": "https://youtu.be/lwrG3HQXTFw",
       "releaseYear": 2001,
-      "runningTime": 125
+      "runningTime": 125,
+      "ageRating": 0
     },
     {
       "id": 9,
@@ -222,7 +230,8 @@
       "description": "범죄를 저지른 정신병자를 수감하는 치료감호소에서 환자가 실종된다. 연방 보안관이 수사에 나서지만, 계속 떠오르는 환영으로 인해 수사는 난항을 겪는데...",
       "previewLink": "https://youtu.be/pIzKw4vconw",
       "releaseYear": 2010,
-      "runningTime": 138
+      "runningTime": 138,
+      "ageRating": 15
     },
     {
       "id": 10,
@@ -251,7 +260,8 @@
       "description": "하늘에서 달을 훔치기로 한 교활한 악당. 아빠를 만나고 싶은 세 명의 고아에게 마음을 빼앗겨 계획에 차질이 생긴다.",
       "previewLink": "https://youtu.be/Bjsikja09ys",
       "releaseYear": 2010,
-      "runningTime": 94
+      "runningTime": 94,
+      "ageRating": 0
     },
     {
       "id": 11,
@@ -278,7 +288,8 @@
       "description": "고등학생 피터 파커가 거미처럼 행동할 수 있는 새로운 능력을 익히는 동시에 가족의 비밀을 밝히고 낯익은 최강 악당과 대결을 벌인다.",
       "previewLink": "https://youtu.be/MKzxAz1e2bU",
       "releaseYear": 2012,
-      "runningTime": 136
+      "runningTime": 136,
+      "ageRating": 12
     },
     {
       "id": 12,
@@ -301,7 +312,8 @@
       "description": "완벽을 추구하는 음악 교수의 지도에 따라, 앤드류는 재즈 뮤지션으로 성공하겠다는 일념에 불탄다. 성공의 대가로 인격이 파괴될지라도.",
       "previewLink": "https://youtu.be/Qsbu5Phz6u8",
       "releaseYear": 2014,
-      "runningTime": 106
+      "runningTime": 106,
+      "ageRating": 15
     },
     {
       "id": 13,
@@ -332,7 +344,8 @@
       "description": "스티븐 스필버그가 감독한 아카데미상 후보작. FBI의 아슬아슬한 추격에도 언제나 한발 앞서는 방탕한 사기꾼의 이야기를 그린다.",
       "previewLink": "https://youtu.be/lrWhA3APhCg",
       "releaseYear": 2002,
-      "runningTime": 141
+      "runningTime": 141,
+      "ageRating": 12
     },
     {
       "id": 14,
@@ -363,7 +376,8 @@
       "description": "비밀스러운 초능력을 지닌 케이팝 걸 그룹. 치명적인 매력을 자랑하는 악마 보이 밴드가 팬들을 빼앗으려는 걸 두고 볼 수 없다. 목소리를 높여 반격에 나서야 한다.",
       "previewLink": "https://youtu.be/xQnsFqn44uo",
       "releaseYear": 2025,
-      "runningTime": 99
+      "runningTime": 99,
+      "ageRating": 0
     },
     {
       "id": 15,
@@ -394,7 +408,8 @@
       "description": "아버지가 물려준 모자 가게를 지키는 수수한 소녀 소피. 전쟁도, 미녀의 심장을 노리는 마법사의 소문도 먼 세상 이야기일 뿐. 하지만 마녀의 저주로 할머니가 되면서, 소피의 인생이 회전목마처럼 힘차게 움직이기 시작한다.",
       "previewLink": "https://youtu.be/YpqMZt1gOXU",
       "releaseYear": 2004,
-      "runningTime": 119
+      "runningTime": 119,
+      "ageRating": 0
     }
   ],
   "dramas": [
@@ -431,7 +446,8 @@
       "description": "이번 생은 망했다고 생각한 순간 기회가 찾아왔다. 이혼 직전, 열여덟 살로 돌아간 홍대영. 지금부터 무능한 남편 대신 꿈 많은 소년으로 살아가려다. 18년 전 그때처럼.",
       "previewLink": "https://youtu.be/-jb4OSFrqEM",
       "releaseYear": 2020,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 12
     },
     {
       "id": 17,
@@ -466,7 +482,8 @@
       "description": "1871년 신미양요 직후 미국으로 건너갔던 소년. 격변하는 역사 속에서 고국으로 돌아와, 사대부의 귀한 따님을 가슴에 품는다.",
       "previewLink": "https://youtu.be/pHY8AdAZg4g",
       "releaseYear": 2018,
-      "episodeCount": 24
+      "episodeCount": 24,
+      "ageRating": 15
     },
     {
       "id": 18,
@@ -493,7 +510,8 @@
       "description": "일과 가정 모두 놓치지 않는 그녀. 다정한 이웃과 친구까지 있어 더없이 행복하다. 그러나 그녀의 세계를 비로소 완성하는 건, 세월에도 변함없는 남편의 사랑. 그러나 그 사랑이 흔들린다는 건, 완벽한 세계에 균열이 생겼다는 것.",
       "previewLink": "https://youtu.be/rpuEpWCaNx4",
       "releaseYear": 2020,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 19
     },
     {
       "id": 19,
@@ -523,7 +541,8 @@
       "description": "각종 시상식을 휩쓴 프리퀄 시리즈 <베터 콜 사울>과 속편 영화 <브레이킹 배드 무비: 엘 카미노>를 낳은 전설적인 범죄 드라마.",
       "previewLink": "https://youtu.be/VFkjBy2b50Q",
       "releaseYear": 2013,
-      "seasonCount": 5
+      "seasonCount": 5,
+      "ageRating": 19
     },
     {
       "id": 20,
@@ -550,7 +569,8 @@
       "description": "악은 악으로, 악은 악으로! 모국을 찾은 한국계 이탈리아 마피아 변호사. 무소불위의 재벌에 손맛 한번 보여줄까? 이거 본의 아니게 정의의 사도가 될지도 모르겠네.",
       "previewLink": "https://youtu.be/d1guslSo6Kk",
       "releaseYear": 2021,
-      "episodeCount": 20
+      "episodeCount": 20,
+      "ageRating": 15
     },
     {
       "id": 21,
@@ -584,7 +604,8 @@
       "description": "다섯 명의 명석한 친구들이 인류에 닥친 실존적 위협을 밝혀낸다. <The New Yorker>가 ‘진기한 SF 대작’이라고 호평한 작품으로, 전 세계 1위에 등극했다.",
       "previewLink": "https://youtu.be/fO5g6j-yEPA",
       "releaseYear": 2024,
-      "seasonCount": 1
+      "seasonCount": 1,
+      "ageRating": 15
     },
     {
       "id": 22,
@@ -611,7 +632,8 @@
       "description": "명석한 두뇌로 능수능란한 변호사의 마음을 사로잡은 대학 중퇴 청년. 변호사 자격도 없이 거대 로펌의 보조 변호사로 일하게 된다.",
       "previewLink": "https://youtu.be/cUnkjEIW2-o",
       "releaseYear": 2019,
-      "seasonCount": 9
+      "seasonCount": 9,
+      "ageRating": 15
     },
     {
       "id": 23,
@@ -642,7 +664,8 @@
       "description": "IT 스타트업 열전에 뛰어든 동시에 삼각관계의 연애 사업도 헤쳐 나간다. 야심 찬 창업가의 이야기를 경쾌하게 그린 로맨틱 코미디.",
       "previewLink": "https://youtu.be/CXqRnXzAWcs",
       "releaseYear": 2020,
-      "episodeCount": 16
+      "episodeCount": 16,
+      "ageRating": 12
     },
     {
       "id": 24,
@@ -671,7 +694,8 @@
       "description": "제주도에서 일어나는 다양한 이야기를 담은 시리즈. 이병헌, 신민아, 차승원, 이정은, 한지민, 김우빈, 엄정화 등이 출연한다.",
       "previewLink": "https://youtu.be/HIdxGmhNvGs",
       "releaseYear": 2022,
-      "episodeCount": 20
+      "episodeCount": 20,
+      "ageRating": 15
     },
     {
       "id": 25,
@@ -691,7 +715,8 @@
       "description": "반지음에겐 전생을 기억할 수 있는 신비한 능력이 있다. 18회차 인생이 이른 나이에 끝난 후 다시 태어난 그녀. 이번 생은 어느덧 어른이 된 어린 시절의 사랑을 찾는 데 올인한다.",
       "previewLink": "https://youtu.be/GCtxKmiP8Zg",
       "releaseYear": 2023,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 12
     },
     {
       "id": 26,
@@ -722,7 +747,8 @@
       "description": "선한 마음으로 무심코 내민 도움의 손길이 역효과를 불러올 수도 있는 정신병동. 복잡한 요구를 하는 이곳 환자들과의 생활에 새 간호사는 잘 적응할 수 있을까?",
       "previewLink": "https://youtu.be/08vlU3VRuTs",
       "releaseYear": 2023,
-      "episodeCount": 12
+      "episodeCount": 12,
+      "ageRating": 15
     },
     {
       "id": 27,
@@ -736,7 +762,8 @@
       "description": "한국에서 TOP 10에 오른 판타지 로맨스 드라마. 긴 세월을 함께한 부부가 천국에서 재회한다. 그런데 문제는 갑자기 50년의 나이 차가 생겨버렸다는 것.",
       "previewLink": "https://youtu.be/JPmpxxVlnao",
       "releaseYear": 2025,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 12
     },
     {
       "id": 28,
@@ -768,7 +795,8 @@
       "description": "하루아침에 19세기 중전의 몸으로 깨어난 현대의 셰프. 눈을 뜬 곳은 험난한 궁중궁궐. 어떻게든 본래 삶이 있는 현대로 돌아갈 방법을 찾아야 한다.",
       "previewLink": "https://youtu.be/dvlbgHhs8LE",
       "releaseYear": 2020,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 15
     },
     {
       "id": 29,
@@ -799,7 +827,8 @@
       "description": "체스 신동의 성장을 다룬 60년대 배경의 영리하고 세련된 드라마. 에미상 11개를 수상했으며, 《뉴요커》는 \"TV 역사상 가장 만족스러운 경험을 선사하는 작품\"으로 꼽았다.",
       "previewLink": "https://youtu.be/2Kd_4OOfmE0",
       "releaseYear": 2020,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 15
     },
     {
       "id": 30,
@@ -832,7 +861,8 @@
       "description": "1960년대 제주, 어린 시절부터 함께 자란 소년과 소녀 사이에 사랑이 피어난다. 새침데기 문학소녀와 운동부 무쇠. 하나부터 열까지 너무도 다른 두 청춘은 첫사랑을 이룰 수 있을까.",
       "previewLink": "https://youtu.be/hYqE_mlPeHc",
       "releaseYear": 2025,
-      "isLimited": true
+      "isLimited": true,
+      "ageRating": 12
     }
   ],
   "animations": [
@@ -886,7 +916,8 @@
       "description": "마침내 탄지로의 칼날이 모두 벼려졌다! 피에 굶주린 혈귀의 습격으로 가족을 잃고 여동생마저 저주에 걸린 소년. 가혹한 운명의 사슬을 끊어내고 세상에서 혈귀를 멸하러, 지금 탄지로가 복수의 칼날을 높이 든다.",
       "previewLink": "https://youtu.be/RJayggM6ZKU",
       "releaseYear": 2024,
-      "seasonCount": 5
+      "seasonCount": 5,
+      "ageRating": 12
     },
     {
       "id": 32,
@@ -915,7 +946,8 @@
       "description": "본모습을 아무도 몰라주는 소녀가 자신을 둘러싼 껍데기를 깨고 사랑을 알아가는 감성 로맨스 애니메이션. 시이나 카루호의 베스트셀러 만화 원작.",
       "previewLink": "https://youtu.be/RqOZVUg_ldM",
       "releaseYear": 2024,
-      "seasonCount": 3
+      "seasonCount": 3,
+      "ageRating": 12
     },
     {
       "id": 33,
@@ -949,7 +981,8 @@
       "description": "맷 그레이닝이 선사하는 중세 시대 배경의 애니메이션. 반항적인 공주가 노래하는 바다코끼리, 음모를 꾸미는 귀족, 악마 친구가 존재하는 세상으로 모험을 떠난다.",
       "previewLink": "https://youtu.be/IxH44TC0XN8",
       "releaseYear": 2023,
-      "partCount": 3
+      "partCount": 3,
+      "ageRating": 19
     },
     {
       "id": 34,
@@ -977,7 +1010,8 @@
       "description": "과학자 할아버지와 손자가 다른 차원으로 여행을 떠나는 엉뚱한 매력의 애니메이션 시리즈.",
       "previewLink": "https://youtu.be/gRLaAJYOE58",
       "releaseYear": 2025,
-      "seasonCount": 8
+      "seasonCount": 8,
+      "ageRating": 19
     },
     {
       "id": 35,
@@ -1003,7 +1037,8 @@
       "description": "바닷속 파인애플 집에 사는 노랗고 네모난 스폰지밥. 특기는 햄버거 뒤집기요, 취미는 해파리 사냥이라지. 맛있는 음식을 뚝딱 만들어내고, 친구들과 짜릿한 모험도 즐기는 하루하루. 듣기만 해도 신나? 그럼 우리 같이 떠나!",
       "previewLink": "https://youtu.be/vzw2GQ54hcw",
       "releaseYear": 2017,
-      "episodeCount": 26
+      "episodeCount": 26,
+      "ageRating": 0
     },
     {
       "id": 36,
@@ -1045,7 +1080,8 @@
       "description": "고향이 폐허로 변한 후, 소년 에렌 예거는 인류를 파멸시키려 하는 거인에 맞서 싸우겠다는 결의를 다진다.",
       "previewLink": "https://youtu.be/necy1bkwJEQ",
       "releaseYear": 2023,
-      "seasonCount": 7
+      "seasonCount": 7,
+      "ageRating": 19
     },
     {
       "id": 37,
@@ -1082,7 +1118,8 @@
       "description": "어느 날, 최애 아이돌을 눈앞에서 만난 시골 의사. 비밀을 품은 스타와의 만남이 그를 연예계라는 비정한 세계로 끌어들인다.",
       "previewLink": "https://youtu.be/WVgJerFiBqI",
       "releaseYear": 2026,
-      "seasonCount": 3
+      "seasonCount": 3,
+      "ageRating": 15
     },
     {
       "id": 38,
@@ -1112,7 +1149,8 @@
       "description": "히메노가 남긴 메시지 덕분에 아키는 공포심을 떨치고 유령의 악마를 공격한다. 한편, 덴지는 체인소 대 일본도의 사투를 다시 시작한다.",
       "previewLink": "https://youtu.be/e_WgkDvTFOY",
       "releaseYear": 2022,
-      "episodeCount": 12
+      "episodeCount": 12,
+      "ageRating": 19
     },
     {
       "id": 39,
@@ -1137,7 +1175,8 @@
       "description": "미국 남부의 촌구석 마을을 지키는 오합지졸 경찰들을 소개합니다. 어른들을 위한 막장 코믹 애니메이션 시리즈.",
       "previewLink": "https://youtu.be/EWSIOBbzuSE",
       "releaseYear": 2022,
-      "partCount": 4
+      "partCount": 4,
+      "ageRating": 19
     },
     {
       "id": 40,
@@ -1182,7 +1221,8 @@
       "description": "TV로 배구 대회를 보고 완전히 매료된 히나타. 비록 키는 작지만, 중학교 배구부에서 누구보다 열심히 연습한다.",
       "previewLink": "https://youtu.be/h563-W0S9bs",
       "releaseYear": 2020,
-      "seasonCount": 4
+      "seasonCount": 4,
+      "ageRating": 12
     }
   ],
   "series": [
@@ -1198,7 +1238,8 @@
       "description": "외로움은 겪을 만큼 겪었다! 솔로 탈출을 간절히 원하는 싱글 남녀들이 사랑과 결혼 상대를 찾아 나섰다. 데이트의 설렘은 물론, 로맨스의 온갖 우여곡절을 고스란히 담아낸 현실 연애 프로그램.",
       "previewLink": "https://youtu.be/hrlwnmda7i4",
       "releaseYear": 2026,
-      "partCount": 6
+      "partCount": 6,
+      "ageRating": 15
     },
     {
       "id": 42,
@@ -1212,7 +1253,8 @@
       "description": "유튜브, 틱톡, 인스타그램 등의 소셜 플랫폼을 대표하는 인플루언서 77인이 한데 모였다! 치밀한 전략으로 가장 많은 관심을 끌어야 하는 대결. 최고의 인플루언서를 가리는 소셜 서바이벌이 펼쳐진다.",
       "previewLink": "https://youtu.be/230S9vX9UK0",
       "releaseYear": 2024,
-      "episodeCount": 7
+      "episodeCount": 7,
+      "ageRating": 12
     },
     {
       "id": 43,
@@ -1226,7 +1268,8 @@
       "description": "매력적인 싱글 남녀가 무인도에 갇혔다. 누군가와 커플이 되는 게 유일한 탈출 방법. 근데 커플들이 '천국도'로 이동해 밤을 불태울 때, 솔로는 '지옥도'에 남아 자급자족해야 한다고?",
       "previewLink": "https://youtu.be/_A9_yjNRR0w",
       "releaseYear": 2026,
-      "seasonCount": 5
+      "seasonCount": 5,
+      "ageRating": 15
     },
     {
       "id": 44,
@@ -1248,7 +1291,8 @@
       "description": "K-팝과 K-드라마의 팬이라면 주목! 정상급 가수와 배우, 예능인들이 매주 들르는 학교가 있다는데. 그들의 춤과 노래, 이야기를 함께 즐기고 싶은 이들은 모두 아형고로 모일 것.",
       "previewLink": "https://youtu.be/dbQ0vGYKNWw",
       "releaseYear": 2025,
-      "partCount": 3
+      "partCount": 3,
+      "ageRating": 12
     },
     {
       "id": 45,
@@ -1272,7 +1316,8 @@
       "description": "가수 지망생들이 자기만의 색깔로 재해석한 명곡 발라드를 무대에서 선보이는 서바이벌 오디션. 스타와 일반 팬이 하나가 되어 우승자를 가려내는 특별한 경연이 펼쳐진다.",
       "previewLink": "https://youtu.be/grprNdAWV_M",
       "releaseYear": 2025,
-      "episodeCount": 12
+      "episodeCount": 12,
+      "ageRating": 0
     },
     {
       "id": 46,
@@ -1286,7 +1331,8 @@
       "description": "손님의 이야기가 요리가 되는 곳. <흑백요리사> 최강록 셰프와 문상훈이 이야기를 듣고 세상에 단 하나뿐인 '주관식' 요리를 선보인다. 주문도, 요리도 모두가 주관식인 특별한 푸드 토크쇼.",
       "previewLink": "https://youtu.be/nIP3aMVvWwA",
       "releaseYear": 2025,
-      "episodeCount": 19
+      "episodeCount": 19,
+      "ageRating": 0
     },
     {
       "id": 47,
@@ -1323,7 +1369,8 @@
       "description": "야구에 미친 아마추어 선수들. 최강의 우승팀을 가릴 챔피언전에서 전설적인 프로 선수들에게 과감히 도전장을 던진다.",
       "previewLink": "https://youtu.be/ZQKrP43NHa0",
       "releaseYear": 2025,
-      "partCount": 3
+      "partCount": 3,
+      "ageRating": 0
     },
     {
       "id": 48,
@@ -1337,7 +1384,8 @@
       "description": "기안84와 친구들이 함께 떠나는 즉흥 여행. 정해진 계획은 없다. 발길 닿는 대로 무작정 여행지를 돌아다니며 그곳의 진정한 아름다움을 발견한다.",
       "previewLink": "https://youtu.be/HN0CuARB-YM",
       "releaseYear": 2025,
-      "seasonCount": 2
+      "seasonCount": 2,
+      "ageRating": 0
     },
     {
       "id": 49,
@@ -1351,7 +1399,8 @@
       "description": "최고의 피지컬을 자랑하는 100인의 참가자. 연인은 험난한 대결에서 치열한 경쟁을 펼친다. 최후의 1인에게 주어지는 영예와 상금을 차지하기 위하여.",
       "previewLink": "https://youtu.be/J_zmVnwKSfs",
       "releaseYear": 2024,
-      "seasonCount": 2
+      "seasonCount": 2,
+      "ageRating": 15
     },
     {
       "id": 50,
@@ -1369,7 +1418,8 @@
       "description": "대한민국 최고의 스타 셰프들과 맛으로 인정받은 실력파 요리사들이 맞붙는다. 베테랑의 내공에 도전하는 숨은 고수들이 이변을 일으킬까? 오직 맛으로만 승부하는 100인의 뜨거운 요리 계급 전쟁.",
       "previewLink": "https://youtu.be/EYT03Lp9y60",
       "releaseYear": 2025,
-      "seasonCount": 2
+      "seasonCount": 2,
+      "ageRating": 12
     }
   ]
 }
