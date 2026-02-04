@@ -4,7 +4,7 @@
       "id": 1,
       "title": "국제시장",
       "type": "movie",
-      "creator": ["윤제균"],
+      "director": ["윤제균"],
       "cast": [
         "황정민",
         "김윤진",
@@ -26,7 +26,7 @@
       "id": 2,
       "title": "그린 북",
       "type": "movie",
-      "creator": ["피터 패럴리"],
+      "director": ["피터 패럴리"],
       "cast": [
         "비고 모텐슨",
         "마허샬라 알리",
@@ -54,7 +54,7 @@
       "id": 3,
       "title": "기생충",
       "type": "movie",
-      "creator": ["봉준호"],
+      "director": ["봉준호"],
       "cast": [
         "송강호",
         "이선균",
@@ -79,7 +79,7 @@
       "id": 4,
       "title": "너의 결혼식",
       "type": "movie",
-      "creator": ["이석근"],
+      "director": ["이석근"],
       "cast": ["박보영", "김영광"],
       "genre": ["로맨스", "엉뚱하고 기발", "로맨틱한 영화"],
       "features": ["유쾌 발랄", "진심 어린", "로맨틱"],
@@ -93,7 +93,7 @@
       "id": 5,
       "title": "대도시의 사랑법",
       "type": "movie",
-      "creator": ["이언희"],
+      "director": ["이언희"],
       "cast": ["김고은", "노상현", "정휘", "오동민", "박선후", "김채은"],
       "genre": [
         "LGBTQ+ 영화",
@@ -102,18 +102,20 @@
         "도서 원작 영화"
       ],
       "features": ["달콤 쌉싸름", "거부할 수 없는 이끌림", "감정을 파고드는"],
+      "thumbnail":"https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSpDYMpInzxgwtIRvuq9d-t_LBj5UJuY56QNhPVctofhXEQSpUENL52sKMEl6PLPmUg16ZrE6-9f7llrzblJRj87qKBqOApyF0pA.jpg?r=0c5",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/rFLxECXOOvC4BmxdCdf4WCq4AyZ.jpg",
       "previewLogo":"https://occ-0-1360-988.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZl8n6tgL6Km3Vz5LtYnTcVHgjOa-Lke3iOWz30jhLUnZ_6ub6FlsVgb9vOcvUANyRFVBCHVlQM4PHfxMA-AGDACS_Kg_PQXsbPATlCOijA.png",
       "description": "자유로운 영혼을 가진 여성이 친구가 게이라는 비밀을 알아 버린다. 그리고 그때부터 의기투합한 두 사람은 서로의 곁에서 위안을 얻는다.",
       "previewLink": "https://youtu.be/5VPwCGe9S5c",
       "releaseYear": 2024,
-      "runningTime": 118
+      "runningTime": 118,
+      "ageRating":15
     },
     {
       "id": 6,
       "title": "베테랑",
       "type": "movie",
-      "creator": ["류승완"],
+      "director": ["류승완"],
       "cast": [
         "황정민",
         "유아인",
@@ -150,7 +152,7 @@
       "id": 7,
       "title": "비긴 어게인",
       "type": "movie",
-      "creator": ["존 카니"],
+      "director": ["존 카니"],
       "cast": [
         "키이라 나이틀리",
         "마크 러팔로",
@@ -173,7 +175,7 @@
       "id": 8,
       "title": "센과 치히로의 행방불명",
       "type": "movie",
-      "creator": ["미야자키 하야오"],
+      "director": ["미야자키 하야오"],
       "cast": [
         "히이라기 루미",
         "이리노 미유",
@@ -203,7 +205,7 @@
       "id": 9,
       "title": "셔터 아일랜드",
       "type": "movie",
-      "creator": ["마틴 스코세이지"],
+      "director": ["마틴 스코세이지"],
       "cast": [
         "레오나르도 디카프리오",
         "마크 러팔로",
@@ -229,7 +231,7 @@
       "id": 10,
       "title": "슈퍼배드",
       "type": "movie",
-      "creator": ["피에르 코팽", "크리스 르노"],
+      "director": ["피에르 코팽", "크리스 르노"],
       "cast": [
         "스티브 커렐",
         "제이슨 시걸",
@@ -258,7 +260,7 @@
       "id": 11,
       "title": "어메이징 스파이더맨",
       "type": "movie",
-      "creator": ["마크 웹"],
+      "director": ["마크 웹"],
       "cast": [
         "앤드루 가필드",
         "엠마 스톤",
@@ -285,7 +287,7 @@
       "id": 12,
       "title": "위플래쉬",
       "type": "movie",
-      "creator": ["데이미언 셔젤"],
+      "director": ["데이미언 셔젤"],
       "cast": [
         "마일스 텔러",
         "J.K. 시먼스",
@@ -308,7 +310,7 @@
       "id": 13,
       "title": "캐치 미 이프 유 캔",
       "type": "movie",
-      "creator": ["스티븐 스필버그"],
+      "director": ["스티븐 스필버그"],
       "cast": [
         "레오나르도 디카프리오",
         "톰 행크스",
@@ -339,7 +341,7 @@
       "id": 14,
       "title": "케이팝 데몬 헌터스",
       "type": "movie",
-      "creator": ["매기 강", "크리스 애플한스"],
+      "director": ["매기 강", "크리스 애플한스"],
       "cast": [
         "아든 조",
         "안효섭",
@@ -370,7 +372,7 @@
       "id": 15,
       "title": "하울의 움직이는 성",
       "type": "movie",
-      "creator": ["미야자키 하야오"],
+      "director": ["미야자키 하야오"],
       "cast": [
         "바이쇼 지에코",
         "키무라 타쿠야",
@@ -403,7 +405,7 @@
       "id": 16,
       "title": "18 어게인",
       "type": "drama",
-      "creator": ["하병훈", "김도연", "안은빈", "최이룬"],
+      "director": ["하병훈", "김도연", "안은빈", "최이룬"],
       "cast": [
         "김하늘",
         "윤상현",
@@ -438,7 +440,7 @@
       "id": 17,
       "title": "미스터 션샤인",
       "type": "drama",
-      "creator": ["김은숙", "이응복"],
+      "director": ["김은숙", "이응복"],
       "cast": [
         "이병헌",
         "김태리",
@@ -473,7 +475,7 @@
       "id": 18,
       "title": "부부의 세계",
       "type": "drama",
-      "creator": ["모완일", "김성진", "강은경", "주현"],
+      "director": ["모완일", "김성진", "강은경", "주현"],
       "cast": [
         "김희애",
         "박해준",
@@ -500,7 +502,7 @@
       "id": 19,
       "title": "브레이킹 배드",
       "type": "drama",
-      "creator": ["빈스 길리건"],
+      "director": ["빈스 길리건"],
       "cast": [
         "브라이언 크랜스턴",
         "애런 폴",
@@ -530,7 +532,7 @@
       "id": 20,
       "title": "빈센조",
       "type": "drama",
-      "creator": ["김희원", "박재범"],
+      "director": ["김희원", "박재범"],
       "cast": [
         "송중기",
         "전여빈",
@@ -557,7 +559,7 @@
       "id": 21,
       "title": "삼체",
       "type": "drama",
-      "creator": ["데이비드 베니오프", "D.B. 와이스", "알렉산더 우"],
+      "director": ["데이비드 베니오프", "D.B. 와이스", "알렉산더 우"],
       "cast": [
         "제스 홍",
         "리암 커닝햄",
@@ -591,7 +593,7 @@
       "id": 22,
       "title": "슈츠",
       "type": "drama",
-      "creator": ["아론 코시"],
+      "director": ["아론 코시"],
       "cast": [
         "가브리엘 마흐트",
         "패트릭 J. 애덤스",
@@ -618,7 +620,7 @@
       "id": 23,
       "title": "스타트업",
       "type": "drama",
-      "creator": ["오충환", "박혜련"],
+      "director": ["오충환", "박혜련"],
       "cast": [
         "수지",
         "남주혁",
@@ -649,7 +651,7 @@
       "id": 24,
       "title": "우리들의 블루스",
       "type": "drama",
-      "creator": ["노희경", "김규태"],
+      "director": ["노희경", "김규태"],
       "cast": [
         "이병헌",
         "신민아",
@@ -678,7 +680,7 @@
       "id": 25,
       "title": "이번 생도 잘 부탁해",
       "type": "drama",
-      "creator": ["이나정", "최영림", "한아름"],
+      "director": ["이나정", "최영림", "한아름"],
       "cast": ["신혜선", "안보현", "하윤경", "안동구"],
       "genre": [
         "로맨틱한 드라마",
@@ -698,7 +700,7 @@
       "id": 26,
       "title": "정신병동에도 아침이 와요",
       "type": "drama",
-      "creator": ["이재규", "김남수", "이남규", "오보현", "김다희"],
+      "director": ["이재규", "김남수", "이남규", "오보현", "김다희"],
       "cast": [
         "박보영",
         "연우진",
@@ -729,7 +731,7 @@
       "id": 27,
       "title": "천국보다 아름다운",
       "type": "drama",
-      "creator": ["김석윤", "이남규", "김수진"],
+      "director": ["김석윤", "이남규", "김수진"],
       "cast": ["김혜자", "손석구", "한지민", "이정은", "천호진", "류덕환"],
       "genre": ["드라마", "한국 드라마"],
       "features": ["힐링", "유쾌 발랄", "진심 어린"],
@@ -743,7 +745,7 @@
       "id": 28,
       "title": "철인왕후",
       "type": "drama",
-      "creator": ["윤성식", "장양호", "박계옥", "최아일"],
+      "director": ["윤성식", "장양호", "박계옥", "최아일"],
       "cast": [
         "신혜선",
         "김정현",
@@ -775,7 +777,7 @@
       "id": 29,
       "title": "퀸스 갬빗",
       "type": "drama",
-      "creator": ["스콧 프랭크", "앨런 스콧"],
+      "director": ["스콧 프랭크", "앨런 스콧"],
       "cast": [
         "안야 테일러조이",
         "빌 캠프",
@@ -806,7 +808,7 @@
       "id": 30,
       "title": "폭싹 속았수다",
       "type": "drama",
-      "creator": ["김원석", "임상춘"],
+      "director": ["김원석", "임상춘"],
       "cast": [
         "아이유",
         "박보검",
@@ -841,7 +843,7 @@
       "id": 31,
       "title": "귀멸의 칼날",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "하나에 나츠키",
         "키토 아카리",
@@ -893,7 +895,7 @@
       "id": 32,
       "title": "너에게 닿기를",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "노토 마미코",
         "나미카와 다이스케",
@@ -922,7 +924,7 @@
       "id": 33,
       "title": "디스인챈트",
       "type": "animation",
-      "creator": ["맷 그레이닝"],
+      "director": ["맷 그레이닝"],
       "cast": [
         "애비 제이컵슨",
         "에릭 안드레",
@@ -956,7 +958,7 @@
       "id": 34,
       "title": "릭 앤 모티",
       "type": "animation",
-      "creator": ["댄 하먼", "저스틴 로일랜드"],
+      "director": ["댄 하먼", "저스틴 로일랜드"],
       "cast": [
         "저스틴 로일랜드",
         "크리스 파넬",
@@ -984,7 +986,7 @@
       "id": 35,
       "title": "스폰지밥 네모바지",
       "type": "animation",
-      "creator": ["스티븐 힐렌버그"],
+      "director": ["스티븐 힐렌버그"],
       "cast": [
         "톰 케니",
         "로저 범패스",
@@ -1010,7 +1012,7 @@
       "id": 36,
       "title": "진격의 거인",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "카지 유우키",
         "이시카와 유이",
@@ -1052,7 +1054,7 @@
       "id": 37,
       "title": "최애의 아이",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "타카하시 리에",
         "오츠카 타케오",
@@ -1089,7 +1091,7 @@
       "id": 38,
       "title": "체인소 맨",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "토야 키쿠노스케",
         "이자와 시오리",
@@ -1119,7 +1121,7 @@
       "id": 39,
       "title": "패러다이스의 경찰들",
       "type": "animation",
-      "creator": ["로저 블랙", "웨이코 오킨"],
+      "director": ["로저 블랙", "웨이코 오킨"],
       "cast": [
         "톰 케니",
         "데이비드 허먼",
@@ -1144,7 +1146,7 @@
       "id": 40,
       "title": "하이큐!!",
       "type": "animation",
-      "creator": [],
+      "director": [],
       "cast": [
         "무라세 아유무",
         "이시카와 카이토",
@@ -1191,7 +1193,7 @@
       "id": 41,
       "title": "나는 솔로",
       "type": "variety",
-      "creator": [],
+      "director": [],
       "cast": ["데프콘", "송해나", "이이경", "전효성"],
       "genre": ["결혼식 & 로맨스 리얼리티 TV", "리얼리티 시리즈"],
       "features": ["거부할 수 없는 이끌림", "로맨틱"],
@@ -1205,7 +1207,7 @@
       "id": 42,
       "title": "더 인플루언서",
       "type": "variety",
-      "creator": ["이재석", "손수정"],
+      "director": ["이재석", "손수정"],
       "cast": [],
       "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
       "features": [],
@@ -1219,7 +1221,7 @@
       "id": 43,
       "title": "솔로지옥",
       "type": "variety",
-      "creator": ["김재원", "김정현", "박수지", "김나현"],
+      "director": ["김재원", "김정현", "박수지", "김나현"],
       "cast": ["홍진경", "이다희", "규현", "한해", "덱스"],
       "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
       "features": ["거부할 수 없는 이끌림", "로맨틱"],
@@ -1233,7 +1235,7 @@
       "id": 44,
       "title": "아는 형님",
       "type": "variety",
-      "creator": [],
+      "director": [],
       "cast": [
         "강호동",
         "서장훈",
@@ -1255,7 +1257,7 @@
       "id": 45,
       "title": "우리들의 발라드",
       "type": "variety",
-      "creator": [],
+      "director": [],
       "cast": [
         "정재형",
         "추성훈",
@@ -1279,7 +1281,7 @@
       "id": 46,
       "title": "주관식당",
       "type": "variety",
-      "creator": ["채송이"],
+      "director": ["채송이"],
       "cast": ["최강록", "문상훈", "주현영"],
       "genre": ["토크쇼"],
       "features": ["힐링"],
@@ -1293,7 +1295,7 @@
       "id": 47,
       "title": "최강야구",
       "type": "variety",
-      "creator": [],
+      "director": [],
       "cast": [
         "김성근",
         "송승준",
@@ -1330,7 +1332,7 @@
       "id": 48,
       "title": "태어난 김에 세계일주",
       "type": "variety",
-      "creator": [],
+      "director": [],
       "cast": ["기안84", "빠니보틀", "덱스", "이시언"],
       "genre": ["음식 & 여행 시리즈", "리얼리티 시리즈", "라이프스타일"],
       "features": ["순한 맛 코미디", "재밌는"],
@@ -1344,7 +1346,7 @@
       "id": 49,
       "title": "피지컬: 100",
       "type": "variety",
-      "creator": ["장호기"],
+      "director": ["장호기"],
       "cast": [],
       "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
       "features": ["흥미진진"],
@@ -1358,7 +1360,7 @@
       "id": 50,
       "title": "흑백요리사: 요리 계급 전쟁",
       "type": "variety",
-      "creator": ["윤현준", "김학민", "김은지"],
+      "director": ["윤현준", "김학민", "김은지"],
       "cast": ["백종원", "안성재"],
       "genre": [
         "음식 & 여행 시리즈",

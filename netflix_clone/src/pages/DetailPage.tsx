@@ -9,33 +9,59 @@ export default function DetailPage() {
     const [showAll, setShowAll] = useState(false);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(true);
+    const [addedItems, setAddedItems] = useState<Set<number>>(new Set());
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
     const movie = moviesData.movies.find(m => m.id === Number(id));
 
-    if (!movie) {return <div>영화를 찾을 수 없습니다.</div>;}
+    if (!movie) { return <div>영화를 찾을 수 없습니다.</div>; }
+
+    const getAgeRatingIcon = (ageRating?: number) => {
+        switch (ageRating) {
+            case 0: return Icons.RegionalRatingsKmrbRatingAll;
+            case 12: return Icons.RegionalRatingsKmrbRating12;
+            case 15: return Icons.RegionalRatingsKmrbRating15;
+            case 19: return Icons.RegionalRatingsKmrbRating19;
+            default: return Icons.RegionalRatingsKmrbRatingAll;
+        }
+    };
+
+    const AgeRatingIcon = getAgeRatingIcon(movie.ageRating);
 
     const getEmbedUrl = (url: string) => {
         const videoId = url.split('youtu.be/')[1] || url.split('v=')[1]?.split('&')[0];
-        return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${videoId}&enablejsapi=1`;
+        return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=${isMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&playsinline=1&loop=1&playlist=${videoId}&enablejsapi=1`;
+    };
+
+    const toggleAddItem = (itemId: number) => {
+        setAddedItems(prev => {
+            const newSet = new Set(prev);
+            if (newSet.has(itemId)) {
+                newSet.delete(itemId);
+            } else {
+                newSet.add(itemId);
+            }
+            return newSet;
+        });
     };
 
     const toggleMute = () => {
         const nextMuted = !isMuted;
         setIsMuted(nextMuted);
         const iframe = iframeRef.current;
-        if (iframe?.contentWindow) {iframe.contentWindow.postMessage(
-                JSON.stringify({ event: 'command', func: nextMuted ? 'mute' : 'unMute', args: [] }),'*'
+        if (iframe?.contentWindow) {
+            iframe.contentWindow.postMessage(
+                JSON.stringify({ event: 'command', func: nextMuted ? 'mute' : 'unMute', args: [] }), '*'
             );
         }
     };
 
     useEffect(() => {
-        const timer = setTimeout(() => {setIsVideoPlaying(true);}, 500);
+        const timer = setTimeout(() => { setIsVideoPlaying(true); }, 500);
         return () => clearTimeout(timer);
     }, []);
 
-    const handleClose = () => {navigate(-1);};
+    const handleClose = () => { navigate(-1); };
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
@@ -47,25 +73,18 @@ export default function DetailPage() {
                 </button>
 
                 {/* 프리뷰 영상 부분 (제목 + 재생버튼) */}
-                <div className="relative h-[515px] min-h-[515px]">
-                    {!isVideoPlaying ? (
-                    <img src={movie.backdropUrl} alt={movie.title} className="w-full h-full object-cover" />
-                ) : (
-                    <iframe
-                        ref={iframeRef}
-                        src={getEmbedUrl(movie.previewLink)}
-                        className="w-full h-full object-cover"
-                        frameBorder="0"
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                        style={{aspectRatio: 'auto'}}
-                        onLoad={() => {
-                            setTimeout(() => {
-                                setIsVideoPlaying(false);
-                            }, 30000);
-                        }}
-                    />
-                )}
+                <div className="relative h-[515px] min-h-[515px] rounded-t-lg overflow-hidden">
+                    <div className="relative w-full h-full rounded-t-lg overflow-hidden">
+                        {!isVideoPlaying ? (
+                            <img src={movie.backdropUrl} alt={movie.title} className="w-full h-full object-cover" />
+                        ) : (
+                        <iframe ref={iframeRef} src={getEmbedUrl(movie.previewLink)} className="absolute inset-0 w-full h-full rounded-t-lg scale-[1.05] origin-center" frameBorder="0" allow="autoplay; encrypted-media"
+                                onLoad={() => {
+                                    setTimeout(() => {setIsVideoPlaying(false);}, 30000);
+                                }}
+                            />
+                        )}
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-[#181818] to-transparent" />
                     <div className="absolute grid w-full px-[46px] bottom-0 p-6 z-10 gap-[35px]">
                         <div className='w-[45%]'>
@@ -77,8 +96,15 @@ export default function DetailPage() {
                                     <Icons.PlayMedium className="w-4 h-4" />
                                     <span>재생</span>
                                 </button>
-                                <button className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15 " aria-label="찜하기">
-                                    <Icons.PlusMedium className="w-[17px] h-[17px]" />
+                                <button
+                                    className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15"
+                                    aria-label="찜하기"
+                                    onClick={() => toggleAddItem(movie.id)}
+                                >
+                                    {addedItems.has(movie.id) ?
+                                        <Icons.CheckmarkMedium className="w-[17px] h-[17px]" /> :
+                                        <Icons.PlusMedium className="w-[17px] h-[17px]" />
+                                    }
                                 </button>
                                 <button className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15 " aria-label="좋아요">
                                     <Icons.ThumbsUpMedium className="w-[17px] h-[17px]" />
@@ -105,11 +131,10 @@ export default function DetailPage() {
                                 <Icons.SubtitlesSmall className="w-[16px] h-[16px]" />
                             </div>
                             <div className='flex gap-4'>
-                                <Icons.RegionalRatingsKmrbRating15 className='w-[30px] h-[30px]' />
+                                <AgeRatingIcon className='w-[30px] h-[30px]' />
                                 <Icons.RegionalRatingsKmrbAdvisoriesLanguage className='w-[30px] h-[30px]' />
                                 <Icons.RegionalRatingsKmrbAdvisoriesDrug className='w-[30px] h-[30px]' />
                                 <Icons.RegionalRatingsKmrbAdvisoriesImitableBehavior className='w-[30px] h-[30px]' />
-
                             </div>
                             <p className="text-white mt-4 text-[14px]">{movie.description}</p>
                         </div>
@@ -122,8 +147,7 @@ export default function DetailPage() {
                             </p></div>
                             <div><p className="text-gray-400">영화특징:
                                 <span className="text-white"> {movie.features.join(', ')}</span>
-                            </p>
-                            </div>
+                            </p></div>
                         </div>
                     </div>
 
@@ -138,8 +162,14 @@ export default function DetailPage() {
                                         <div className='absolute inset-0' style={{ background: 'radial-gradient(circle, transparent 0%, rgba(0,0,0,0.6) 100%)' }} />
                                         <span className='absolute top-2 right-2 text-white px-2 py-1 text-[16px]'>{Math.floor(item.runningTime / 60)}시간 {item.runningTime % 60}분</span>
                                     </div>
-                                    <div className='p-[16px] text-[16px] font-light'>
+                                    <div className='p-[16px] text-[16px] font-light flex justify-between'>
                                         <span>{item.releaseYear}</span>
+                                        <button className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15" aria-label="찜하기" onClick={() => toggleAddItem(item.id)}>
+                                            {addedItems.has(item.id) ?
+                                                <Icons.CheckmarkMedium className="w-[17px] h-[17px]" /> :
+                                                <Icons.PlusMedium className="w-[17px] h-[17px]" />
+                                            }
+                                        </button>
                                     </div>
                                     <div className='px-[14px] pb-[16px] text-[14px] font-extralight'>
                                         <p>{item.description}</p>
@@ -166,7 +196,7 @@ export default function DetailPage() {
                         <div className="grid gap-4 text-[14px]">
                             <div className='flex gap-1'>
                                 <p className="text-gray-400">감독:</p>
-                                <p>{movie.creator}</p>
+                                <p>{movie.director}</p>
                             </div>
                             <div className='flex gap-1'>
                                 <p className="text-gray-400">출연: </p>
@@ -181,10 +211,12 @@ export default function DetailPage() {
                             </div>
                             <div className='flex gap-1'>
                                 <p className="text-gray-400">영화 특징: </p>
-                                <p>{movie.features}</p>
+                                <p>{movie.features.join(', ')}</p>
                             </div>
-                            <div className='flex gap-1'>
+                            <div className='flex gap-2 items-center '>
                                 <p className="text-gray-400">관람등급: </p>
+                                <p><AgeRatingIcon className='w-[30px] h-[30px]' /></p>
+                                <p>{movie.ageRating}세이상관람가</p>
                             </div>
                         </div>
                     </div>
