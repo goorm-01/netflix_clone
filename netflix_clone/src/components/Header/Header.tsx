@@ -1,10 +1,37 @@
 import React from 'react';
-// import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
+  // 스크롤 상태
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // 버튼 상태
+  const [selectedMenu, setSelectedMenu] = useState<string>('홈');
+
+  // 스크롤 이벤트
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // 스크롤 이벤트 리스너를 등록, 스크롤이 되는 것을 확인
+    window.addEventListener('scroll', handleScroll);
+
+    // 언마운트 됐을 때 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     // 헤더 컨테이너
-    <div className='bg-[rgba(0, 0, 0, 0)] w-full text-white h-[68px] flex fixed top-0 pl-[60px] pr-[60px] items-center'>
+    <div
+      className={`w-full text-white h-[68px] flex fixed top-0 pl-[60px] pr-[60px] items-center z-[9999] ${isScrolled ? 'bg-black' : 'bg-[rgba(0,0,0,0)]'} transition-colors duration-500 ease-in-out`}
+    >
       {/* 넷플릭스 로고 */}
       <svg
         className='mr-[25px]'
@@ -22,14 +49,67 @@ export default function Header() {
 
       <div className='flex justify-between w-full items-center'>
         {/* 내비게이션 바 */}
-        <li className='flex columns-1 gap-[20px] items-center text-[14px] ml-[20px]'>
-          <ul>홈</ul>
-          <ul>시리즈</ul>
-          <ul>영화</ul>
-          <ul>게임</ul>
-          <ul>NEW! 요즘 대세 컨텐츠</ul>
-          <ul>내가 찜한 리스트</ul>
-          <ul>언어별로 찾아보기</ul>
+        <li className='flex columns-1 gap-[20px] items-center text-[1vw] ml-[20px] text-gray-300 cursor-pointer'>
+          <ul
+            onClick={() => setSelectedMenu('홈')}
+            className={selectedMenu === '홈' ? 'text-white font-semibold' : ''}
+          >
+            홈
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('시리즈')}
+            className={
+              selectedMenu === '시리즈' ? 'text-white font-semibold' : ''
+            }
+          >
+            시리즈
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('영화')}
+            className={
+              selectedMenu === '영화' ? 'text-white font-semibold' : ''
+            }
+          >
+            영화
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('게임')}
+            className={
+              selectedMenu === '게임' ? 'text-white font-semibold' : ''
+            }
+          >
+            게임
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('NEW! 요즘 대세 컨텐츠')}
+            className={
+              selectedMenu === 'NEW! 요즘 대세 컨텐츠'
+                ? 'text-white font-semibold'
+                : ''
+            }
+          >
+            NEW! 요즘 대세 컨텐츠
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('내가 찜한 리스트')}
+            className={
+              selectedMenu === '내가 찜한 리스트'
+                ? 'text-white font-semibold'
+                : ''
+            }
+          >
+            내가 찜한 리스트
+          </ul>
+          <ul
+            onClick={() => setSelectedMenu('언어별로 찾아보기')}
+            className={
+              selectedMenu === '언어별로 찾아보기'
+                ? 'text-white font-semibold'
+                : ''
+            }
+          >
+            언어별로 찾아보기
+          </ul>
         </li>
         {/* 검색, 키즈, 알림, 내정보 */}
         <div className='flex columns-1 items-center text-[14px] gap-[15px]'>
