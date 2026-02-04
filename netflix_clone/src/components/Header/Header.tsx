@@ -11,6 +11,9 @@ export default function Header() {
   // 버튼 상태
   const [selectedMenu, setSelectedMenu] = useState<string>('홈');
 
+  // 호버 메뉴
+  const [isHoverMenu, setIsHoverMenu] = useState<boolean>(false);
+
   // 스크롤 이벤트
   useEffect(() => {
     const handleScroll = () => {
@@ -52,38 +55,39 @@ export default function Header() {
 
       <div className='flex justify-between w-full items-center'>
         {/* 내비게이션 바 */}
-        <li className='flex columns-1 gap-[20px] items-center text-[1vw] ml-[20px] text-gray-300 cursor-pointer'>
-          <ul
+        <ul className='hidden lg:flex columns-1 gap-[20px] items-center text-[1vw] ml-[20px] text-gray-300 cursor-pointer'>
+          {/* 클릭 됐을 때 색이 변경되게 설정 */}
+          <li
             onClick={() => setSelectedMenu('홈')}
             className={selectedMenu === '홈' ? 'text-white font-semibold' : ''}
           >
             홈
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('시리즈')}
             className={
               selectedMenu === '시리즈' ? 'text-white font-semibold' : ''
             }
           >
             시리즈
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('영화')}
             className={
               selectedMenu === '영화' ? 'text-white font-semibold' : ''
             }
           >
             영화
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('게임')}
             className={
               selectedMenu === '게임' ? 'text-white font-semibold' : ''
             }
           >
             게임
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('NEW! 요즘 대세 컨텐츠')}
             className={
               selectedMenu === 'NEW! 요즘 대세 컨텐츠'
@@ -92,8 +96,8 @@ export default function Header() {
             }
           >
             NEW! 요즘 대세 컨텐츠
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('내가 찜한 리스트')}
             className={
               selectedMenu === '내가 찜한 리스트'
@@ -102,8 +106,8 @@ export default function Header() {
             }
           >
             내가 찜한 리스트
-          </ul>
-          <ul
+          </li>
+          <li
             onClick={() => setSelectedMenu('언어별로 찾아보기')}
             className={
               selectedMenu === '언어별로 찾아보기'
@@ -112,8 +116,41 @@ export default function Header() {
             }
           >
             언어별로 찾아보기
-          </ul>
-        </li>
+          </li>
+        </ul>
+
+        {/* 뷰포트에 맞게 작아지면 메뉴바 생성 */}
+        <div
+          className='lg:hidden relative text-[14px]'
+          onMouseEnter={() => setIsHoverMenu(true)}
+          onMouseLeave={() => setIsHoverMenu(false)}
+        >
+          <button>메뉴</button>
+        </div>
+
+        {/* 메뉴바를 호버했을 때 */}
+        {isHoverMenu && (
+          <>
+            <div
+              onMouseEnter={() => setIsHoverMenu(true)}
+              onMouseLeave={() => setIsHoverMenu(false)}
+            >
+              <div className='top-[40px] absolute left-0 w-full h-[30px]' />
+              <div className='absolute z-9999 top-[60px] left-[80px]'>
+                <ul className='py-[20px] flex-col flex items-center justify-center gap-2 bg-[rgba(0,0,0,0.8)] text-white min-w-[200px] rounded'>
+                  <li>홈</li>
+                  <li>시리즈</li>
+                  <li>영화</li>
+                  <li>게임</li>
+                  <li>NEW! 요즘 대세 컨텐츠</li>
+                  <li>내가 찜한 리스트</li>
+                  <li>언어별로 찾아보기</li>
+                </ul>
+              </div>
+            </div>
+          </>
+        )}
+
         {/* 검색, 키즈, 알림, 내정보 */}
         <div className='flex columns-1 items-center text-[14px] gap-[15px]'>
           {/* 검색 아이콘 */}
