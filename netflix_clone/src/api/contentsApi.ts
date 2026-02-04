@@ -73,3 +73,21 @@ export const getContentsByType = async (
     setTimeout(() => resolve(contents.filter((c) => c.type === type)), 300);
   });
 };
+
+/* 장르별 컨텐츠 불러오기 API */
+export const getContentsByGenre = async (genre: string): Promise<Content[]> => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const normalize = (value: string) => value.trim();
+
+      /* 공백을 제거하여 검사 */
+      const normalizedGenre = normalize(genre);
+
+      resolve(
+        contents.filter((c) =>
+          c.genre.some((g) => normalize(g).includes(normalizedGenre)),
+        ),
+      );
+    }, 300);
+  });
+};
