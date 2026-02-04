@@ -16,6 +16,9 @@ export const ThumbsUpMedium = (props: React.SVGProps<SVGSVGElement>) => (
 export const VolumeOffMedium = (props: React.SVGProps<SVGSVGElement>) => (
     <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" {...props}><path fill="currentColor" fill-rule="evenodd" d="M11 4a1 1 0 0 0-1.7-.7L4.58 8H1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h3.59l4.7 4.7A1 1 0 0 0 11 20zM5.7 9.7 9 6.42V17.6l-3.3-3.3-.29-.29H2v-4h3.41zm9.6 0 2.29 2.3-2.3 2.3 1.42 1.4L19 13.42l2.3 2.3 1.4-1.42-2.28-2.3 2.3-2.3-1.42-1.4-2.3 2.28-2.3-2.3z" clip-rule="evenodd"></path></svg>
 );
+export const VolumeHighMedium = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" {...props}><path fill="currentColor" fill-rule="evenodd" d="M24 12a14 14 0 0 0-4.1-9.9l-1.415 1.415a12 12 0 0 1 0 16.97L19.9 21.9A14 14 0 0 0 24 12M11 4a1 1 0 0 0-1.707-.707L4.586 8H1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h3.586l4.707 4.707A1 1 0 0 0 11 20zM5.707 9.707 9 6.414v11.172l-3.293-3.293L5.414 14H2v-4h3.414zM16 12a6 6 0 0 0-1.757-4.243l-1.415 1.415a4 4 0 0 1 0 5.656l1.415 1.415A6 6 0 0 0 16 12m1.07-7.071a10 10 0 0 1 0 14.142l-1.413-1.414a8 8 0 0 0 0-11.314z" clip-rule="evenodd"></path></svg>
+);
 export const SubtitlesSmall = (props: React.SVGProps<SVGSVGElement>) => (
     <svg viewBox="0 0 16 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" {...props}><path fill="currentColor" fillRule="evenodd" d="M0 1.75C0 1.34.34 1 .75 1h14.5c.41 0 .75.34.75.75v10.5c0 .41-.34.75-.75.75h-2.5v2a.75.75 0 0 1-1.11.66L6.8 13H.75a.75.75 0 0 1-.75-.75zm1.5.75v9h5.7l.16.1 3.89 2.13V11.5h3.25v-9zm4.5 4H3V5h3zm7 1h-3V9h3zM3 9V7.5h6V9zm10-4H7v1.5h6z" clipRule="evenodd"/></svg>
 );
