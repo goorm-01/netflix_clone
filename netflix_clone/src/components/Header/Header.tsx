@@ -1,3 +1,6 @@
+// Header.tsx
+// 최상단의 메뉴바를 보여줍니다.
+// 스크롤 시 배경색이 변합니다.
 import React from 'react';
 import { useState, useEffect } from 'react';
 

@@ -1,3 +1,6 @@
+// TopView.tsx
+// 최상단에 랜덤으로 영상을 보여줍니다.
+// 반응형을 위해 글자의 경우 vw 단위를 사용했습니다.
 import React from 'react';
 import { getContents } from '../../api/contentsApi';
 import { useEffect, useState } from 'react';
