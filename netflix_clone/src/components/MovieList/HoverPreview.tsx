@@ -9,6 +9,25 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     const [isAnimating, setIsAnimating] = useState(true);
     const [isClosing, setIsClosing] = useState(false);
 
+    // 프리뷰 영상 링크 파싱 및 자동/반복 재생 링크로 반환
+    const getPreviewUrl = (url: string): string | null => {
+        if (!url) return null;
+
+        // Url 형식이 yotu.be/* 인 경우
+        const shortUrl = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
+        if (shortUrl) {
+            return `https://www.youtube.com/embed/${shortUrl[1]}?autoplay=1&mute=1&controls=0&loop=1&playlist=${shortUrl[1]}`;
+        }
+
+        // Url 형식이 youtube.com/* 인 경우
+        const longUrl = url.match(/youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/);
+        if (longUrl) {
+            return `https://www.youtube.com/embed/${longUrl[1]}?autoplay=1&mute=1&controls=0&loop=1&playlist=${longUrl[1]}`;
+        }
+
+        return null;
+    };
+
     // 시간 포멧팅 함수 (분 -> 시간/분)
     const formatRunningTime = (minutes: number): string => {
         const hours = Math.floor(minutes / 60);
@@ -36,7 +55,8 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     // 프리뷰 크기 계산 및 위치 계산
     const scale = 1.5;
     const previewWidth = position.width * scale;
-    const previewHeight = position.height * scale;
+    // 프리뷰 이미지 및 영상이 항상 16:9 비율을 유지하도록 계산
+    const previewHeight = previewWidth * (9 / 16);
 
     // 확장 시 이동할 거리 계산
     const expandX = (previewWidth - position.width) / 2;
@@ -129,11 +149,22 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                     transition: isAnimating ? 'none' : 'height 0.2s ease-out',
                 }}
             >
-                <img
-                    src={movie.backdropUrl}
-                    alt={movie.title}
-                    className="w-full h-full object-cover rounded-t-[.2vw]"
-                />
+                {getPreviewUrl(movie.previewLink) ? (
+                    <iframe
+                        src={getPreviewUrl(movie.previewLink)!}
+                        title="movie.title"
+                        className="w-full h-full rounded-t-[.2vw]"
+                        allow="autoplay; encrypted-media"
+                        style={{ border: 'none' }}
+                    />
+                ) : (
+                    <img
+                        src={movie.backdropUrl}
+                        alt={movie.title}
+                        className="w-full h-full object-cover rounded-t-[.2vw]"
+                    />
+                )}
+
             </div>
 
             <div
