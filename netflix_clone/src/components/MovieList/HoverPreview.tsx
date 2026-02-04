@@ -2,10 +2,13 @@
 
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import type { HoverPreviewProps } from "./types";
 import type { Content } from "../../data/content";
 
 export default function HoverPreview({ movie, position, onMouseEnter, onMouseLeave }: HoverPreviewProps) {
+    const navigate = useNavigate();
+    const location = useLocation();
     const [isAnimating, setIsAnimating] = useState(true);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -175,15 +178,25 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                     transition: 'opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s',
                     cursor: 'pointer',
                 }}
+                onClick={() => {
+                    onMouseLeave();
+                    navigate(`/detail/${movie.id}`, { state: { background: location } });
+                }}
             >
                 <div className="flex gap-2 mb-5">
-                    <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-[rgba(255,255,255,0.9)]">
+                    <button 
+                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-[rgba(255,255,255,0.9)]"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <span className="text-balck text-lg">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="PlayMedium" data-icon-id=":r36:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" d="M5 2.7a1 1 0 0 1 1.48-.88l16.93 9.3a1 1 0 0 1 0 1.76l-16.93 9.3A1 1 0 0 1 5 21.31z"></path></svg>
                         </span>
                     </button>
                     {/* 찜하기 버튼 */}
-                    <button className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]">
+                    <button 
+                        className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <span className="text-white text-xl">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="PlusMedium" data-icon-id=":r37:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M11 11V2h2v9h9v2h-9v9h-2v-9H2v-2z" clip-rule="evenodd"></path></svg>
                         </span>
@@ -198,7 +211,10 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 좋아요 버튼 */}
-                    <button className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]">
+                    <button 
+                        className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <span className="text-white text-sm">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ThumbsUpMedium" data-icon-id=":r38:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M10.696 8.773A2 2 0 0 0 11 7.713V4h.838c.877 0 1.59.553 1.77 1.311C13.822 6.228 14 7.227 14 8a7 7 0 0 1-.246 1.75L13.432 11H17.5a1.5 1.5 0 0 1 1.476 1.77l-.08.445.28.354c.203.256.324.578.324.931s-.12.675-.324.93l-.28.355.08.445q.024.13.024.27c0 .49-.234.925-.6 1.2l-.4.3v.5a1.5 1.5 0 0 1-1.5 1.5h-3.877a9 9 0 0 1-2.846-.462l-1.493-.497A10.5 10.5 0 0 0 5 18.5v-4.747l2.036-.581a3 3 0 0 0 1.72-1.295zM10.5 2A1.5 1.5 0 0 0 9 3.5v4.213l-1.94 3.105a1 1 0 0 1-.574.432l-2.035.581A2 2 0 0 0 3 13.754v4.793c0 1.078.874 1.953 1.953 1.953.917 0 1.828.148 2.698.438l1.493.498a11 11 0 0 0 3.479.564H16.5a3.5 3.5 0 0 0 3.467-3.017 3.5 3.5 0 0 0 1.028-2.671c.32-.529.505-1.15.505-1.812s-.185-1.283-.505-1.812Q21 12.595 21 12.5A3.5 3.5 0 0 0 17.5 9h-1.566c.041-.325.066-.66.066-1 0-1.011-.221-2.194-.446-3.148C15.14 3.097 13.543 2 11.838 2z" clip-rule="evenodd"></path></svg>
                         </span>
@@ -213,7 +229,14 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 상세정보 버튼 - 오른쪽 끝 */}
-                    <button className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white ml-auto hover:bg-[rgba(255,255,255,0.15)]">
+                    <button 
+                        className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white ml-auto hover:bg-[rgba(255,255,255,0.15)]"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            onMouseLeave();
+                            navigate(`/detail/${movie.id}`, { state: { background: location } });
+                        }}
+                    >
                         <span className="text-white text-lg">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronDownMedium" data-icon-id=":r39:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="m12 15.586 7.293-7.293 1.414 1.414-8 8a1 1 0 0 1-1.414 0l-8-8 1.414-1.414z" clip-rule="evenodd"></path></svg>
                         </span>

@@ -50,36 +50,6 @@ export default function MovieInfo({ movie }: MovieInfoProps) {
                     </p></div>
                 </div>
             </div>
-
-            <div className='mt-8 pb-8 text-white'>
-                <h3 className='mb-5 text-[24px]'>{movie.title} 상세 정보</h3>
-                <div className="grid gap-4 text-[14px]">
-                    <div className='flex gap-1'>
-                        <p className="text-gray-400">감독:</p>
-                        <p>{movie.creator}</p>
-                    </div>
-                    <div className='flex gap-1'>
-                        <p className="text-gray-400">출연: </p>
-                        <p>{movie.cast.join(', ')}</p>
-                    </div>
-                    <div className='flex gap-1'>
-                        <p className="text-gray-400">각본: </p>
-                    </div>
-                    <div className='flex gap-1'>
-                        <p className="text-gray-400">장르: </p>
-                        <p>{movie.genre.join(', ')}</p>
-                    </div>
-                    <div className='flex gap-1'>
-                        <p className="text-gray-400">영화 특징: </p>
-                        <p>{movie.features.join(', ')}</p>
-                    </div>
-                    <div className='flex gap-2 items-center '>
-                        <p className="text-gray-400">관람등급: </p>
-                        <p><AgeRatingIcon className='w-[30px] h-[30px]' /></p>
-                        <p>{movie.ageRating}세이상관람가</p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
