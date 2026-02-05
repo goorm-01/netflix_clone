@@ -225,7 +225,7 @@ export default function CardSlider({
       </div>
 
       {/* slider container */}
-      <div className='relative overflow-x-clip overflow-y-visible'>
+      <div className='relative overflow-y-visible overflow-x-clip'>
         {/* card track */}
         <div
           ref={trackRef}
@@ -264,13 +264,9 @@ export default function CardSlider({
         {canPrev && (
           <button
             onClick={handlePrev}
-            className='absolute left-0 top-4 bottom-4 w-12
-                                     bg-black/50 hover:bg-black/70
-                                     opacity-0 group-hover:opacity-100
-                                     transition-opacity duration-300
-                                     flex items-center justify-center z-20'
+            className='absolute left-0 z-20 flex items-center justify-center w-12 transition-opacity duration-300 opacity-0 top-4 bottom-4 bg-black/50 hover:bg-black/70 group-hover:opacity-100'
           >
-            <span className='text-white text-4xl'>‹</span>
+            <span className='text-4xl text-white'>‹</span>
           </button>
         )}
 
@@ -278,13 +274,9 @@ export default function CardSlider({
         {canNext && (
           <button
             onClick={handleNext}
-            className='absolute right-0 top-4 bottom-4 w-12
-                                     bg-black/50 hover:bg-black/70
-                                     opacity-0 group-hover:opacity-100
-                                     transition-opacity duration-300
-                                     flex items-center justify-center z-20'
+            className='absolute right-0 z-20 flex items-center justify-center w-12 transition-opacity duration-300 opacity-0 top-4 bottom-4 bg-black/50 hover:bg-black/70 group-hover:opacity-100'
           >
-            <span className='text-white text-4xl'>›</span>
+            <span className='text-4xl text-white'>›</span>
           </button>
         )}
       </div>

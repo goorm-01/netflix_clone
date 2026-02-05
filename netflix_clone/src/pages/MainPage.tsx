@@ -24,7 +24,6 @@ export default function MainPage() {
 
   return (
     <div className='bg-[#141414] min-h-screen py-10'>
-      <Header />
       <TopView />
       <CardSlider title='영화' movies={movies} />
       <CardSlider
