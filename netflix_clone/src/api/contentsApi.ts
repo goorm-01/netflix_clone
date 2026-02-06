@@ -34,17 +34,54 @@ export const getContentById = async (id: number): Promise<Content> => {
 };
 
 /* 키워드로 컨텐츠 검색하기 API */
+// export const searchContents = async (
+//   keyword: string,
+// ): Promise<SearchResult> => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       /* 키워드를 기반으로 제목, 출연, 제작에서 탐색 */
+//       const exactMatches = contents.filter((c) => {
+//         return (
+//           c.title.includes(keyword) ||
+//           c.cast.includes(keyword) ||
+//           c.creator.includes(keyword)
+//         );
+//       });
+
+//       /* 유사 콘텐츠 추가(중복은 제거) */
+//       const relatedMatches = contents.filter((c) => {
+//         if (exactMatches.includes(c)) return false;
+
+//         return exactMatches.some(
+//           (m) =>
+//             m.genre.some((g) => c.genre.includes(g)) ||
+//             m.features.some((f) => c.features.includes(f)) ||
+//             c.type === m.type,
+//         );
+//       });
+
+//       resolve({ exactMatches, relatedMatches });
+//     }, 300);
+//   });
+// };
+
+/* 키워드로 컨텐츠 검색하기 API */
 export const searchContents = async (
   keyword: string,
 ): Promise<SearchResult> => {
   return new Promise((resolve) => {
     setTimeout(() => {
+      const lowerKeyword = keyword.toLowerCase();
+      
       /* 키워드를 기반으로 제목, 출연, 제작에서 탐색 */
       const exactMatches = contents.filter((c) => {
         return (
-          c.title.includes(keyword) ||
-          c.cast.includes(keyword) ||
-          c.creator.includes(keyword)
+          c.title.toLowerCase().includes(lowerKeyword) ||
+          c.cast.some(actor => actor.toLowerCase().includes(lowerKeyword)) ||
+          c.creator.some(creator => creator.toLowerCase().includes(lowerKeyword)) ||
+          c.genre.some(genre => genre.toLowerCase().includes(lowerKeyword)) ||
+          c.features.some(feature => feature.toLowerCase().includes(lowerKeyword)) ||
+          c.description.toLowerCase().includes(lowerKeyword)
         );
       });
 
@@ -54,8 +91,8 @@ export const searchContents = async (
 
         return exactMatches.some(
           (m) =>
-            m.genre.some((g) => c.genre.includes(g)) ||
-            m.features.some((f) => c.features.includes(f)) ||
+            m.genre.some((g) => c.genre.some(cg => cg.includes(g))) ||
+            m.features.some((f) => c.features.some(cf => cf.includes(f))) ||
             c.type === m.type,
         );
       });
