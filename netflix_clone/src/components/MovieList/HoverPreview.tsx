@@ -2,12 +2,17 @@
 
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import type { HoverPreviewProps } from "./types";
 import type { Content } from "../../data/content";
 
 export default function HoverPreview({ movie, position, onMouseEnter, onMouseLeave }: HoverPreviewProps) {
     const [isAnimating, setIsAnimating] = useState(true);
     const [isClosing, setIsClosing] = useState(false);
+
+    // 상세정보 모달용 훅 선언
+    const navigate = useNavigate();
+    const location = useLocation();
 
     // 프리뷰 영상 링크 파싱 및 자동/반복 재생 링크로 반환
     const getPreviewUrl = (url: string): string | null => {
@@ -225,7 +230,16 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 상세정보 버튼 - 오른쪽 끝 */}
-                    <button className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white ml-auto hover:bg-[rgba(255,255,255,0.15)]">
+                    <button
+                        className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white ml-auto hover:bg-[rgba(255,255,255,0.15)]"
+                        // 버튼 클릭 시 호버 프리뷰 종료 및 상세정보 모달 오픈
+                        onClick={() => {
+                            handleClose();
+                            navigate(`/detail/${movie.id}`, {
+                                state: { background: location }
+                            });
+                        }}
+                    >
                         <span className="text-white text-lg">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronDownMedium" data-icon-id=":r39:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="m12 15.586 7.293-7.293 1.414 1.414-8 8a1 1 0 0 1-1.414 0l-8-8 1.414-1.414z" clip-rule="evenodd"></path></svg>
                         </span>
