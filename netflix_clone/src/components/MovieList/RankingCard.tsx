@@ -2,7 +2,7 @@
 
 import type { RankingCardProps } from "./types";
 
-export default function RankingCard({ movie, rank, onHover, onLeave, cardWidth }: RankingCardProps) {
+export default function RankingCard({ movie, rank, onHover, onLeave, onClick, cardWidth }: RankingCardProps) {
     //마우스 진입 시 카드 위치를 계산하여 부모에게 전달
     const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
         const rect = e.currentTarget.getBoundingClientRect();
@@ -20,6 +20,7 @@ export default function RankingCard({ movie, rank, onHover, onLeave, cardWidth }
         <div
             className="relative flex items-end flex-shrink-0 cursor-pointer transition-transform duration-300 ease-out hover:z-10 overflow-visible"
             onMouseEnter={handleMouseEnter}
+            onClick={() => onClick?.(movie)}
             style={{ width: `${baseWidth}px`, height: `${imageHeight}`}}
             onMouseLeave={onLeave}
         >

@@ -6,6 +6,8 @@ export interface Content {
   id: number;
   title: string;
   type: ContentType;
+  thumbnail: string;
+  previewLogo: string;
   creator: string[];
   cast: string[];
   genre: string[];
@@ -27,6 +29,8 @@ type RawContent = {
   id: number;
   title: string;
   type: ContentType;
+  thumbnail: string;
+  previewLogo: string;
   creator: string[];
   cast: string[];
   genre: string[];
@@ -58,6 +62,8 @@ function normalizeContent(item: RawContent): Content {
     id: item.id,
     title: item.title,
     type: item.type,
+    thumbnail: item.thumbnail ?? '',
+    previewLogo: item.previewLogo ?? '',
     creator: item.creator ?? [],
     cast: item.cast ?? [],
     genre: item.genre ?? [],
