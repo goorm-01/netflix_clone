@@ -23,7 +23,13 @@ export default function MovieInfo({ movie }: MovieInfoProps) {
                 <div className="grid gap-2 text-gray-300 mb-4">
                     <div className='flex gap-4 text-[16px] items-center' >
                         <span>{movie.releaseYear}</span>
-                        <span>{Math.floor(movie.runningTime / 60)}시간 {movie.runningTime % 60}분</span>
+                        <span>
+                            {movie.runningTime ? `${Math.floor(movie.runningTime / 60)}시간 ${movie.runningTime % 60}분`
+                            : movie.episodeCount ? `에피소드 ${movie.episodeCount}개` 
+                            : movie.seasonCount ? `시즌 ${movie.seasonCount}개`
+                            : movie.partCount ? `파트 ${movie.partCount}개`
+                            : ''}
+                        </span>
                         <span>HD</span>
                         <Icons.SubtitlesSmall className="w-[16px] h-[16px]" />
                     </div>
