@@ -182,118 +182,205 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
     const handlePreviewEnter = () => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     };
+  }, []);
 
-    const handlePreviewLeave = () => {
-        setShowPreview(false);
-        setHoveredMovie(null);
-    };
+  // 화면 크기 변경 시 currentIndex 보정
+  useEffect(() => {
+    // 순환 애니메이션 중에는 보정하지 않음
+    if (isTransitioning) return;
 
-    return (
-        <div ref={sliderRef} className="relative mb-8 group">
-            {/* title & indicator */}
-            <div
-                className="flex items-center justify-between px-12 mb-2"
-                onMouseEnter={() => setIsTitleHovered(true)}
-                onMouseLeave={() => setIsTitleHovered(false)}
-            >
-                <div className="flex items-center cursor-pointer group/title">
-                    <h2 className="text-white text-[1.4vw] font-bold">{title}</h2>
-                    {/* 타이틀 호버 시 모두보기 나타남 */}
-                    <div className="flex items-center text-[#54b9c5] text-[0.9vw] font-medium opacity-0 group-hover:opacity-100 transition-opacity ml-2">
-                        <span className={`transition-all duration-500 overflow-hidden whitespace-nowrap translate-y-[5px] ${isTitleHovered ? 'max-w-[100px] opacity-100' : 'max-w-0 opacity-0'}`}>
-                            모두보기
-                        </span>
-                        <span className="text-[2vw] font-bold">›</span>
-                    </div>
-                </div>
-                <div className="flex gap-0.5">
-                    {Array.from({ length: totalPages }).map((_, index) => (
-                        <div
-                            key={index}
-                            className={`h-[2px] w-3 transition-colors ${index === (currentPage < 0 ? totalPages - 1 : currentPage > totalPages - 1 ? 0 : currentPage)
-                                ? 'bg-white'
-                                : 'bg-gray-600'
-                                }`}
-                        />
-                    ))}
-                </div>
-            </div>
+    if (currentIndex > maxIndex) {
+      setCurrentIndex(maxIndex);
+    }
+  }, [visibleCount, movies.length, currentIndex, maxIndex, isTransitioning]);
 
-            {/* slider container */}
-            <div className="relative overflow-x-clip overflow-y-visible">
-                {/* card track */}
-                <div
-                    ref={trackRef}
-                    className="flex px-12 py-4"
-                    style={{
-                        gap: `${gap}px`,
-                        transform: `translateX(-${translateX}px)`,
-                        transition: enableTransition
-                            ? 'transform 500ms ease-out'
-                            : 'none',
-                    }}
-                >
-                    {extendedMovies.map((movie, index) =>
-                        variant === 'ranking' ? (
-                            <RankingCard
-                                key={`${movie.id}-${index}`}
-                                movie={movie}
-                                rank={(index - startOffset + movies.length) % movies.length + 1}
-                                onHover={handleCardHover}
-                                onLeave={handleCardLeave}
-                                onClick={handleCardClick}
-                                cardWidth={cardWidth}
-                            />
-                        ) : (
-                            <MovieCard
-                                key={`${movie.id}-${index}`}
-                                movie={movie}
-                                onHover={handleCardHover}
-                                onLeave={handleCardLeave}
-                                cardWidth={cardWidth}
-                            />
-                        )
-                    )}
-                </div>
+  // 실제 translateX 계산 (복제 오프셋 포함)
+  const translateX = (currentIndex + startOffset) * (cardWidth + gap);
 
-                {/* prev button */}
-                {canPrev && (
-                    <button
-                        onClick={handlePrev}
-                        className="absolute left-0 top-4 bottom-4 w-12
-                                     bg-black/50 hover:bg-black/70
-                                     opacity-0 group-hover:opacity-100
-                                     transition-opacity duration-300
-                                     flex items-center justify-center z-20"
-                    >
-                        <span className="text-white text-4xl">‹</span>
-                    </button>
-                )}
+  const TRANSITION_DURATION = 500;
 
-                {/* next button */}
-                {canNext && (
-                    <button
-                        onClick={handleNext}
-                        className="absolute right-0 top-4 bottom-4 w-12
-                                     bg-black/50 hover:bg-black/70
-                                     opacity-0 group-hover:opacity-100
-                                     transition-opacity duration-300
-                                     flex items-center justify-center z-20"
-                    >
-                        <span className="text-white text-4xl">›</span>
-                    </button>
-                )}
-            </div>
+  const handlePrev = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setEnableTransition(true); // 애니메이션 활성화
 
-            {/* hover preview */}
-            {showPreview && hoveredMovie && cardPosition && (
-                <HoverPreview
-                    movie={hoveredMovie}
-                    position={cardPosition}
-                    onMouseEnter={handlePreviewEnter}
-                    onMouseLeave={handlePreviewLeave}
-                />
-            )}
+    if (currentIndex === 0) {
+      setCurrentIndex(-visibleCount);
+      setTimeout(() => {
+        setEnableTransition(false); // 애니메이션 비활성화
+        setCurrentIndex(maxIndex);
+        // 다음 프레임에서 애니메이션 다시 활성화
+        requestAnimationFrame(() => {
+          setEnableTransition(true);
+          setIsTransitioning(false);
+        });
+      }, TRANSITION_DURATION);
+    } else {
+      const newIndex = Math.max(0, currentIndex - visibleCount);
+      setCurrentIndex(newIndex);
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, TRANSITION_DURATION);
+    }
+  };
+
+  const handleNext = () => {
+    if (isTransitioning) return;
+    if (!hasInteracted) setHasInteracted(true);
+    setIsTransitioning(true);
+    setEnableTransition(true); // 애니메이션 활성화
+
+    if (currentIndex >= maxIndex) {
+      const newIndex = maxIndex + visibleCount;
+      setCurrentIndex(newIndex);
+      setTimeout(() => {
+        setEnableTransition(false); // 애니메이션 비활성화
+        setCurrentIndex(0);
+        // 다음 프레임에서 애니메이션 다시 활성화
+        requestAnimationFrame(() => {
+          setEnableTransition(true);
+          setIsTransitioning(false);
+        });
+      }, TRANSITION_DURATION);
+    } else {
+      const newIndex = Math.min(maxIndex, currentIndex + visibleCount);
+      setCurrentIndex(newIndex);
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, TRANSITION_DURATION);
+    }
+  };
+
+  // 호버 핸들러들
+  const handleCardHover = (movie: Content, rect: DOMRect) => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    hoverTimeoutRef.current = setTimeout(() => {
+      setHoveredMovie(movie);
+      setCardPosition(rect);
+      setShowPreview(true);
+    }, 300);
+  };
+
+  const handleCardLeave = () => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    hoverTimeoutRef.current = setTimeout(() => {
+      setShowPreview(false);
+      setHoveredMovie(null);
+      setCardPosition(null);
+    }, 100);
+  };
+
+  const handlePreviewEnter = () => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+  };
+
+  const handlePreviewLeave = () => {
+    setShowPreview(false);
+    setHoveredMovie(null);
+  };
+
+  return (
+    <div ref={sliderRef} className='relative mb-8 group'>
+      {/* title & indicator */}
+      <div
+        className='flex items-center justify-between px-12 mb-2'
+        onMouseEnter={() => setIsTitleHovered(true)}
+        onMouseLeave={() => setIsTitleHovered(false)}
+      >
+        <div className='flex items-center cursor-pointer group/title'>
+          <h2 className='text-white text-[1.4vw] font-bold'>{title}</h2>
+          {/* 타이틀 호버 시 모두보기 나타남 */}
+          <div className='flex items-center text-[#54b9c5] text-[0.9vw] font-medium opacity-0 group-hover:opacity-100 transition-opacity ml-2'>
+            <span className={`transition-all duration-500 overflow-hidden whitespace-nowrap translate-y-[5px] 
+              ${isTitleHovered ? 'max-w-[100px] opacity-100' : 'max-w-0 opacity-0'}`}>모두보기</span>
+            <span className='text-[2vw] font-bold'>›</span>
+          </div>
         </div>
-    );
+        <div className='flex gap-0.5'>
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <div
+              key={index}
+              className={`h-[2px] w-3 transition-colors ${
+                index ===
+                (currentPage < 0
+                  ? totalPages - 1
+                  : currentPage > totalPages - 1
+                    ? 0
+                    : currentPage)
+                  ? 'bg-white'
+                  : 'bg-gray-600'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* slider container */}
+      <div className='relative overflow-y-visible overflow-x-clip'>
+        {/* card track */}
+        <div
+          ref={trackRef}
+          className='flex px-12 py-4'
+          style={{
+            gap: `${gap}px`,
+            transform: `translateX(-${translateX}px)`,
+            transition: enableTransition ? 'transform 500ms ease-out' : 'none',
+          }}
+        >
+          {extendedMovies.map((movie, index) =>
+            variant === 'ranking' ? (
+              <RankingCard
+                key={`${movie.id}-${index}`}
+                movie={movie}
+                rank={((index - startOffset + movies.length) % movies.length) + 1}
+                onHover={handleCardHover}
+                onLeave={handleCardLeave}
+                onClick={handleCardClick}
+                cardWidth={cardWidth}
+              />
+            ) : (
+              <MovieCard
+                key={`${movie.id}-${index}`}
+                movie={movie}
+                onHover={handleCardHover}
+                onLeave={handleCardLeave}
+                cardWidth={cardWidth}
+              />
+            ),
+          )}
+        </div>
+
+        {/* prev button */}
+        {canPrev && (
+          <button
+            onClick={handlePrev}
+            className='absolute left-0 z-20 flex items-center justify-center w-12 transition-opacity duration-300 opacity-0 top-4 bottom-4 bg-black/50 hover:bg-black/70 group-hover:opacity-100'
+          >
+            <span className='text-4xl text-white'>‹</span>
+          </button>
+        )}
+
+        {/* next button */}
+        {canNext && (
+          <button
+            onClick={handleNext}
+            className='absolute right-0 z-20 flex items-center justify-center w-12 transition-opacity duration-300 opacity-0 top-4 bottom-4 bg-black/50 hover:bg-black/70 group-hover:opacity-100'
+          >
+            <span className='text-4xl text-white'>›</span>
+          </button>
+        )}
+      </div>
+
+      {/* hover preview */}
+      {showPreview && hoveredMovie && cardPosition && (
+        <HoverPreview
+          movie={hoveredMovie}
+          position={cardPosition}
+          onMouseEnter={handlePreviewEnter}
+          onMouseLeave={handlePreviewLeave}
+        />
+      )}
+    </div>
+  );
 }
+

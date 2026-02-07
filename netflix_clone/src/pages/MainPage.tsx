@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 
+import Header from '../components/Header/Header';
+import TopView from '../components/TopView/TopView';
 import { CardSlider } from '../components/MovieList';
 import { useState, useEffect } from 'react';
 import { getContentsByType } from '../api/contentsApi';
@@ -18,16 +20,20 @@ export default function MainPage() {
     getContentsByType('drama').then(setDramas);
     getContentsByType('animation').then(setAnimations);
     getContentsByType('variety').then(setSeries);
-  })
-  
+  });
+
   return (
-    <div className="bg-[#141414] min-h-screen py-10">
-      <CardSlider title="영화" movies={movies} />
+    <div className='bg-[#141414] min-h-screen py-10'>
+      <TopView />
+      <CardSlider title='영화' movies={movies} />
       <CardSlider
-        title="오늘 대한민국의 TOP 10 시리즈"
+        title='오늘 대한민국의 TOP 10 시리즈'
         movies={series.slice(0, 10)}
-        variant="ranking"
+        variant='ranking'
       />
+
+      <CardSlider title='드라마' movies={dramas} />
+      <CardSlider title='애니메이션' movies={animations} />
     </div>
-  )
+  );
 }
