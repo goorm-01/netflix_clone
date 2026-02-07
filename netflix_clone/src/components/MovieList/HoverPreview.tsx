@@ -55,6 +55,17 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
         return null;
     }
 
+    // 관람 등급 변환 함수
+    const getAgeRating = (ageRating?: number): string => {
+        switch (ageRating) {
+            case 0: return '전체';
+            case 12: return '12+';
+            case 15: return '15+';
+            case 19: return '19+';
+            default: return '전체';
+        }
+    };
+
     // 프리뷰 크기 계산 및 위치 계산
     const scale = 1.5;
     const previewWidth = position.width * scale;
@@ -184,10 +195,8 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 }}
             >
                 <div className="flex gap-2 mb-5">
-                    <button 
-                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-[rgba(255,255,255,0.9)]"
-                        onClick={(e) => e.stopPropagation()}
-                    >
+                    {/* 재생 버튼 */}
+                    <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-[rgba(255,255,255,0.9)]">
                         <span className="text-balck text-lg">
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="PlayMedium" data-icon-id=":r36:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" d="M5 2.7a1 1 0 0 1 1.48-.88l16.93 9.3a1 1 0 0 1 0 1.76l-16.93 9.3A1 1 0 0 1 5 21.31z"></path></svg>
                         </span>
@@ -254,6 +263,9 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 </div>
 
                 <div className="flex items-center gap-2 text-sm flex-wrap mb-5">
+                    <span className="px-1 border border-gray-400 text-gray-400 text-[14px]">
+                        {getAgeRating(movie.ageRating)}
+                    </span>
                     {getTypeText(movie) && (
                         <span className="text-gray-400 text-[16px]">{getTypeText(movie)}</span>
                     )}
