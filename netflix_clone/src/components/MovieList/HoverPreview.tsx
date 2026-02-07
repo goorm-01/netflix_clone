@@ -8,9 +8,10 @@ import type { Content } from "../../data/content";
 
 export default function HoverPreview({ movie, position, onMouseEnter, onMouseLeave }: HoverPreviewProps) {
     const navigate = useNavigate();
-    const location = useLocation();
+    const location = useLocation()
     const [isAnimating, setIsAnimating] = useState(true);
     const [isClosing, setIsClosing] = useState(false);
+
 
     // 프리뷰 영상 링크 파싱 및 자동/반복 재생 링크로 반환
     const getPreviewUrl = (url: string): string | null => {
@@ -43,7 +44,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
             return `${mins}분`;
         }
         return '';
-    }
+    };
 
     // 부가 정보 텍스트 변환
     const getTypeText = (movie: Content): string | null => {
@@ -53,16 +54,21 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
         if (movie.partCount) return `파트 ${movie.partCount}개`;
         if (movie.isLimited) return '리미티드 시리즈';
         return null;
-    }
+    };
 
     // 관람 등급 변환 함수
     const getAgeRating = (ageRating?: number): string => {
         switch (ageRating) {
-            case 0: return '전체';
-            case 12: return '12+';
-            case 15: return '15+';
-            case 19: return '19+';
-            default: return '전체';
+            case 0:
+                return '전체';
+            case 12:
+                return '12+';
+            case 15:
+                return '15+';
+            case 19:
+                return '19+';
+            default:
+                return '전체';
         }
     };
 
@@ -74,7 +80,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
 
     // 확장 시 이동할 거리 계산
     const expandX = (previewWidth - position.width) / 2;
-    const expandY = (previewHeight - position.height);
+    const expandY = previewHeight - position.height;
 
     // 화면 가장자리 판단 (좌/우 끝 카드의 확장은 다르게 처리)
     const edgeThreshold = 60;
@@ -136,28 +142,44 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
     }, []);
 
     // 초기 상태 (카드 크기/위치) vs 최종 상태 (확대된 크기/위치)
-    const currentWidth = isAnimating ? position.width : (isClosing ? position.width : fixedPositionRef.current.width);
-    const currentHeight = isAnimating ? position.height : (isClosing ? position.height : fixedPositionRef.current.height);
-    const currentLeft = isAnimating ? position.left : (isClosing ? position.left : fixedPositionRef.current.left);
-    const currentTop = isAnimating ? position.top : (isClosing ? position.top : fixedPositionRef.current.top);
+    const currentWidth = isAnimating
+        ? position.width
+        : isClosing
+            ? position.width
+            : fixedPositionRef.current.width;
+    const currentHeight = isAnimating
+        ? position.height
+        : isClosing
+            ? position.height
+            : fixedPositionRef.current.height;
+    const currentLeft = isAnimating
+        ? position.left
+        : isClosing
+            ? position.left
+            : fixedPositionRef.current.left;
+    const currentTop = isAnimating
+        ? position.top
+        : isClosing
+            ? position.top
+            : fixedPositionRef.current.top;
 
     // HoverPreview를 body 바로 아래에 렌더링하여 부모 영향을 받지 않게 수정
     return createPortal(
         <div
-            className="absolute z-50 bg-[#181818] rounded-[.2vw] shadow-2xl overflow-visible"
+            className='absolute z-50 bg-[#181818] rounded-[.2vw] shadow-2xl overflow-visible'
             style={{
                 left: `${currentLeft + fixedScrollRef.current.x}px`,
                 top: `${currentTop + fixedScrollRef.current.y}px`,
                 width: `${currentWidth}px`,
                 opacity: isClosing ? 0 : 1,
                 transition: isAnimating ? 'none' : 'all 0.2s ease-out',
-                boxShadow: 'rgba(0,0,0,0.75) 0px 3px 10px 0px'
+                boxShadow: 'rgba(0,0,0,0.75) 0px 3px 10px 0px',
             }}
             onMouseEnter={onMouseEnter}
             onMouseLeave={handleClose}
         >
             <div
-                className="relative overflow-hidden"
+                className='relative overflow-hidden'
                 style={{
                     height: `${currentHeight}px`,
                     transition: isAnimating ? 'none' : 'height 0.2s ease-out',
@@ -166,19 +188,18 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                 {getPreviewUrl(movie.previewLink) ? (
                     <iframe
                         src={getPreviewUrl(movie.previewLink)!}
-                        title="movie.title"
-                        className="w-full h-full rounded-t-[.2vw]"
-                        allow="autoplay; encrypted-media"
+                        title='movie.title'
+                        className='w-full h-full rounded-t-[.2vw]'
+                        allow='autoplay; encrypted-media'
                         style={{ border: 'none' }}
                     />
                 ) : (
                     <img
                         src={movie.backdropUrl}
                         alt={movie.title}
-                        className="w-full h-full object-cover rounded-t-[.2vw]"
+                        className='w-full h-full object-cover rounded-t-[.2vw]'
                     />
                 )}
-
             </div>
 
             <div
@@ -202,7 +223,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 찜하기 버튼 */}
-                    <button 
+                    <button
                         className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]"
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -220,7 +241,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 좋아요 버튼 */}
-                    <button 
+                    <button
                         className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white hover:bg-[rgba(255,255,255,0.15)]"
                         onClick={(e) => e.stopPropagation()}
                     >
@@ -238,7 +259,7 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                         </span>
                     </button>
                     {/* 상세정보 버튼 - 오른쪽 끝 */}
-                    <button 
+                    <button
                         className="relative group w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white ml-auto hover:bg-[rgba(255,255,255,0.15)]"
                         onClick={(e) => {
                             e.stopPropagation();
@@ -250,33 +271,20 @@ export default function HoverPreview({ movie, position, onMouseEnter, onMouseLea
                             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronDownMedium" data-icon-id=":r39:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="m12 15.586 7.293-7.293 1.414 1.414-8 8a1 1 0 0 1-1.414 0l-8-8 1.414-1.414z" clip-rule="evenodd"></path></svg>
                         </span>
                         {/* Tooltip */}
-                        <span className="absolute -top-10 left-1/2 -translate-x-1/2
-                     bg-white text-black text-sm font-semibold px-2 py-1 rounded
-                     opacity-0 group-hover:opacity-100
-                     pointer-events-none whitespace-nowrap transition-opacity">
+                        <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black text-sm font-semibold px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap transition-opacity'">
                             {movie.type === 'movie' ? '상세 정보' : '회차 및 상세 정보'}
-                            <span className="absolute top-full left-1/2 -translate-x-1/2
-                       border-4 border-transparent border-t-white" />
+                            <span className='absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white' />
                         </span>
-
                     </button>
                 </div>
-
-                <div className="flex items-center gap-2 text-sm flex-wrap mb-5">
-                    <span className="px-1 border border-gray-400 text-gray-400 text-[14px]">
+                <div className='flex items-center gap-2 text-sm flex-wrap mb-5'>
+                    <span className='px-1 border border-gray-400 text-gray-400 text-[14px]'>
                         {getAgeRating(movie.ageRating)}
                     </span>
-                    {getTypeText(movie) && (
-                        <span className="text-gray-400 text-[16px]">{getTypeText(movie)}</span>
+                    {getTypeText(movie) && (<span className='text-gray-400 text-[16px]'> {getTypeText(movie)} </span>
                     )}
                 </div>
-                {movie.genre && movie.genre.length > 0 && (
-                    <div className="mt-2 text-[16px] text-gray-300 mb-5">
-                        {movie.genre.join(' • ')}
-                    </div>
-                )}
-            </div>
-        </div>,
-        document.body
+                {movie.genre && movie.genre.length > 0 && (<div className='mt-2 text-[16px] text-gray-300 mb-5'> {movie.genre.join(' • ')} </div>)} </div>
+        </div>, document.body,
     );
 }
