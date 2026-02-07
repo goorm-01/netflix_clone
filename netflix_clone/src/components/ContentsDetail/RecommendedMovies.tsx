@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import React from 'react';
 import * as Icons from '../../assets/icons';
-import { getContentsByGenre } from '../../api/contentsApi';
+import { getContents } from '../../api/contentsApi';
 import type { Content } from '../../data/content';
 
 interface RecommendedMoviesProps {
@@ -16,16 +16,42 @@ export default function RecommendedMovies({ movie, addedItems, onToggleAddItem, 
     const [recommendedMovies, setRecommendedMovies] = useState<Content[]>([]);
 
     useEffect(() => {
-        const genre = movie.genre[0];
-        if (!genre) {
+        const normalize = (value: string) => value.trim().toLowerCase();
+        const movieGenres = movie.genre.map(normalize);
+        const movieFeatures = movie.features.map(normalize);
+        const movieType = movie.type;
+
+        if (movieGenres.length === 0 && movieFeatures.length === 0 && !movieType) {
             setRecommendedMovies([]);
             return;
         }
 
-        getContentsByGenre(genre).then((items) => {
-            setRecommendedMovies(items.filter((item) => item.id !== movie.id));
+        const GENRE_WEIGHT = 3;
+        const FEATURE_WEIGHT = 2;
+        const TYPE_WEIGHT = 1;
+
+        getContents().then((items) => {
+            const scored = items
+                .filter((item) => item.id !== movie.id)
+                .map((item) => {
+                    const itemGenres = item.genre.map(normalize);
+                    const itemFeatures = item.features.map(normalize);
+                    const genreScore = itemGenres.filter((g) => movieGenres.includes(g)).length;
+                    const featureScore = itemFeatures.filter((f) => movieFeatures.includes(f)).length;
+                    const typeScore = item.type === movieType ? 1 : 0;
+                    const score =
+                        genreScore * GENRE_WEIGHT +
+                        featureScore * FEATURE_WEIGHT +
+                        typeScore * TYPE_WEIGHT;
+                    return { item, score };
+                })
+                .filter(({ score }) => score > 0)
+                .sort((a, b) => b.score - a.score)
+                .map(({ item }) => item);
+
+            setRecommendedMovies(scored);
         });
-    }, [movie.id, movie.genre]);
+    }, [movie.id, movie.genre, movie.features, movie.type]);
 
     const visibleMovies = recommendedMovies.slice(0, showAll ? recommendedMovies.length : 9);
 
@@ -50,10 +76,7 @@ export default function RecommendedMovies({ movie, addedItems, onToggleAddItem, 
                                 <span>{item.releaseYear}</span>
                             </div>
                             <button className="bg-black/5 text-white w-[38px] h-[38px] rounded-full flex items-center justify-center border-2 border-solid border-gray-400 hover:border-white hover:bg-white/15" aria-label="찜하기" onClick={() => onToggleAddItem(item.id)}>
-                                {addedItems.has(item.id) ?
-                                    <Icons.CheckmarkMedium className="w-[17px] h-[17px]" /> :
-                                    <Icons.PlusMedium className="w-[17px] h-[17px]" />
-                                }
+                                {addedItems.has(item.id) ? <Icons.CheckmarkMedium className="w-[17px] h-[17px]" /> : <Icons.PlusMedium className="w-[17px] h-[17px]" />}
                             </button>
                         </div>
                         <div className='px-[14px] pb-[16px] text-[14px] font-extralight'>
@@ -68,10 +91,7 @@ export default function RecommendedMovies({ movie, addedItems, onToggleAddItem, 
                     <div className="absolute mb-[60px] inset-x-0 h-16 bg-gradient-to-b from-transparent via-black/40 to-black/80" />
                     <div className="absolute inset-x-0 top-1/2 h-0.5 bg-white/30" />
                     <button onClick={() => setShowAll(!showAll)} className="z-10 flex h-[38px] w-[38px] items-center justify-center rounded-full border-2 border-gray-400 bg-black/30 text-white hover:border-gray-300">
-                        {showAll ? (
-                            <Icons.ChevronUpMedium className="w-[18px] h-[18px]" />
-                        ) : (
-                            <Icons.ChevronDownMedium className="w-[18px] h-[18px]" />
+                        {showAll ? ( <Icons.ChevronUpMedium className="w-[18px] h-[18px]" />) : (<Icons.ChevronDownMedium className="w-[18px] h-[18px]" />
                         )}
                     </button>
                 </div>
