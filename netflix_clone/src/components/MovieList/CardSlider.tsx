@@ -182,102 +182,11 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
     const handlePreviewEnter = () => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     };
-  }, []);
 
-  // 화면 크기 변경 시 currentIndex 보정
-  useEffect(() => {
-    // 순환 애니메이션 중에는 보정하지 않음
-    if (isTransitioning) return;
-
-    if (currentIndex > maxIndex) {
-      setCurrentIndex(maxIndex);
-    }
-  }, [visibleCount, movies.length, currentIndex, maxIndex, isTransitioning]);
-
-  // 실제 translateX 계산 (복제 오프셋 포함)
-  const translateX = (currentIndex + startOffset) * (cardWidth + gap);
-
-  const TRANSITION_DURATION = 500;
-
-  const handlePrev = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setEnableTransition(true); // 애니메이션 활성화
-
-    if (currentIndex === 0) {
-      setCurrentIndex(-visibleCount);
-      setTimeout(() => {
-        setEnableTransition(false); // 애니메이션 비활성화
-        setCurrentIndex(maxIndex);
-        // 다음 프레임에서 애니메이션 다시 활성화
-        requestAnimationFrame(() => {
-          setEnableTransition(true);
-          setIsTransitioning(false);
-        });
-      }, TRANSITION_DURATION);
-    } else {
-      const newIndex = Math.max(0, currentIndex - visibleCount);
-      setCurrentIndex(newIndex);
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, TRANSITION_DURATION);
-    }
-  };
-
-  const handleNext = () => {
-    if (isTransitioning) return;
-    if (!hasInteracted) setHasInteracted(true);
-    setIsTransitioning(true);
-    setEnableTransition(true); // 애니메이션 활성화
-
-    if (currentIndex >= maxIndex) {
-      const newIndex = maxIndex + visibleCount;
-      setCurrentIndex(newIndex);
-      setTimeout(() => {
-        setEnableTransition(false); // 애니메이션 비활성화
-        setCurrentIndex(0);
-        // 다음 프레임에서 애니메이션 다시 활성화
-        requestAnimationFrame(() => {
-          setEnableTransition(true);
-          setIsTransitioning(false);
-        });
-      }, TRANSITION_DURATION);
-    } else {
-      const newIndex = Math.min(maxIndex, currentIndex + visibleCount);
-      setCurrentIndex(newIndex);
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, TRANSITION_DURATION);
-    }
-  };
-
-  // 호버 핸들러들
-  const handleCardHover = (movie: Content, rect: DOMRect) => {
-    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-    hoverTimeoutRef.current = setTimeout(() => {
-      setHoveredMovie(movie);
-      setCardPosition(rect);
-      setShowPreview(true);
-    }, 300);
-  };
-
-  const handleCardLeave = () => {
-    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-    hoverTimeoutRef.current = setTimeout(() => {
-      setShowPreview(false);
-      setHoveredMovie(null);
-      setCardPosition(null);
-    }, 100);
-  };
-
-  const handlePreviewEnter = () => {
-    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-  };
-
-  const handlePreviewLeave = () => {
-    setShowPreview(false);
-    setHoveredMovie(null);
-  };
+    const handlePreviewLeave = () => {
+        setShowPreview(false);
+        setHoveredMovie(null);
+    };
 
   return (
     <div ref={sliderRef} className='relative mb-8 group'>
@@ -383,4 +292,3 @@ export default function CardSlider({ title, movies, variant = 'default' }: CardS
     </div>
   );
 }
-
