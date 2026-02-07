@@ -3,13 +3,7 @@
 import type { RankingCardProps } from './types';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function RankingCard({
-  movie,
-  rank,
-  onHover,
-  onLeave,
-  cardWidth,
-}: RankingCardProps) {
+export default function RankingCard({movie,rank,onHover,onLeave,cardWidth,}: RankingCardProps) {
   const navigate = useNavigate();
   const location = useLocation();
 

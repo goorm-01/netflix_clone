@@ -4,7 +4,9 @@
       "id": 1,
       "title": "국제시장",
       "type": "movie",
-      "creator": ["윤제균"],
+      "creator": [
+        "윤제균"
+      ],
       "cast": [
         "황정민",
         "김윤진",
@@ -14,8 +16,16 @@
         "라마란",
         "김슬기"
       ],
-      "genre": ["진한 여운을 남기는 영화"],
-      "features": ["감명을 주는", "달콤 쌉싸름", "감정을 파고드는"],
+      "genre": [
+        "진한 여운을 남기는 영화"
+      ],
+      "features": [
+        "감명을 주는",
+        "달콤 쌉싸름",
+        "감정을 파고드는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWbflkRk0ayLtPUQDcBHaKCjwIan4PQkAgI-biJp1He8w1hsRj-bxYWPWFt1lFJvDmMaE0bVzFf7rVWaR0Hp9CDY8gA6yN024ek.webp?r=b08 ",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABf-j5kgxW3wYYJQIrpzwcOICuNBUaZrsYjIVfcXfGLKQ7hK_LpxizyiaIK41RRU4LorsFT-2wi4BxwI1yBxD1hAbPHxEb1ja5m4oveXtEIM.png?r=99b",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/wcMlVCKjTIT3g3fQNo5iXo586mk.jpg",
       "description": "한국 전쟁이 한창이던 시절, 피난길에 아버지와 헤어져 부산에 자리 잡은 덕수. 평생 동안 아버지와의 약속을 한시도 잊지 않는다. 아버지 대신 가족을 지키겠다는 그 약속을.",
       "previewLink": "https://youtu.be/4TwmvNNlWqI",
@@ -27,7 +37,9 @@
       "id": 2,
       "title": "그린 북",
       "type": "movie",
-      "creator": ["피터 패럴리"],
+      "creator": [
+        "피터 패럴리"
+      ],
       "cast": [
         "비고 모텐슨",
         "마허샬라 알리",
@@ -44,7 +56,12 @@
         "코미디 영화",
         "사회 이슈를 다루는 드라마 장르 영화"
       ],
-      "features": ["감상적", "진심 어린"],
+      "features": [
+        "감상적",
+        "진심 어린"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTS1hhBaogSsMtFSGoxMNkdnrJ9DMsU3d5KU613nVe_3kjekVqgtQ2ml3jhE72lcU-6R9yItnqhP0Ye7RivPGG65uEEzNiKo_tc.webp?r=4ec",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZkzI5eC04azAjSfLiE9ZsnInUF1lJ-CXPZHfmt0r0M-aSGEmnQtQmdj5MEG58aZWNcaM0Y0ORCAaCeBXq3HhtcHf23olYkREGPybscdAU4.png?r=8a4",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/yJCOTcyVyO6J5OJhaSH9gmUqVlh.jpg",
       "description": "교양 있고 우아한 피아니스트와 산전수전 다 겪은 운전기사. 인종 차별이 만연한 남부 지역으로 콘서트 투어를 떠난 두 사람 사이에 어느새 인종을 뛰어넘는 우정이 싹튼다.",
       "previewLink": "https://youtu.be/qtGBWKR9QhY",
@@ -56,7 +73,9 @@
       "id": 3,
       "title": "기생충",
       "type": "movie",
-      "creator": ["봉준호"],
+      "creator": [
+        "봉준호"
+      ],
       "cast": [
         "송강호",
         "이선균",
@@ -69,8 +88,15 @@
         "정지소",
         "정현준"
       ],
-      "genre": ["코미디 영화", "스릴러 영화"],
-      "features": ["어두운"],
+      "genre": [
+        "코미디 영화",
+        "스릴러 영화"
+      ],
+      "features": [
+        "어두운"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQd4uND5fz4iqlk1zchjcGxGXZGUO_ns9rMdEUUELtqMU7_OdHuIbi1EqjefsaDxwrdTUlMdK-9wXoHSjVBcBEnjWrl4vckFRB4.webp?r=761",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABTs_ZwIq1C9Os7gyiRMq82fW4QmJwzGq5OzdFXrcMKSAVbR-J0RNy3TOqphZrFOIGDsdsy1rOa8ve0H3eYjCte4i3WaFoUcLzDJBTeaFuw0.png?r=b8c",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
       "description": "반지하에서 근근이 먹고 살던 가족. 우연히 생긴 알바로 부잣집에 발을 들이더니, 어느덧 온 식구가 저택 곳곳의 밥줄을 꿰찬다. 공간도 계단도 남아돌잖아요. 그러니 우리 같이 나눠 씁시다.",
       "previewLink": "https://youtu.be/jBdRhhSt3Bc",
@@ -82,10 +108,25 @@
       "id": 4,
       "title": "너의 결혼식",
       "type": "movie",
-      "creator": ["이석근"],
-      "cast": ["박보영", "김영광"],
-      "genre": ["로맨스", "엉뚱하고 기발", "로맨틱한 영화"],
-      "features": ["유쾌 발랄", "진심 어린", "로맨틱"],
+      "creator": [
+        "이석근"
+      ],
+      "cast": [
+        "박보영",
+        "김영광"
+      ],
+      "genre": [
+        "로맨스",
+        "엉뚱하고 기발",
+        "로맨틱한 영화"
+      ],
+      "features": [
+        "유쾌 발랄",
+        "진심 어린",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfMjd5pWMI284DIRLIzQF94HTC66GZ4PoTOZfshEZWfz3QE1SKJr1VAOwuaTW7JU1NjyNRpx7D-4VAi9Kx0BXk2fJ2iI_Q28gug.webp?r=d5a",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABdbTHgacpXMmt7C-O4vqJdoR5RgmJDvXfw8adeeIslMnRW4SHmFfaLkyhT6l1D2tv-qCr-4kQ0HwReWrX-9AygsBl5erDBhkqCZ5MiPAtFY.png?r=320",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/kU2FAKmAysoACykvryNBQshlK8o.jpg",
       "description": "첫눈에 반하면 뭐 해, 엇갈리고 또 엇갈리는데. 고등학교 시절 첫사랑 승희와 원치 않는 이별을 한 우연. 그런 그에게 승희를 다시 만날 수 있는 기회가 찾아온다. 우연은 그녀와의 완벽한 재회를 꿈꾸는데, 과연 그의 바람은 이루어질까?",
       "previewLink": "https://youtu.be/ATrvjG5-qGk",
@@ -97,18 +138,31 @@
       "id": 5,
       "title": "대도시의 사랑법",
       "type": "movie",
-      "creator": ["이언희"],
-      "cast": ["김고은", "노상현", "정휘", "오동민", "박선후", "김채은"],
+      "creator": [
+        "이언희"
+      ],
+      "cast": [
+        "김고은",
+        "노상현",
+        "정휘",
+        "오동민",
+        "박선후",
+        "김채은"
+      ],
       "genre": [
         "LGBTQ+ 영화",
         "진한 여운을 남기는 영화",
         "로맨틱한 영화",
         "도서 원작 영화"
       ],
-      "features": ["달콤 쌉싸름", "거부할 수 없는 이끌림", "감정을 파고드는"],
-      "thumbnail":"https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSpDYMpInzxgwtIRvuq9d-t_LBj5UJuY56QNhPVctofhXEQSpUENL52sKMEl6PLPmUg16ZrE6-9f7llrzblJRj87qKBqOApyF0pA.jpg?r=0c5",
+      "features": [
+        "달콤 쌉싸름",
+        "거부할 수 없는 이끌림",
+        "감정을 파고드는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSpDYMpInzxgwtIRvuq9d-t_LBj5UJuY56QNhPVctofhXEQSpUENL52sKMEl6PLPmUg16ZrE6-9f7llrzblJRj87qKBqOApyF0pA.jpg?r=0c5",
+      "previewLogo": "https://occ-0-1360-988.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZl8n6tgL6Km3Vz5LtYnTcVHgjOa-Lke3iOWz30jhLUnZ_6ub6FlsVgb9vOcvUANyRFVBCHVlQM4PHfxMA-AGDACS_Kg_PQXsbPATlCOijA.png",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/rFLxECXOOvC4BmxdCdf4WCq4AyZ.jpg",
-      "previewLogo":"https://occ-0-1360-988.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZl8n6tgL6Km3Vz5LtYnTcVHgjOa-Lke3iOWz30jhLUnZ_6ub6FlsVgb9vOcvUANyRFVBCHVlQM4PHfxMA-AGDACS_Kg_PQXsbPATlCOijA.png",
       "description": "자유로운 영혼을 가진 여성이 친구가 게이라는 비밀을 알아 버린다. 그리고 그때부터 의기투합한 두 사람은 서로의 곁에서 위안을 얻는다.",
       "previewLink": "https://youtu.be/5VPwCGe9S5c",
       "releaseYear": 2024,
@@ -119,7 +173,9 @@
       "id": 6,
       "title": "베테랑",
       "type": "movie",
-      "creator": ["류승완"],
+      "creator": [
+        "류승완"
+      ],
       "cast": [
         "황정민",
         "유아인",
@@ -144,8 +200,15 @@
         "엄태구",
         "박소담"
       ],
-      "genre": ["코미디 영화", "액션 & 어드벤처 영화"],
-      "features": ["흥미진진"],
+      "genre": [
+        "코미디 영화",
+        "액션 & 어드벤처 영화"
+      ],
+      "features": [
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWo4hckulEeVJkvEbV8nRQGfgfjuMItaIedvRaas2FMiqm9HYegR-zojCFliB-YHZyk_sESgKSrwq8NJ7qpbWoTPyOaxe0yeS8c.webp?r=b0c",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABQkdxZrfti5xvHjEgsqvnWw0qWiBHjUh4p2oibQrsPEjKV44XznlOSYMQ1Kl5xnIUpgHH_xnW53Js6b4xhwQNPOsl1qVdKSf_ivA4qS56xY.png?r=1fb",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/fDLC0FLTkEU2rMIbptxCRYWeceq.jpg",
       "description": "법보다 돈이 더 강한 세상. 정의감으로 똘똘 뭉친 베테랑 형사와 돈으로 죄를 덮으려는 안하무인 재벌 3세. 한 치의 양보도 없는 두 사람의 불꽃 튀는 대결이 지금 시작된다!",
       "previewLink": "https://youtu.be/24PZYgDMCh4",
@@ -157,7 +220,9 @@
       "id": 7,
       "title": "비긴 어게인",
       "type": "movie",
-      "creator": ["존 카니"],
+      "creator": [
+        "존 카니"
+      ],
       "cast": [
         "키이라 나이틀리",
         "마크 러팔로",
@@ -168,8 +233,19 @@
         "모스 데프",
         "시로 그린"
       ],
-      "genre": ["음악", "미국 작품", "코미디 영화", "인디 영화"],
-      "features": ["힐링", "유쾌 발랄", "잔잔한"],
+      "genre": [
+        "음악",
+        "미국 작품",
+        "코미디 영화",
+        "인디 영화"
+      ],
+      "features": [
+        "힐링",
+        "유쾌 발랄",
+        "잔잔한"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYzNeAhXkxODXZr-s_HZnklK2jmY1q51V40BpJO8eHi35cEOP_NWLzIKdnqAKoEWa7I7l1JkSDy49sOMWOzC1qi3e0HcoF3YtmM.webp?r=7bc",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABa9xVfmi7mOScP2CgL2hUM8CxP3PxOKqzQeFuOyzF4rYY68lAlUjaxbifD1loh3N3rh78acSPsplB6JCjbtVdcx85HVkCGOE5QKWcQFSq7U.png?r=9d8",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/xrSRmL6pXnRfu9vKwayILkNgLP.jpg",
       "description": "불운한 음악 프로듀서가 바에서 실력 있는 싱어송라이터를 발견하자 가수로 데뷔시키고 자신의 삶도 구하기로 한다.",
       "previewLink": "https://youtu.be/98wK1kFDEAo",
@@ -181,7 +257,9 @@
       "id": 8,
       "title": "센과 치히로의 행방불명",
       "type": "movie",
-      "creator": ["미야자키 하야오"],
+      "creator": [
+        "미야자키 하야오"
+      ],
       "cast": [
         "히이라기 루미",
         "이리노 미유",
@@ -200,7 +278,13 @@
         "일본 작품",
         "애니메이션 영화"
       ],
-      "features": ["기발한", "초현실적", "상상의 나래"],
+      "features": [
+        "기발한",
+        "초현실적",
+        "상상의 나래"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABc-B2VXVVyklIbLJ0Koob20q5c4Ggi9wDLNHz0V3eSq6fiGqNh4pgsNkE2JdiV3fPDpC2Ht3kbNxMigRghPt7nDmPCXDH2Wn0Bvc.jpg?r=e74",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABYAWw5vF2ukxErLq_bwTOyhj6hhHFiGrqVX9w4FhyBddwF5ihs_ucf6HwWmFF0IYWOWHts2ZHd4HhZYK7Js4xQJp97Qgl72WXu1_CGhM3ZE.png?r=f2b",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
       "description": "마녀가 지배하는 기묘한 세계. 마녀에게 거역하면 동물로 변하게 되는 이곳에 열 살 소녀 치히로가 발을 들여놓는다.",
       "previewLink": "https://youtu.be/lwrG3HQXTFw",
@@ -212,7 +296,9 @@
       "id": 9,
       "title": "셔터 아일랜드",
       "type": "movie",
-      "creator": ["마틴 스코세이지"],
+      "creator": [
+        "마틴 스코세이지"
+      ],
       "cast": [
         "레오나르도 디카프리오",
         "마크 러팔로",
@@ -226,8 +312,18 @@
         "존 캐럴 린치",
         "엘리어스 코티스"
       ],
-      "genre": ["미국 작품", "스릴러 영화", "미스터리 영화", "도서 원작 영화"],
-      "features": ["발상의 전환", "불길한"],
+      "genre": [
+        "미국 작품",
+        "스릴러 영화",
+        "미스터리 영화",
+        "도서 원작 영화"
+      ],
+      "features": [
+        "발상의 전환",
+        "불길한"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb4sDv-CtVe5rEZ5nUGMqYAthBu1Kjapc2xNdGPCb2GmfAlbpawaw0DissPwlJQvW0jYUaX_ANaGtIaDXKL1J2oMSLs6r72HAvc.webp?r=ee3",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZ5XM0vjP8SXvljwbB208JEchZdZcS7MtpqADs3t4aCyIzovdHW-4IZrg1jopx094d-rFoyHqfk9cZdIqhGeLqVIhnvHFjswn_H4_kLWkno.png?r=5fd",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/iZDnaE7DtL2MvgwqwHS8jy4Px6o.jpg",
       "description": "범죄를 저지른 정신병자를 수감하는 치료감호소에서 환자가 실종된다. 연방 보안관이 수사에 나서지만, 계속 떠오르는 환영으로 인해 수사는 난항을 겪는데...",
       "previewLink": "https://youtu.be/pIzKw4vconw",
@@ -239,7 +335,10 @@
       "id": 10,
       "title": "슈퍼배드",
       "type": "movie",
-      "creator": ["피에르 코팽", "크리스 르노"],
+      "creator": [
+        "피에르 코팽",
+        "크리스 르노"
+      ],
       "cast": [
         "스티브 커렐",
         "제이슨 시걸",
@@ -256,8 +355,17 @@
         "잭 맥브레이어",
         "대니 맥브라이드"
       ],
-      "genre": ["가족 영화", "어린이 & 가족 영화", "미국 작품", "코미디 영화"],
-      "features": ["허당 매력"],
+      "genre": [
+        "가족 영화",
+        "어린이 & 가족 영화",
+        "미국 작품",
+        "코미디 영화"
+      ],
+      "features": [
+        "허당 매력"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABe4APLsLli-q1aWEyVfNUN9VRg4m8w2TRNNPwSr19mtc5prUSNE03DW2L_KEu7DTuA3j3xQbi__t6dbKuW_iHJd6L-iHqQCGdE0.webp?r=5f7",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABePQ4RgBXVRsTkZNS8k9fc_G0IzW3fjXC_Jy1OAqHS1HvjA-lYtD1D7m1FRS-r2VuEHkNGoqEfu_z2oiprh4hgCeu-KLGUL03Z1dc1rTHSA.png?r=98e",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/xVEBLD278GuFZoPFskpD3dvdJlV.jpg",
       "description": "하늘에서 달을 훔치기로 한 교활한 악당. 아빠를 만나고 싶은 세 명의 고아에게 마음을 빼앗겨 계획에 차질이 생긴다.",
       "previewLink": "https://youtu.be/Bjsikja09ys",
@@ -269,7 +377,9 @@
       "id": 11,
       "title": "어메이징 스파이더맨",
       "type": "movie",
-      "creator": ["마크 웹"],
+      "creator": [
+        "마크 웹"
+      ],
       "cast": [
         "앤드루 가필드",
         "엠마 스톤",
@@ -284,8 +394,18 @@
         "맥스 찰스",
         "C. 토머스 하웰"
       ],
-      "genre": ["미국 작품", "SF 영화", "액션 & 어드벤처 영화", "청춘 영화"],
-      "features": ["상상의 나래", "흥미진진"],
+      "genre": [
+        "미국 작품",
+        "SF 영화",
+        "액션 & 어드벤처 영화",
+        "청춘 영화"
+      ],
+      "features": [
+        "상상의 나래",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZv7BM5gzDKsQrlXzgheiyOkssrOIKlQEbquRHUkzork5cgMlt6dEQdiO-14QkS8GhcHkCsoy7DfJVU2_CbE2gWa4lyucmp4yR8.webp?r=858",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABVroRnJC71gPH1YrWcNaZt9YgS2PSeIqiv9FzKT6I8TXz9w8ZJ_Pp-YWc82sgH83KciQVfaoEFaPPrgtLN0DzOLLSeyyjIfnu4v6FzFhLKM.png?r=66a",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/a92L1Zm4vGlXOD0f2CEsfqnNDhc.jpg",
       "description": "고등학생 피터 파커가 거미처럼 행동할 수 있는 새로운 능력을 익히는 동시에 가족의 비밀을 밝히고 낯익은 최강 악당과 대결을 벌인다.",
       "previewLink": "https://youtu.be/MKzxAz1e2bU",
@@ -297,7 +417,9 @@
       "id": 12,
       "title": "위플래쉬",
       "type": "movie",
-      "creator": ["데이미언 셔젤"],
+      "creator": [
+        "데이미언 셔젤"
+      ],
       "cast": [
         "마일스 텔러",
         "J.K. 시먼스",
@@ -308,8 +430,17 @@
         "크리스 멀키",
         "데이먼 겁튼"
       ],
-      "genre": ["음악", "미국 작품", "진한 여운을 남기는 영화", "인디 영화"],
-      "features": ["심리"],
+      "genre": [
+        "음악",
+        "미국 작품",
+        "진한 여운을 남기는 영화",
+        "인디 영화"
+      ],
+      "features": [
+        "심리"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABclFEF9gLwzoVKB66dyWXsmVKxgx4yC9sP9kaaw3unBSDwVJx6YsoeB9Eg4lFqI3734Uos5Fo1gK8JiD4uCrA72yw0gAIU_C54k.webp?r=747",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABaW8n6z_QWZqTX4DljcuiIE8a_FWHWGGNh-L-fx7Q-Q0NQbW_GsD6uIiTS7X0QQDsYOdcfz9sWn_fy8ebgZZekvwkSyIbbewTcrhESER7lc.png?r=93d",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/fRGxZuo7jJUWQsVg9PREb98Aclp.jpg",
       "description": "완벽을 추구하는 음악 교수의 지도에 따라, 앤드류는 재즈 뮤지션으로 성공하겠다는 일념에 불탄다. 성공의 대가로 인격이 파괴될지라도.",
       "previewLink": "https://youtu.be/Qsbu5Phz6u8",
@@ -321,7 +452,9 @@
       "id": 13,
       "title": "캐치 미 이프 유 캔",
       "type": "movie",
-      "creator": ["스티븐 스필버그"],
+      "creator": [
+        "스티븐 스필버그"
+      ],
       "cast": [
         "레오나르도 디카프리오",
         "톰 행크스",
@@ -341,7 +474,12 @@
         "도서 원작 영화",
         "실화 바탕 영화"
       ],
-      "features": ["향수 자극", "감상적"],
+      "features": [
+        "향수 자극",
+        "감상적"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfkqB7jaNdNlftE-aNr5pROERDcjHiMOG8rt_tBeYN5aVjnNY9SvC2hWBon0TiHrTqCVLDGz2_nFfRpaIcCIIZDhT-CWOezNBug.webp?r=f7f",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABff9WzEvITEKdIIio6vIHLPOScXfmnFLyR-okiqevgbtFjMWumrbVClcvE-pudfnQPkXLeMAJH2iKGC5AFa2DEhvCsP7Xso-02acQzlWrGI.png?r=044",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/eS3xZQ1C8lt6mm4K5lTmjbYn2HE.jpg",
       "description": "스티븐 스필버그가 감독한 아카데미상 후보작. FBI의 아슬아슬한 추격에도 언제나 한발 앞서는 방탕한 사기꾼의 이야기를 그린다.",
       "previewLink": "https://youtu.be/lrWhA3APhCg",
@@ -353,7 +491,10 @@
       "id": 14,
       "title": "케이팝 데몬 헌터스",
       "type": "movie",
-      "creator": ["매기 강", "크리스 애플한스"],
+      "creator": [
+        "매기 강",
+        "크리스 애플한스"
+      ],
       "cast": [
         "아든 조",
         "안효섭",
@@ -373,7 +514,12 @@
         "미국 작품",
         "코미디 영화"
       ],
-      "features": ["상상의 나래", "흥미진진"],
+      "features": [
+        "상상의 나래",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABS_I9e_X9gdwz0v4PBFWFp2U6XqGqa0R5_z5vV7w6PftsQ0e506qsdKpQjqmzNcivSTQh_i585QleyORhvJPuqA1w0IOTH3x9MF_xMNx8fxmx1HOFz4l8bdss0otxN--CeIHVePIUbYCZEiMNVu8eEVvinb3fU64VrlhAHsToLnLvVpx-c1Lt8FjmLPqZuTuiXQFk2573tLVBw.webp?r=c00",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABV3xurGoLiQNaXKSRzoeArJ8wXAS3icKB03Ibf2B6fF-tUY3mEOgj3b10sm3qFNxadTW5pW1ORPB2CYUUvKVI6NuAIfEX_f6yFzHbxLmhFaEPjfbvfsJ6GkF7bO3IqzcI_Gfyif3IcrFkkbOadCG-7Ox5nPQ_D_HIUXT8cKY-9WXKuXx9F3t.png?r=db1",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/l3QLD7oNvckSZLWxPB3yPIXzYqz.jpg",
       "description": "비밀스러운 초능력을 지닌 케이팝 걸 그룹. 치명적인 매력을 자랑하는 악마 보이 밴드가 팬들을 빼앗으려는 걸 두고 볼 수 없다. 목소리를 높여 반격에 나서야 한다.",
       "previewLink": "https://youtu.be/xQnsFqn44uo",
@@ -385,7 +531,9 @@
       "id": 15,
       "title": "하울의 움직이는 성",
       "type": "movie",
-      "creator": ["미야자키 하야오"],
+      "creator": [
+        "미야자키 하야오"
+      ],
       "cast": [
         "바이쇼 지에코",
         "키무라 타쿠야",
@@ -405,7 +553,12 @@
         "도서 원작 애니메이션",
         "도서 원작 영화"
       ],
-      "features": ["상상의 나래", "진심 어린"],
+      "features": [
+        "상상의 나래",
+        "진심 어린"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUbHFYXRETiS6GmTlSB8TDLugjYrBxc5b27ADXaLrUIiN-N-QsOOf09OeANPjgPxT8bSgbMM0Yf1MFlxW-nfLVol4b6Oggp_R0w.webp?r=b22",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABUFPzFq-LlXmUvd56SArAYjISb1o9fUhINoxFIPMHsVDy6ddh0LCYiYI74a0NVeXp4KwoQmy2ea4ZpdUwA_BjY9Ph0XxnLH2JPvORxaITvk.png?r=f4a",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/hjlvbMKhQm7N8tYynr8yQ8GBmqe.jpg",
       "description": "아버지가 물려준 모자 가게를 지키는 수수한 소녀 소피. 전쟁도, 미녀의 심장을 노리는 마법사의 소문도 먼 세상 이야기일 뿐. 하지만 마녀의 저주로 할머니가 되면서, 소피의 인생이 회전목마처럼 힘차게 움직이기 시작한다.",
       "previewLink": "https://youtu.be/YpqMZt1gOXU",
@@ -419,7 +572,12 @@
       "id": 16,
       "title": "18 어게인",
       "type": "drama",
-      "creator": ["하병훈", "김도연", "안은빈", "최이룬"],
+      "creator": [
+        "하병훈",
+        "김도연",
+        "안은빈",
+        "최이룬"
+      ],
       "cast": [
         "김하늘",
         "윤상현",
@@ -443,7 +601,12 @@
         "로맨틱 코미디 시리즈",
         "한국 드라마"
       ],
-      "features": ["감상적", "로맨틱"],
+      "features": [
+        "감상적",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSU3ODcTGUnYvGi1FOv9CWgLRBHgsaYNel8ONV9j5hAIO2lzfR7nWDgG-f-qmNqe0XRUYqRv77UvMExpChjIHXW3eWr6qVrH88o.webp?r=be3",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABbdr3vcMP6_GGH24HSqP6jKtJ0kHyNpFHapaNnFt0-eB3XhmbTHgV__j6i_3r_zhNFa8S1m3aohIZCvFyK9ym36ppdBgnTzb4cJ_f6cc_eA.png?r=abf",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/qoxdwCcUzLOgo4AajKuu72kChKu.jpg",
       "description": "이번 생은 망했다고 생각한 순간 기회가 찾아왔다. 이혼 직전, 열여덟 살로 돌아간 홍대영. 지금부터 무능한 남편 대신 꿈 많은 소년으로 살아가려다. 18년 전 그때처럼.",
       "previewLink": "https://youtu.be/-jb4OSFrqEM",
@@ -455,7 +618,10 @@
       "id": 17,
       "title": "미스터 션샤인",
       "type": "drama",
-      "creator": ["김은숙", "이응복"],
+      "creator": [
+        "김은숙",
+        "이응복"
+      ],
       "cast": [
         "이병헌",
         "김태리",
@@ -479,7 +645,13 @@
         "시대물",
         "한국 드라마"
       ],
-      "features": ["달콤 쌉싸름", "감정을 파고드는", "흥미진진"],
+      "features": [
+        "달콤 쌉싸름",
+        "감정을 파고드는",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZauhF9flZ2xlduRVk3GmOcVE_rsKyI-dRRjeIOh-6Y3gIXiL8qigp1x2X4dMnv3avqCRanNVMbKsJnKNq04iSVHNEh41av9__I.webp?r=1de",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABSrbjy07TZ_sp1kvzWCZ4Xdm3BOb030fnLZNOVQAEjLIywZuO5SrJIPFlnr5moU1p2VSEpAEh6v5TO4XbUikTctpdlaYHVHtdSk8KfSDdfY.png?r=df2",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/ykSw6OJRMwPEr99s0Qf4WcMKbb2.jpg",
       "description": "1871년 신미양요 직후 미국으로 건너갔던 소년. 격변하는 역사 속에서 고국으로 돌아와, 사대부의 귀한 따님을 가슴에 품는다.",
       "previewLink": "https://youtu.be/pHY8AdAZg4g",
@@ -491,7 +663,12 @@
       "id": 18,
       "title": "부부의 세계",
       "type": "drama",
-      "creator": ["모완일", "김성진", "강은경", "주현"],
+      "creator": [
+        "모완일",
+        "김성진",
+        "강은경",
+        "주현"
+      ],
       "cast": [
         "김희애",
         "박해준",
@@ -506,8 +683,18 @@
         "이무생",
         "전진서"
       ],
-      "genre": ["로맨틱한 드라마", "드라마", "한국 드라마"],
-      "features": ["어두운", "긴장감 넘치는", "로맨틱"],
+      "genre": [
+        "로맨틱한 드라마",
+        "드라마",
+        "한국 드라마"
+      ],
+      "features": [
+        "어두운",
+        "긴장감 넘치는",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABawwfv0gc-1QWbioT2IfQ0IkpAJh76YbXAeznkuMKm5e_n566_xKA0BM1t-yC5wMtXvxARnf7aH3cahu-SKRmloOSsQaeXVGdjs.webp?r=37f",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABSAJ57Oi77E5ioxrHyXZvSLKN6pp3wjJIG1cBf6tXcbfZiKLvYMSIqThGT8cOVBnUiBO2VPwlzFosMpkbetU9_Di_SSA3J5SMte2-OdqMEc.png?r=fee",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/s5blC7jMtAOHcFxmdADqwHBby0X.jpg",
       "description": "일과 가정 모두 놓치지 않는 그녀. 다정한 이웃과 친구까지 있어 더없이 행복하다. 그러나 그녀의 세계를 비로소 완성하는 건, 세월에도 변함없는 남편의 사랑. 그러나 그 사랑이 흔들린다는 건, 완벽한 세계에 균열이 생겼다는 것.",
       "previewLink": "https://youtu.be/rpuEpWCaNx4",
@@ -519,7 +706,9 @@
       "id": 19,
       "title": "브레이킹 배드",
       "type": "drama",
-      "creator": ["빈스 길리건"],
+      "creator": [
+        "빈스 길리건"
+      ],
       "cast": [
         "브라이언 크랜스턴",
         "애런 폴",
@@ -538,7 +727,13 @@
         "범죄 사건을 다루는 콘텐츠",
         "스릴러 시리즈"
       ],
-      "features": ["폭력적인", "어두운", "긴장감 넘치는"],
+      "features": [
+        "폭력적인",
+        "어두운",
+        "긴장감 넘치는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfeiEIV-GO2-YOJpTWqUtTdYbRr2GhS-nqokNDcFnlX7BRHUxE_NkzdsVwFD40ePRAhe2flWgaVkX0fy5sK2QX-XuF6Y9ID7lbo.webp?r=9be",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABcfYBo8XQLfiB7xw4OmyllyF4M33sYQfTJsDhpandJVRn8Tm1GpxHX_r7mEOJW2u1ALIi7nE9xMYBybflpoMaMOouuEEU09ur0NpO0j0Zb8.png?r=cd0",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/gae3QaHGZNF6UhQf8nMOyssp8ul.jpg",
       "description": "각종 시상식을 휩쓴 프리퀄 시리즈 <베터 콜 사울>과 속편 영화 <브레이킹 배드 무비: 엘 카미노>를 낳은 전설적인 범죄 드라마.",
       "previewLink": "https://youtu.be/VFkjBy2b50Q",
@@ -550,7 +745,10 @@
       "id": 20,
       "title": "빈센조",
       "type": "drama",
-      "creator": ["김희원", "박재범"],
+      "creator": [
+        "김희원",
+        "박재범"
+      ],
       "cast": [
         "송중기",
         "전여빈",
@@ -567,6 +765,8 @@
         "사회 문제를 다룬 드라마"
       ],
       "features": [],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdKLQD98VguqpDZgK7wRmRBSG8F40BFNbrkEOyVyFrKHVfjykNws21xiR1yXs3fbttWjGmLoDq2w2GkKQxTRMAN-EnhfFxrdTbQ.webp?r=0e7",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABUwkiODJyis0j__AKgfhdlYJKpBUtLhYoVbluvgTMxDRqF41aKbaoyZ8RyMs5c1o932yIhyppxhiJ_lKd6Cygbj5Y6adGuK21ZwygWZlhSE.png?r=3c4",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/fSfQ0BNKs9dcoVXWYUt12eGxtSc.jpg",
       "description": "악은 악으로, 악은 악으로! 모국을 찾은 한국계 이탈리아 마피아 변호사. 무소불위의 재벌에 손맛 한번 보여줄까? 이거 본의 아니게 정의의 사도가 될지도 모르겠네.",
       "previewLink": "https://youtu.be/d1guslSo6Kk",
@@ -578,7 +778,11 @@
       "id": 21,
       "title": "삼체",
       "type": "drama",
-      "creator": ["데이비드 베니오프", "D.B. 와이스", "알렉산더 우"],
+      "creator": [
+        "데이비드 베니오프",
+        "D.B. 와이스",
+        "알렉산더 우"
+      ],
       "cast": [
         "제스 홍",
         "리암 커닝햄",
@@ -601,7 +805,12 @@
         "도서 원작 시리즈",
         "스릴러 시리즈"
       ],
-      "features": ["발상의 전환", "상상의 나래"],
+      "features": [
+        "발상의 전환",
+        "상상의 나래"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXLtNXC0HRVeUGTScFmSAHvovlESUt8B9EAVITtJOB876lr_06-zcD_mesjbpj094zUZ5WF4VdG5iJP82rKw3TO8f3xaKAaZs9g.webp?r=dd8",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABfGUFStAQs2-y4qGrXYZwqxLcaX-9cUfISAJVvjxOuh_sTEW1PQjHqHa2CZLqI4S-U2zmDh1bHbeoB8aDZftDEZh5vmDcYON2gn7cjztrtskj83jW4CfbmTvIXtGBwpqgXJD4CLvTej72SqS6A5gSNZkp9YxDZeGU5GLQUuETvtLVfXUFEW4.png?r=6a8",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/2ZCJNFmLgGYxatgjSn0N7JRrkq2.jpg",
       "description": "다섯 명의 명석한 친구들이 인류에 닥친 실존적 위협을 밝혀낸다. <The New Yorker>가 ‘진기한 SF 대작’이라고 호평한 작품으로, 전 세계 1위에 등극했다.",
       "previewLink": "https://youtu.be/fO5g6j-yEPA",
@@ -613,7 +822,9 @@
       "id": 22,
       "title": "슈츠",
       "type": "drama",
-      "creator": ["아론 코시"],
+      "creator": [
+        "아론 코시"
+      ],
       "cast": [
         "가브리엘 마흐트",
         "패트릭 J. 애덤스",
@@ -628,8 +839,17 @@
         "둘레 힐",
         "레이철 해리스"
       ],
-      "genre": ["드라마", "법정 드라마", "미국 작품", "코미디 시리즈"],
-      "features": ["위트 있는"],
+      "genre": [
+        "드라마",
+        "법정 드라마",
+        "미국 작품",
+        "코미디 시리즈"
+      ],
+      "features": [
+        "위트 있는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYbe_FuBCG4STYFlZtlHHugafpjJoJ9VtLlCZ03Qqf83GoEusyiUDPFJG36hswauX0kTaSaDQbHzVNVitlmTZt-E-MQxzkXNllI.webp?r=92a",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABadiAKlOljYtxfM4txFLnqfY0dtj_a4QnBWg23YtRxfdnmmVuN1HQF6VOcltQh1CEI5Qo7mwJ4FcDdRbFKodapCHbfXJ_6Kz1HlJ8akbtjo.png?r=603",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/vSFZ47TtjA19clltkFB1Ao47Jod.jpg",
       "description": "명석한 두뇌로 능수능란한 변호사의 마음을 사로잡은 대학 중퇴 청년. 변호사 자격도 없이 거대 로펌의 보조 변호사로 일하게 된다.",
       "previewLink": "https://youtu.be/cUnkjEIW2-o",
@@ -641,7 +861,10 @@
       "id": 23,
       "title": "스타트업",
       "type": "drama",
-      "creator": ["오충환", "박혜련"],
+      "creator": [
+        "오충환",
+        "박혜련"
+      ],
       "cast": [
         "수지",
         "남주혁",
@@ -661,7 +884,12 @@
         "로맨틱 코미디 시리즈",
         "한국 드라마"
       ],
-      "features": ["감명을 주는", "로맨틱"],
+      "features": [
+        "감명을 주는",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdW2Y_IVCkoN3sMmjnMRYxvAF-ku_f0cVS3a71Pqv-uiJpxpMGhUDa-XF3fMJm-WxMT7eDSjMa_YE5TIA_i0B_X40airCcW-3yY.webp?r=57f",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABTkjFTWuKB1ZHit0vVSkPWyh-e7PLVY0je8FFaMrElnhQHFH5-3tM1LAW5X8p91U5a37wH8MOB5D5GP48r6UrhVSJ_ViWVupLe8pZ58STNQ.png?r=bba",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/7w8DrhjcYdHWo2Wq2DlJ8KW6K5D.jpg",
       "description": "IT 스타트업 열전에 뛰어든 동시에 삼각관계의 연애 사업도 헤쳐 나간다. 야심 찬 창업가의 이야기를 경쾌하게 그린 로맨틱 코미디.",
       "previewLink": "https://youtu.be/CXqRnXzAWcs",
@@ -673,7 +901,10 @@
       "id": 24,
       "title": "우리들의 블루스",
       "type": "drama",
-      "creator": ["노희경", "김규태"],
+      "creator": [
+        "노희경",
+        "김규태"
+      ],
       "cast": [
         "이병헌",
         "신민아",
@@ -690,8 +921,18 @@
         "노윤서",
         "기소유"
       ],
-      "genre": ["로맨틱한 드라마", "드라마", "한국 드라마"],
-      "features": ["힐링", "진심이 통하는", "달콤 쌉싸름"],
+      "genre": [
+        "로맨틱한 드라마",
+        "드라마",
+        "한국 드라마"
+      ],
+      "features": [
+        "힐링",
+        "진심이 통하는",
+        "달콤 쌉싸름"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUI-vK5D5cbdvDgzktn7IX6Pn_nQELfU2GjjBbMBq2e6ij435uQAQ5ogLvoQ2B041qJpT7dFBL6yPeVZZ4d4z2mSdk6XoCt61I8.webp?r=613",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABT_BeKc9Jn7_6xwPNUfvoQiLx47Ak5ogtsDybDAE5YOuh-fP-UEblXRLHhj5D1Pbtfb_OsFMWWeCfJ_t0Kyw4xAGkWIgCvz4lUqXzmkHt1c.png?r=522",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/9RWGXx5bTZHLzOuAODAyb9sZTHs.jpg",
       "description": "제주도에서 일어나는 다양한 이야기를 담은 시리즈. 이병헌, 신민아, 차승원, 이정은, 한지민, 김우빈, 엄정화 등이 출연한다.",
       "previewLink": "https://youtu.be/HIdxGmhNvGs",
@@ -703,8 +944,17 @@
       "id": 25,
       "title": "이번 생도 잘 부탁해",
       "type": "drama",
-      "creator": ["이나정", "최영림", "한아름"],
-      "cast": ["신혜선", "안보현", "하윤경", "안동구"],
+      "creator": [
+        "이나정",
+        "최영림",
+        "한아름"
+      ],
+      "cast": [
+        "신혜선",
+        "안보현",
+        "하윤경",
+        "안동구"
+      ],
       "genre": [
         "로맨틱한 드라마",
         "드라마",
@@ -712,7 +962,13 @@
         "로맨틱 코미디 시리즈",
         "웹툰 원작 한국 드라마"
       ],
-      "features": ["설렘주의", "감정을 파고드는", "로맨틱"],
+      "features": [
+        "설렘주의",
+        "감정을 파고드는",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABU3S8uSGxAwwGab_-CE4grKQ5nx78aRXq2fl3jVaOBqk9W8aRG7ApgH131k4lirURlH9CJhGx_toMKaoWsiQ6Pq88ALcsxFhwyU.webp?r=455",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABTFHgNBvRK4M0eF8C6nZRaWLEZGOAHEHmkC7GuQsmDCkpp4BMUxRNVTbJN0zXVLzTYXFzUFcmi-jrK1wRL5R0cnVLw84zvEU1wQlVqsHB_g.png?r=db6",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/AaCnw1mQWWyY8YwpkWw4viRChE2.jpg",
       "description": "반지음에겐 전생을 기억할 수 있는 신비한 능력이 있다. 18회차 인생이 이른 나이에 끝난 후 다시 태어난 그녀. 이번 생은 어느덧 어른이 된 어린 시절의 사랑을 찾는 데 올인한다.",
       "previewLink": "https://youtu.be/GCtxKmiP8Zg",
@@ -724,7 +980,13 @@
       "id": 26,
       "title": "정신병동에도 아침이 와요",
       "type": "drama",
-      "creator": ["이재규", "김남수", "이남규", "오보현", "김다희"],
+      "creator": [
+        "이재규",
+        "김남수",
+        "이남규",
+        "오보현",
+        "김다희"
+      ],
       "cast": [
         "박보영",
         "연우진",
@@ -743,8 +1005,18 @@
         "노재원",
         "권한솔"
       ],
-      "genre": ["드라마", "웹툰 원작 한국 드라마", "한국 드라마"],
-      "features": ["힐링", "진심 어린", "감정을 파고드는"],
+      "genre": [
+        "드라마",
+        "웹툰 원작 한국 드라마",
+        "한국 드라마"
+      ],
+      "features": [
+        "힐링",
+        "진심 어린",
+        "감정을 파고드는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYTdCwDjZEvcy_82GHKzksi1vvlD8xeZ_1ZI0DdGYEcOTgEuoU6iMiEtygAX2g_f-JMjsxobxnV7jv5BFKGJ8HUedMjCL82079M.webp?r=147",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABUfLUFWv2S3aGytLNrShOMQ_velbHYHLMN7Sornbu4RiaZyay_6t8nO_zQH0iqa5i_OjorWSggyU3mNlEuLG4oUrkNQdzX65JdHgO5mCvZX5b_bnTLylOvKkMCPEenzx4v8BvaT2O_pBzVsh97SUKBgpmyi8nCb1QKKCD11-MTxL1V9NnIpM.png?r=abb",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/7IUoYeA278rmFgX4oIeXC008d6W.jpg",
       "description": "선한 마음으로 무심코 내민 도움의 손길이 역효과를 불러올 수도 있는 정신병동. 복잡한 요구를 하는 이곳 환자들과의 생활에 새 간호사는 잘 적응할 수 있을까?",
       "previewLink": "https://youtu.be/08vlU3VRuTs",
@@ -756,10 +1028,30 @@
       "id": 27,
       "title": "천국보다 아름다운",
       "type": "drama",
-      "creator": ["김석윤", "이남규", "김수진"],
-      "cast": ["김혜자", "손석구", "한지민", "이정은", "천호진", "류덕환"],
-      "genre": ["드라마", "한국 드라마"],
-      "features": ["힐링", "유쾌 발랄", "진심 어린"],
+      "creator": [
+        "김석윤",
+        "이남규",
+        "김수진"
+      ],
+      "cast": [
+        "김혜자",
+        "손석구",
+        "한지민",
+        "이정은",
+        "천호진",
+        "류덕환"
+      ],
+      "genre": [
+        "드라마",
+        "한국 드라마"
+      ],
+      "features": [
+        "힐링",
+        "유쾌 발랄",
+        "진심 어린"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaTX79b6yvEvz-bAErFbNHOaSQHlJ4WlPezOx5YJMU9v94GIEOE37gKGU4AEaWj6-zzWV6aqwbzkiLzSmGBjAJp0DzOT2rKAGuA.webp?r=ed8",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABbqqRWb9YsriC1xVU5tADMeMAN46QYSUu4PgFO39LT9Z5CC8nheuJZmZIKcYatAe-4lo2ALr1awjgjqke9wka68W_ciw4MdqwfXuJlLnyCQ.png?r=e23",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/1SC2gbJA5zZ2x3YGMtlqbr3bIzk.jpg",
       "description": "한국에서 TOP 10에 오른 판타지 로맨스 드라마. 긴 세월을 함께한 부부가 천국에서 재회한다. 그런데 문제는 갑자기 50년의 나이 차가 생겨버렸다는 것.",
       "previewLink": "https://youtu.be/JPmpxxVlnao",
@@ -771,7 +1063,12 @@
       "id": 28,
       "title": "철인왕후",
       "type": "drama",
-      "creator": ["윤성식", "장양호", "박계옥", "최아일"],
+      "creator": [
+        "윤성식",
+        "장양호",
+        "박계옥",
+        "최아일"
+      ],
       "cast": [
         "신혜선",
         "김정현",
@@ -792,7 +1089,12 @@
         "시대물",
         "로맨틱 코미디 시리즈"
       ],
-      "features": ["유쾌 발랄", "로맨틱"],
+      "features": [
+        "유쾌 발랄",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABe1bcCaG57saw7eAOjWgSePe5XnqS1OsL2PowUxVMWuN66dZJLdVVRVhwejwXA_GBOoba4jmDACvajhUiFAk2OhlPwPsckS73jI.webp?r=f7e",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABR0veKRy6NMRFJtJqFmxGuhbnku1CJml_tAwAf-i0TyMPLXawHxxVX2Rk-_ub9pvr_TqstNIxDMZD4Z37dkJyqWfEvS2KO5d3S4pGUyKS1E.png?r=495",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/isOBmIuaPrJ29QWYgRQuOY3Fsdi.jpg",
       "description": "하루아침에 19세기 중전의 몸으로 깨어난 현대의 셰프. 눈을 뜬 곳은 험난한 궁중궁궐. 어떻게든 본래 삶이 있는 현대로 돌아갈 방법을 찾아야 한다.",
       "previewLink": "https://youtu.be/dvlbgHhs8LE",
@@ -804,7 +1106,10 @@
       "id": 29,
       "title": "퀸스 갬빗",
       "type": "drama",
-      "creator": ["스콧 프랭크", "앨런 스콧"],
+      "creator": [
+        "스콧 프랭크",
+        "앨런 스콧"
+      ],
       "cast": [
         "안야 테일러조이",
         "빌 캠프",
@@ -824,7 +1129,12 @@
         "도서 원작 시리즈",
         "사회 문제를 다룬 드라마"
       ],
-      "features": ["거부할 수 없는 이끌림", "감정을 파고드는"],
+      "features": [
+        "거부할 수 없는 이끌림",
+        "감정을 파고드는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcfi2QeoKJq7VDQX-VIrEp6_bP9WGcFXrv6_BH87MSmj-IfcPkPKG2ptdx4jFQ7Gdz-XnhbL4SCqWd3W9fPsY2XUOv7_uigUNzI.webp?r=033",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABWcAekYJOnqRWNs6g5dhjVRdtK1OPiNz-IpP3iz7AkmCFCGWpExZKXLW3g989fp7mCzXCOLnNJIQRSaGJub8eaFynoItvCjhZJ7Mdo2IzCUjFVwXqJedg_vn4xrlTonIiWfb7UbZUkbS1N_AwqMqcl4_Enc6Cai5Qa-9q-mIdEbfzhgQM2n5.png?r=9a3",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg",
       "description": "체스 신동의 성장을 다룬 60년대 배경의 영리하고 세련된 드라마. 에미상 11개를 수상했으며, 《뉴요커》는 \"TV 역사상 가장 만족스러운 경험을 선사하는 작품\"으로 꼽았다.",
       "previewLink": "https://youtu.be/2Kd_4OOfmE0",
@@ -836,7 +1146,10 @@
       "id": 30,
       "title": "폭싹 속았수다",
       "type": "drama",
-      "creator": ["김원석", "임상춘"],
+      "creator": [
+        "김원석",
+        "임상춘"
+      ],
       "cast": [
         "아이유",
         "박보검",
@@ -857,8 +1170,18 @@
         "강유석",
         "이수경"
       ],
-      "genre": ["로맨틱한 드라마", "드라마", "한국 드라마"],
-      "features": ["향수 자극", "달콤 쌉싸름", "감정을 파고드는"],
+      "genre": [
+        "로맨틱한 드라마",
+        "드라마",
+        "한국 드라마"
+      ],
+      "features": [
+        "향수 자극",
+        "달콤 쌉싸름",
+        "감정을 파고드는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdrV8GqLkHwI_cU44F-wehHGqwFHjattkU_RvL5-XXAcZIzPNH8udDcFUfZty7NUN--mdMUXvRS0aRUbtJj-AynXvgPDWAQQCPQ.webp?r=b59",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABRMoRcd_XrsLjoj3SwTfXRf0vy9QayLJxlwjQYOEl6za-GzJQkbGqpXM3mnwWWIYN1AYGkEBDDpcKnnCaIL_p9OJRX1J610JPHqYZi4S8S9LgIc8ohRwES9yYfo84oB3Ua7WVEips5HYGPTQVUiuDHnOBbR-OeELCMvmENgw0B6Zg4DSO4IF.png?r=1ee",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/7Q54y3bsrBV4xOwGNMm6yNPdwr2.jpg",
       "description": "1960년대 제주, 어린 시절부터 함께 자란 소년과 소녀 사이에 사랑이 피어난다. 새침데기 문학소녀와 운동부 무쇠. 하나부터 열까지 너무도 다른 두 청춘은 첫사랑을 이룰 수 있을까.",
       "previewLink": "https://youtu.be/hYqE_mlPeHc",
@@ -913,7 +1236,13 @@
         "일본 작품",
         "애니 시리즈"
       ],
-      "features": ["상상의 나래", "어두운", "흥미진진"],
+      "features": [
+        "상상의 나래",
+        "어두운",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaAluvglRrDWQqQm5yKW9mlxHmhzXxVs_ywTmCNXKa9NkNtwV8n8AqZzKxqfuttdTLarOR-PJx8Hdd7GF7uuJFYnWoj__U02gtk.webp?r=5f4",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABbUe4cB1a-Qe_mQYhjfUE84rTN3HH4tLUxhCbKyiDa1PFsj8XqS0KJQKYyJcEhc1ZOObpVolPxxHUsGAc92rAj6KBavHx2cpPywTu_jlCOU.png?r=033",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/9VxSqn7D7SjQtz1l3wxrbd5GFgt.jpg",
       "description": "마침내 탄지로의 칼날이 모두 벼려졌다! 피에 굶주린 혈귀의 습격으로 가족을 잃고 여동생마저 저주에 걸린 소년. 가혹한 운명의 사슬을 끊어내고 세상에서 혈귀를 멸하러, 지금 탄지로가 복수의 칼날을 높이 든다.",
       "previewLink": "https://youtu.be/RJayggM6ZKU",
@@ -943,7 +1272,13 @@
         "로맨스 애니메이션",
         "청소년들을 위한 시리즈"
       ],
-      "features": ["설렘주의", "감상적", "진심 어린"],
+      "features": [
+        "설렘주의",
+        "감상적",
+        "진심 어린"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaGA3fc5hL3H8WmSSmtjwlwhYahY_C_P2B7hp-JVo5iqGgX1zl8F2QgHKiUA7XQdU2H3MJ52cp3VEZ2LNcrUSwNKlqISzQVTLKg.webp?r=13a",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABcHudHGdckrlGN4D55dbWZaajYtfT3EOZYTXyZfo7WLb2RPf-kGZKq3svmHEB8T-nqJ5j-U10VnHB2Ta5MB8Njj96FVVRB4xdNsYYF4vmZ34fWuNTueahos2uzbGpiqEsuO1z4nynY9w24QE-LCDu9ThBOBb0G9IAXscQ54LqHQJLzfPxBQS.png?r=d0b",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/4aqPbHJPG6rGqiUqELSkk7AXLME.jpg",
       "description": "본모습을 아무도 몰라주는 소녀가 자신을 둘러싼 껍데기를 깨고 사랑을 알아가는 감성 로맨스 애니메이션. 시이나 카루호의 베스트셀러 만화 원작.",
       "previewLink": "https://youtu.be/RqOZVUg_ldM",
@@ -955,7 +1290,9 @@
       "id": 33,
       "title": "디스인챈트",
       "type": "animation",
-      "creator": ["맷 그레이닝"],
+      "creator": [
+        "맷 그레이닝"
+      ],
       "cast": [
         "애비 제이컵슨",
         "에릭 안드레",
@@ -978,7 +1315,11 @@
         "액션 & 어드벤처 시리즈",
         "판타지 시리즈"
       ],
-      "features": ["위트 있는"],
+      "features": [
+        "위트 있는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUclNmDT_uGlCyzt55LV8hNpGDBi-rZ3a0G148-XIAme8rnpn1XqFxnYVmxn9OaxBi3tKmLIkXzbz9Tw7BHpkuopLObm45iDBUE.webp?r=3a1",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABRH6K_P294bsYN_nUZhCrKqFJf31H7qa7bmA4s8mj_Jf55fMnUUPRfDDaIavtTVSw3VidCIX7pfSJOCep1RzPYa87Fs39HbAfK1uKySeSXYdT559a9XbnwO7u6ujvYKHR04fhEVtFLYlwiA4CIhiB3u0Owzzo2PeVtOW82pPGw3irbSa1z8M.png?r=db8",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/hHEqDPbO6z4Xje5tOf3Wm1mdMtI.jpg",
       "description": "맷 그레이닝이 선사하는 중세 시대 배경의 애니메이션. 반항적인 공주가 노래하는 바다코끼리, 음모를 꾸미는 귀족, 악마 친구가 존재하는 세상으로 모험을 떠난다.",
       "previewLink": "https://youtu.be/IxH44TC0XN8",
@@ -990,7 +1331,10 @@
       "id": 34,
       "title": "릭 앤 모티",
       "type": "animation",
-      "creator": ["댄 하먼", "저스틴 로일랜드"],
+      "creator": [
+        "댄 하먼",
+        "저스틴 로일랜드"
+      ],
       "cast": [
         "저스틴 로일랜드",
         "크리스 파넬",
@@ -1007,7 +1351,12 @@
         "코미디 시리즈",
         "액션 & 어드벤처 시리즈"
       ],
-      "features": ["초현실적", "익살스러운"],
+      "features": [
+        "초현실적",
+        "익살스러운"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRrohldk-UvG9dldynA_2RhTobTXWTszx1USkSJrBeGAOiA04MAmFHXtTtFErfnhnBArBlP49gj4cw56IJE68-bFKfWCgxmOtYxn.jpg?r=e7a",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABSiWBkuREB16qKXvSq3mq7_QyH1vOTHlQhkITUYwEqVuQtD0Lk1V5bpGvC7eBhUg0tMW2hHY-u3b72_6-zGkrCoiuByWoaleDOtrjWfhcGQ.png?r=723",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/2hTIOpPLLsP8wZB29eRdim57565.jpg",
       "description": "과학자 할아버지와 손자가 다른 차원으로 여행을 떠나는 엉뚱한 매력의 애니메이션 시리즈.",
       "previewLink": "https://youtu.be/gRLaAJYOE58",
@@ -1019,7 +1368,9 @@
       "id": 35,
       "title": "스폰지밥 네모바지",
       "type": "animation",
-      "creator": ["스티븐 힐렌버그"],
+      "creator": [
+        "스티븐 힐렌버그"
+      ],
       "cast": [
         "톰 케니",
         "로저 범패스",
@@ -1033,8 +1384,18 @@
         "웬디오 베제하",
         "루이스 페레스 폰스"
       ],
-      "genre": ["키즈 시리즈", "미국 작품", "코미디 시리즈", "만화 시리즈"],
-      "features": ["유쾌 발랄", "허당 매력"],
+      "genre": [
+        "키즈 시리즈",
+        "미국 작품",
+        "코미디 시리즈",
+        "만화 시리즈"
+      ],
+      "features": [
+        "유쾌 발랄",
+        "허당 매력"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeaES-995rmFKfRgJbnhljQuLX1XUeYpqPg4zd0lHmcw-bdFs4uc4RNQWxgvkgAMAaYCPikk2_rGa7g9hP0t9U1xoqpOaDcLiq8.webp?r=beb",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABVqDn74PVYltVo8l13PdYnIIKLrkPrxeFZnEkvhX0Jt6WOhWxFm4DeKkzcx1GFm5HCXocHfKdtTzSu34ey-Z1AXCykmMbPYAVn2_Id1WRFk.png?r=e98",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/3MY7hMWrJ13Xtb1Y4jd7tztyPaZ.jpg",
       "description": "바닷속 파인애플 집에 사는 노랗고 네모난 스폰지밥. 특기는 햄버거 뒤집기요, 취미는 해파리 사냥이라지. 맛있는 음식을 뚝딱 만들어내고, 친구들과 짜릿한 모험도 즐기는 하루하루. 듣기만 해도 신나? 그럼 우리 같이 떠나!",
       "previewLink": "https://youtu.be/vzw2GQ54hcw",
@@ -1077,7 +1438,12 @@
         "일본 작품",
         "애니 시리즈"
       ],
-      "features": ["어두운", "흥미진진"],
+      "features": [
+        "어두운",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABYMiJZnMiljoGaC9NoBQMP1L8UXahgwth7Ug5XUtgBKgXq3F5Qb_sIMM7vGtBrFlNFOOo95J8iTWo_EgoCgN7qn06TVmN8pMdyRsazVItIo.png?r=31b",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXLZNgUOwj93S2M41gDiLcrMZwaASsmSx8JEBuEPmY1BVIJMQTY2nURQrkC2JIy4XIXXHAUe0GhTf1Vv0OBTHIrBx-Yo6QkNLCA.webp?r=102",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/yvKrycViRMQcIgdnjsM5JGNWU4Q.jpg",
       "description": "고향이 폐허로 변한 후, 소년 에렌 예거는 인류를 파멸시키려 하는 거인에 맞서 싸우겠다는 결의를 다진다.",
       "previewLink": "https://youtu.be/necy1bkwJEQ",
@@ -1115,7 +1481,11 @@
         "드라마 장르 애니메이션",
         "일본 만화 원작 시리즈"
       ],
-      "features": ["흥미진진"],
+      "features": [
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVXji5Fp1EWmUyYFCotKmYJWgsBtJv8rJVG3EKLNoJ00OjRGmawntJpFCOwP1LLVS2M79DiaEVWjzQSQ6Z5dy1Jt_QXXALkjNIa7AiCi-bLbB2UQtIXlDqZROlJeyOoHtUI14372QMgc2hkrvtjXIBTq52aTR5HblNKJdtw8EIXP7TE.webp?r=30f",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABd38bKH5MMUDSd6tY3SxE8ArVpS_aQl9CbRmB5gG7yahprlR68C2iY1WZuvCKBRiRz1Z4YH6BEiuENX0PFWq9OW8vh5kh8gql9Nhix6pDEs.png?r=5fb",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/rKKRrr9UywyCi1pxyRKSOoauO9q.jpg",
       "description": "어느 날, 최애 아이돌을 눈앞에서 만난 시골 의사. 비밀을 품은 스타와의 만남이 그를 연예계라는 비정한 세계로 끌어들인다.",
       "previewLink": "https://youtu.be/WVgJerFiBqI",
@@ -1146,7 +1516,11 @@
         "일본 작품",
         "애니 시리즈"
       ],
-      "features": ["흥미진진"],
+      "features": [
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZrbW21b2EaYD47_NfIvcNEdyDUyjmMxP8Rp3ZP0xLu8rYL0s68HooQEs2OWNbdZCzsUXxG5l_SLIzL8XbZFfcTzJojhCOQJfd4.webp?r=d78",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABc6aKueCxm82yXNZ9n3XeoXAvsGSLRPyvyoLQXfWhvcizEiEdPVMnpVKqGVfuAhM4UkBP1u0YmfJ27kN-H6XTMApviY3ytMWAIYX-l-Q_UA.png?r=e4c",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/yrql0fatWXYV2IsHPvXsrAqf2Dj.jpg",
       "description": "히메노가 남긴 메시지 덕분에 아키는 공포심을 떨치고 유령의 악마를 공격한다. 한편, 덴지는 체인소 대 일본도의 사투를 다시 시작한다.",
       "previewLink": "https://youtu.be/e_WgkDvTFOY",
@@ -1158,7 +1532,10 @@
       "id": 39,
       "title": "패러다이스의 경찰들",
       "type": "animation",
-      "creator": ["로저 블랙", "웨이코 오킨"],
+      "creator": [
+        "로저 블랙",
+        "웨이코 오킨"
+      ],
       "cast": [
         "톰 케니",
         "데이비드 허먼",
@@ -1171,8 +1548,17 @@
         "로저 블랙",
         "웨이코 오킨"
       ],
-      "genre": ["미국 작품", "코미디 시리즈"],
-      "features": ["익살스러운", "아찔하고 발칙하게", "폭력적인"],
+      "genre": [
+        "미국 작품",
+        "코미디 시리즈"
+      ],
+      "features": [
+        "익살스러운",
+        "아찔하고 발칙하게",
+        "폭력적인"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABURMCoVGfecg-qLjutk3wxuLZxJV4RBvDQulXyl4YCgjQz1raH8CKlyFVB8XtOQz9m3pntesQGXX0WiCXSQzygicjr51METQUT4.webp?r=8cf",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABZrQTLQHNGEPim6L2BVen8mSWLpxszPWF3-PD0uzKV3K-jLRCodiZbMIcjE0AVi4gfkWAiafVo18-lcv_vkuTr-TYI1aKt7JsmcU72Wpntt6V6htDr0FZYmsMZkdIbh9HHqozPNGDncqtRJQdo5b8JG6KVdrMrny8KAVsY3t0ylf7VN-KBQ-.png?r=c8b",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/ycnNgJwJoOfoE7PqQuouFALN6BZ.jpg",
       "description": "미국 남부의 촌구석 마을을 지키는 오합지졸 경찰들을 소개합니다. 어른들을 위한 막장 코믹 애니메이션 시리즈.",
       "previewLink": "https://youtu.be/EWSIOBbzuSE",
@@ -1218,7 +1604,13 @@
         "애니 시리즈",
         "드라마 장르 애니메이션"
       ],
-      "features": ["응원하고픈", "감명을 주는", "기분 좋아지는"],
+      "features": [
+        "응원하고픈",
+        "감명을 주는",
+        "기분 좋아지는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZmCNN-TBvUTvX0Qi1xRj04sbCRhAevE6rA9AZVttpkQEt05t4Gvo8Dvn97nLaY2JYrmDfBMVHi3e61-BnrIPLAJevIeRyLyDTc.webp?r=602",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABU6COtRIuJDn8f37q-meTPT91fgkgvflL2tUT_tJcFN8ccUCKnTc2gev_8k65ot02okPvQiN-EXuS7AGb8YxzSJGWhbRpcIVkO6KqfdVxNE.png?r=76f",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/3mBtXzyOIzh5zJNEgHqIIYTPb6n.jpg",
       "description": "TV로 배구 대회를 보고 완전히 매료된 히나타. 비록 키는 작지만, 중학교 배구부에서 누구보다 열심히 연습한다.",
       "previewLink": "https://youtu.be/h563-W0S9bs",
@@ -1233,9 +1625,22 @@
       "title": "나는 솔로",
       "type": "variety",
       "creator": [],
-      "cast": ["데프콘", "송해나", "이이경", "전효성"],
-      "genre": ["결혼식 & 로맨스 리얼리티 TV", "리얼리티 시리즈"],
-      "features": ["거부할 수 없는 이끌림", "로맨틱"],
+      "cast": [
+        "데프콘",
+        "송해나",
+        "이이경",
+        "전효성"
+      ],
+      "genre": [
+        "결혼식 & 로맨스 리얼리티 TV",
+        "리얼리티 시리즈"
+      ],
+      "features": [
+        "거부할 수 없는 이끌림",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdDYowufRkM_6uRWA8514Aa_a9Y_RLEMRRUdumfzHrqU-d9LhWAzW0zNrcInVJuAipxU67euQV97BhYIJHezUE4-7x0BPmTA8ut74h9GrcDfc6XrnU15l92qp30RK8w8ron_8BKX4PrKiz2CJv1bGJ_MdbbdA1bikYAzKatP02mGiFXCmkgvg_vZ1Z7DVmtyKF2D4ZCREy9PrGtaHvrCqk3e6gm_RvetdYbv0v52yfSrYw7x82nt0RWU8NnIw0jDbkz7Oh4eeqTbFFx9Me0Dp8bZiDHhilZDjZzRSs_MP5RxtT-IqRz59_xzhZUH79OdN7bds71l1PXcgduerN5Zdo_G.webp?r=719",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABd9U7Vm1omzR4c8gYSsoY09OkxG5bdTpgEZQ9o2tm-1zkILVRaTCh1Lv_1alRA3oEe5dZf5etwjoRITipg24KVwbKlizpGyFeQWDYZWo3qo.png?r=d0e",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/ovyM4mpiI6XCC7LUGpsC13IYZS2.jpg",
       "description": "외로움은 겪을 만큼 겪었다! 솔로 탈출을 간절히 원하는 싱글 남녀들이 사랑과 결혼 상대를 찾아 나섰다. 데이트의 설렘은 물론, 로맨스의 온갖 우여곡절을 고스란히 담아낸 현실 연애 프로그램.",
       "previewLink": "https://youtu.be/hrlwnmda7i4",
@@ -1247,10 +1652,18 @@
       "id": 42,
       "title": "더 인플루언서",
       "type": "variety",
-      "creator": ["이재석", "손수정"],
+      "creator": [
+        "이재석",
+        "손수정"
+      ],
       "cast": [],
-      "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
+      "genre": [
+        "경쟁 리얼리티 시리즈",
+        "리얼리티 시리즈"
+      ],
       "features": [],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdZThX_XI9NK4t_QHaB5GUVky2pGieEWTrJoL-TtgbIwb-KYVMHG3HLuenD5uNZ7JPfG7lmuWJwI_CmCbNRh04V2X9rFiUHR4YA.webp?r=60b",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABdHwJbDExjaxTnbP0kjEtC9f6IbLrpppffLi3MIE2UVIYGNSqxFGq1mtx86vpEALgXj4pj6woti9BErWQ1GKC44lMzbky2wuuFBFavLgOq7vBSj1M2og1igKiPVaop_OPM1BGLfNFCTqYA0sUF-Qwjr7X1Yjw9MJf1Eq6epyUFYWvGx1nr7B.png?r=a0a",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/6UoI9jVP5EilcA7gO0bjjA8qgDL.jpg",
       "description": "유튜브, 틱톡, 인스타그램 등의 소셜 플랫폼을 대표하는 인플루언서 77인이 한데 모였다! 치밀한 전략으로 가장 많은 관심을 끌어야 하는 대결. 최고의 인플루언서를 가리는 소셜 서바이벌이 펼쳐진다.",
       "previewLink": "https://youtu.be/230S9vX9UK0",
@@ -1262,10 +1675,29 @@
       "id": 43,
       "title": "솔로지옥",
       "type": "variety",
-      "creator": ["김재원", "김정현", "박수지", "김나현"],
-      "cast": ["홍진경", "이다희", "규현", "한해", "덱스"],
-      "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
-      "features": ["거부할 수 없는 이끌림", "로맨틱"],
+      "creator": [
+        "김재원",
+        "김정현",
+        "박수지",
+        "김나현"
+      ],
+      "cast": [
+        "홍진경",
+        "이다희",
+        "규현",
+        "한해",
+        "덱스"
+      ],
+      "genre": [
+        "경쟁 리얼리티 시리즈",
+        "리얼리티 시리즈"
+      ],
+      "features": [
+        "거부할 수 없는 이끌림",
+        "로맨틱"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdE_dzruR50MTZzGanQZu4xYrQMyGK8Pw1bMvBK7xGGABEvjyrWdMzFDmW0ltcB2vyeQgHoBDa5PXerm-qBCENQOB68Jm8VbqxkhRTKYgezwLpHoDdsnJcVqGRW-bvDwEZxrL-F4UhZakHJWpFpg-dFtTY_nxXhbh37e43M-vTm1XYhCxtu9jlEnkrieh30k4-8yiUvgFvXGRHLMNHe2uD72eeOL3XMIy3RkbQTGWg.webp?r=3d4",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABTOqCMABoOR1MXeODhUM2w-QwJVyhx-mKkt68jib_Pa9vbtw_2KW3jhYY25Xiip2ehTi_OzBlEVjdswbplnVeYZEr6QJhXSd5wkQ-VJj7t3Mzh8AJNgtd5J1N3BY7Ehi-pjj6HSpvNyNNawpl-SddWiVRmuUmU2MIgBcC9UASI2UeAEyMdY6.png?r=2ee",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/jcYlROkKUj8kmDciaDSPSxQ0Ceh.jpg",
       "description": "매력적인 싱글 남녀가 무인도에 갇혔다. 누군가와 커플이 되는 게 유일한 탈출 방법. 근데 커플들이 '천국도'로 이동해 밤을 불태울 때, 솔로는 '지옥도'에 남아 자급자족해야 한다고?",
       "previewLink": "https://youtu.be/_A9_yjNRR0w",
@@ -1287,8 +1719,14 @@
         "민경훈",
         "이상민"
       ],
-      "genre": ["버라이어티 시리즈"],
-      "features": ["허당 매력"],
+      "genre": [
+        "버라이어티 시리즈"
+      ],
+      "features": [
+        "허당 매력"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWb1ph1v5x5wpSQgkGQzV7RX0Z2S-xGYi7ragIadg9H4s2GV4og4bjV0AcSA3Fqirk--BsVY3Bz5JAcgtQubRI2XV_nMLFgPFvM.webp?r=f45",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABerGI21Er-v0-YGfIHh1UFhBgCzcNEwTMlrCWMV_IRebldjhz-JAa9YM6swmJFtJQdrN-oLjpTwylA_0aLSyVN5zPznEs9lYjLhZXrcWggc.png?r=9ca",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/u2LC6GAk15csvAWXik4voRHd8Uq.jpg",
       "description": "K-팝과 K-드라마의 팬이라면 주목! 정상급 가수와 배우, 예능인들이 매주 들르는 학교가 있다는데. 그들의 춤과 노래, 이야기를 함께 즐기고 싶은 이들은 모두 아형고로 모일 것.",
       "previewLink": "https://youtu.be/dbQ0vGYKNWw",
@@ -1312,8 +1750,18 @@
         "미미",
         "정승환"
       ],
-      "genre": ["음악", "경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
-      "features": ["재밌는", "진심이 통하는", "향수 자극"],
+      "genre": [
+        "음악",
+        "경쟁 리얼리티 시리즈",
+        "리얼리티 시리즈"
+      ],
+      "features": [
+        "재밌는",
+        "진심이 통하는",
+        "향수 자극"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABc20QdpD2j5Rf3DqD3f0kZcohlG8efrvD6zAgGHXcb2tUSwfJ2jD83IBstURUD2efiSn6U52oeI6ERPIzgqN9Xd9_QmYo_WhisU.webp?r=771",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABXY8-0wsaWTX1eyOIxrqw4r6rMkPe6yWYDkCFX8O8KXoPku3Wc_QhBHxkqNiVikCm6wnwZR54ZpWfJIQmhI_0tWX6r0sGf9hJVnXdmPPTz0.png?r=d29",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/opYhbQoMWAhPmUV6FP9voSPipc.jpg",
       "description": "가수 지망생들이 자기만의 색깔로 재해석한 명곡 발라드를 무대에서 선보이는 서바이벌 오디션. 스타와 일반 팬이 하나가 되어 우승자를 가려내는 특별한 경연이 펼쳐진다.",
       "previewLink": "https://youtu.be/grprNdAWV_M",
@@ -1325,10 +1773,22 @@
       "id": 46,
       "title": "주관식당",
       "type": "variety",
-      "creator": ["채송이"],
-      "cast": ["최강록", "문상훈", "주현영"],
-      "genre": ["토크쇼"],
-      "features": ["힐링"],
+      "creator": [
+        "채송이"
+      ],
+      "cast": [
+        "최강록",
+        "문상훈",
+        "주현영"
+      ],
+      "genre": [
+        "토크쇼"
+      ],
+      "features": [
+        "힐링"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbpY4MJBmVt9Iqv3HcIwSt9zbCDzC8oBrOPHNbU75gfzzy0Iqr9KjogCZrfPPpeQwAlVwa9JgqmI0q77e2VUypIL9dzRAjgBlQk.webp?r=7de",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABfgUw1NgY2oe1fuMinV01t2yFMlIrtYqVZ6enIW-LAWNTqQ-8vy7csYduJ1bLXkbI8iScet4XGuCZI91ZSmswlbKVxr5tbPSVxdN2mLOBf0.png?r=ac6",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/m4kx24URgqL1E1LacDPrEn7XFtI.jpg",
       "description": "손님의 이야기가 요리가 되는 곳. <흑백요리사> 최강록 셰프와 문상훈이 이야기를 듣고 세상에 단 하나뿐인 '주관식' 요리를 선보인다. 주문도, 요리도 모두가 주관식인 특별한 푸드 토크쇼.",
       "previewLink": "https://youtu.be/nIP3aMVvWwA",
@@ -1365,8 +1825,19 @@
         "이홍구",
         "박재욱"
       ],
-      "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈", "야구", "스포츠"],
-      "features": ["재밌는", "감명을 주는", "흥미진진"],
+      "genre": [
+        "경쟁 리얼리티 시리즈",
+        "리얼리티 시리즈",
+        "야구",
+        "스포츠"
+      ],
+      "features": [
+        "재밌는",
+        "감명을 주는",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTWIXQguVmvTjkC5RPbjR-N227qX5sBUteQmRLoIIqdashQ59srxMOLkjmxUYoXcSbMMG9lC1cdAJCXUkpQlg0WmwzX8_ie6t1g.webp?r=86a",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABeQ5QrrmcJpB7kY15dxyIRbRgXI6CTH_u-a9hB2TU1clsDO_ScevN6nYPdUTRHckhWjGYSMc88Vm84g0Bf7_9rpSzRf-lA10ZdZsOdtXBqU.png?r=a3f",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/tr3327leR46vmeKQHRW135OAiZT.jpg",
       "description": "야구에 미친 아마추어 선수들. 최강의 우승팀을 가릴 챔피언전에서 전설적인 프로 선수들에게 과감히 도전장을 던진다.",
       "previewLink": "https://youtu.be/ZQKrP43NHa0",
@@ -1379,9 +1850,23 @@
       "title": "태어난 김에 세계일주",
       "type": "variety",
       "creator": [],
-      "cast": ["기안84", "빠니보틀", "덱스", "이시언"],
-      "genre": ["음식 & 여행 시리즈", "리얼리티 시리즈", "라이프스타일"],
-      "features": ["순한 맛 코미디", "재밌는"],
+      "cast": [
+        "기안84",
+        "빠니보틀",
+        "덱스",
+        "이시언"
+      ],
+      "genre": [
+        "음식 & 여행 시리즈",
+        "리얼리티 시리즈",
+        "라이프스타일"
+      ],
+      "features": [
+        "순한 맛 코미디",
+        "재밌는"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQ3eFen6o5IPTryt2vhp97MqHyZalJ0NLaTRvNlX_77jNTKvp7PLBzuURF5ZT8jiySApa75m5Dy3FQ972bRsGfc66VY7VXTcSJ4.webp?r=3de",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABXgqfMtf1xW38HMCKKtwA3UOeHupX0siu9mmWWarkrbk8O9v5gndsgkVjR1OA6igasPDYpnzKVPb2UvVr6tq7_X3Lt2xl3lOm70bMExt_MI.png?r=851",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/yuqWyW9zXOn7OxznW53GhsKac52.jpg",
       "description": "기안84와 친구들이 함께 떠나는 즉흥 여행. 정해진 계획은 없다. 발길 닿는 대로 무작정 여행지를 돌아다니며 그곳의 진정한 아름다움을 발견한다.",
       "previewLink": "https://youtu.be/HN0CuARB-YM",
@@ -1393,10 +1878,19 @@
       "id": 49,
       "title": "피지컬: 100",
       "type": "variety",
-      "creator": ["장호기"],
+      "creator": [
+        "장호기"
+      ],
       "cast": [],
-      "genre": ["경쟁 리얼리티 시리즈", "리얼리티 시리즈"],
-      "features": ["흥미진진"],
+      "genre": [
+        "경쟁 리얼리티 시리즈",
+        "리얼리티 시리즈"
+      ],
+      "features": [
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXnIl8rpPaxHeuN2Puo8cwXxr0Ze5a-dcpredO95_qI-FUfeSjAuiuCXxN98Saa9zrIIzyQDfNpMrnpUbyC5mXPnynwTwWGvZHQ.webp?r=5ab",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABSAe7K5637-VAkDftEQrjtErHrPVEOvXZVDOv2tgf_jt8I-9sz1F0EoY9VIUDORcAG8Kyug5iAZpfHbJDYmcO2MI8R25XiQiz3l5HlBDhnH9lgrxfw7TespnGb1X418rF_fxitXfW5NV68VknqnfG2pdHHaesZsZZLICrlX0BzzNqmyU0KFr.png?r=2f3",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/cF2LLniq3LAFDsrH80I8bujiOF3.jpg",
       "description": "최고의 피지컬을 자랑하는 100인의 참가자. 연인은 험난한 대결에서 치열한 경쟁을 펼친다. 최후의 1인에게 주어지는 영예와 상금을 차지하기 위하여.",
       "previewLink": "https://youtu.be/J_zmVnwKSfs",
@@ -1408,14 +1902,26 @@
       "id": 50,
       "title": "흑백요리사: 요리 계급 전쟁",
       "type": "variety",
-      "creator": ["윤현준", "김학민", "김은지"],
-      "cast": ["백종원", "안성재"],
+      "creator": [
+        "윤현준",
+        "김학민",
+        "김은지"
+      ],
+      "cast": [
+        "백종원",
+        "안성재"
+      ],
       "genre": [
         "음식 & 여행 시리즈",
         "경쟁 리얼리티 시리즈",
         "리얼리티 시리즈"
       ],
-      "features": ["감명을 주는", "흥미진진"],
+      "features": [
+        "감명을 주는",
+        "흥미진진"
+      ],
+      "thumbnail": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABT9QKWCHBctMlk-PKa2JcmxSo3SByUaMQLfmWubGnyO2Elb82gZxrJOFa54FCBIikbpgTApKJ9xeClEyUHdWI7MhIBDYdiLHzpgQmP97bfn9MKbxBwAq-HIix7DlgFhZseayfxKDmlWHLc8ctJRsA0JvJbDJn-dDtzLXgIYLCjEdJ__7I9p-NZAxCr3ZENzUIIn0npgS5psVLtHGjx5P3WY7qOB2chF1oBxduw8AJHqjpCJ3OxLjksdjR1VE9NfLvkzJHxXNhCHXS9xBNTd1JvpFFxus7lTEFTR_F5sz4RhQghSmTiy9-bEvlKa7W9NJJdufiN-ThrR5XtsYTENJ3TNh.webp?r=743",
+      "previewLogo": "https://occ-0-8123-325.1.nflxso.net/dnm/api/v6/beuYL-MTCxPyt5oTOhVnWNGfZug/AAAABbGxE3mIYmffnwi1crwiGDPa7TWPdm8g4sU5OBsvI8iHdDZt0N6kpImtHazYHoUyuZUcDwC9RWskUPN-7cZoB3j-NP4ibLT98mPE_kAcglSxhKFn1AzHlGST_ZssrPAe1mYYbuv-An_krfkn3c_x4N0Ip6DrEPEPDQZAPtJjcGdZTgK0KdxC.png?r=d75",
       "backdropUrl": "https://media.themoviedb.org/t/p/w1000_and_h563_face/6A9mXBfN3sr9xisJMZkgdNvb5w7.jpg",
       "description": "대한민국 최고의 스타 셰프들과 맛으로 인정받은 실력파 요리사들이 맞붙는다. 베테랑의 내공에 도전하는 숨은 고수들이 이변을 일으킬까? 오직 맛으로만 승부하는 100인의 뜨거운 요리 계급 전쟁.",
       "previewLink": "https://youtu.be/EYT03Lp9y60",

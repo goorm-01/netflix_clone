@@ -19,6 +19,7 @@ export interface RankingCardProps {
     rank: number;                                           //순위
     onHover?: (movie: Content, rect: DOMRect) => void;      //호버 시 콜백
     onLeave?: () => void;                                   //호버 해제 시 콜백
+    onClick?: (movie: Content) => void;                     //클릭 시 콜백
     cardWidth?: number;                                     //카드 너비
 }
 
