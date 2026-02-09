@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import VideoPreview from './VideoPreview';
 import MovieInfo from './MovieInfo';
@@ -13,6 +13,15 @@ interface ContentsDetailModalProps {
 
 export default function ContentsDetailModal({ movie, onClose }: ContentsDetailModalProps) {
     const [addedItems, setAddedItems] = useState<Set<number>>(new Set());
+
+    useEffect(() => {
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+
+        return () => {
+            document.body.style.overflow = previousOverflow;
+        };
+    }, []);
 
     const getAgeRatingIcon = (ageRating?: number) => {
         switch (ageRating) {
@@ -38,7 +47,7 @@ export default function ContentsDetailModal({ movie, onClose }: ContentsDetailMo
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+            className="fixed inset-0 z-[10000] flex items-center justify-center bg-black bg-opacity-75"
             onClick={onClose}
         >
             <div
