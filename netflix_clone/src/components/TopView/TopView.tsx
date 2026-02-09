@@ -4,10 +4,13 @@
 import React from 'react';
 import { getContents } from '../../api/contentsApi';
 import { useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import type { Content } from '../../data/content';
 
 export default function TopView() {
   const [randomMovie, setRandomMovie] = useState<Content>();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     // 컨텐츠를 골라서 랜덤된 데이터를 결정
@@ -52,7 +55,14 @@ export default function TopView() {
               <button className='bg-white text-black px-8 py-2 rounded text-[1vw] hover:bg-opacity-80'>
                 ▶ 재생
               </button>
-              <button className='bg-gray-500 bg-opacity-70 text-white px-8 py-2 rounded text-[1vw] hover:bg-opacity-50'>
+              <button
+                className='bg-gray-500 bg-opacity-70 text-white px-8 py-2 rounded text-[1vw] hover:bg-opacity-50'
+                onClick={() => {
+                  navigate(`/detail/${randomMovie.id}`, {
+                    state: { background: location },
+                  });
+                }}
+              >
                 ⓘ 상세 정보
               </button>
             </div>
